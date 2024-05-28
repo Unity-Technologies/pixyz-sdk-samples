@@ -1,0 +1,17 @@
+# For more information about the available options please visit: http://go/backstage (VPN required)
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    github.com/project-slug: Unity-Technologies/pixyz-sdk-samples
+  name: pixyz-sdk-samples
+  description: "This repository contains samples for the pixyz SDK "
+  labels:
+    costcenter: "2105"
+  tags:
+    - planned-public
+    - enterprise
+spec:
+  type: other
+  lifecycle: pre-production
+  owner: Unity-Technologies/industrial-solutions-engineering
