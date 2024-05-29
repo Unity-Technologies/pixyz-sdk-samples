@@ -1,0 +1,254 @@
+FORGETYPEID;LABEL
+autodesk.unit.unit:custom-1.0.0;ODBM_CSV_NULL
+autodesk.unit.unit:meters-1.0.0;Meters
+autodesk.unit.unit:centimeters-1.0.1;Centimeters
+autodesk.unit.unit:millimeters-1.0.1;Millimeters
+autodesk.unit.unit:feet-1.0.1;Feet
+autodesk.unit.unit:feetFractionalInches-1.0.0;Feet and fractional inches
+autodesk.unit.unit:fractionalInches-1.0.0;Fractional inches
+autodesk.unit.unit:inches-1.0.1;Inches
+autodesk.unit.unit:acres-1.0.1;Acres
+autodesk.unit.unit:hectares-1.0.1;Hectares
+autodesk.unit.unit:metersCentimeters-1.0.0;Meters and centimeters
+autodesk.unit.unit:cubicYards-1.0.1;Cubic yards
+autodesk.unit.unit:squareFeet-1.0.1;Square feet
+autodesk.unit.unit:squareMeters-1.0.1;Square meters
+autodesk.unit.unit:cubicFeet-1.0.1;Cubic feet
+autodesk.unit.unit:cubicMeters-1.0.1;Cubic meters
+autodesk.unit.unit:degrees-1.0.1;Degrees
+autodesk.unit.unit:degreesMinutes-1.0.0;Degrees minutes seconds
+autodesk.unit.unit:general-1.0.1;General
+autodesk.unit.unit:fixed-1.0.1;Fixed
+autodesk.unit.unit:percentage-1.0.1;Percentage
+autodesk.unit.unit:squareInches-1.0.1;Square inches
+autodesk.unit.unit:squareCentimeters-1.0.1;Square centimeters
+autodesk.unit.unit:squareMillimeters-1.0.1;Square millimeters
+autodesk.unit.unit:cubicInches-1.0.1;Cubic inches
+autodesk.unit.unit:cubicCentimeters-1.0.1;Cubic centimeters
+autodesk.unit.unit:cubicMillimeters-1.0.1;Cubic millimeters
+autodesk.unit.unit:liters-1.0.1;Liters
+autodesk.unit.unit:usGallons-1.0.1;US gallons
+autodesk.unit.unit:kilogramsPerCubicMeter-1.0.1;Kilograms per cubic meter
+autodesk.unit.unit:poundsMassPerCubicFoot-1.0.1;Pounds mass per cubic foot
+autodesk.unit.unit:poundsMassPerCubicInch-1.0.1;Pounds mass per cubic inch
+autodesk.unit.unit:britishThermalUnits-1.0.1;British thermal units
+autodesk.unit.unit:calories-1.0.1;Calories
+autodesk.unit.unit:kilocalories-1.0.1;Kilocalories
+autodesk.unit.unit:joules-1.0.1;Joules
+autodesk.unit.unit:kilowattHours-1.0.1;Kilowatt hours
+autodesk.unit.unit:therms-1.0.1;Therms
+autodesk.unit.unit:inchesOfWater60DegreesFahrenheitPer100Feet-1.0.1;Inches of water (60 °F) per 100 feet
+autodesk.unit.unit:pascalsPerMeter-1.0.1;Pascals per meter
+autodesk.unit.unit:watts-1.0.1;Watts
+autodesk.unit.unit:kilowatts-1.0.1;Kilowatts
+autodesk.unit.unit:britishThermalUnitsPerSecond-1.0.1;British thermal units per second
+autodesk.unit.unit:britishThermalUnitsPerHour-1.0.1;British thermal units per hour
+autodesk.unit.unit:caloriesPerSecond-1.0.1;Calories per second
+autodesk.unit.unit:kilocaloriesPerSecond-1.0.1;Kilocalories per second
+autodesk.unit.unit:wattsPerSquareFoot-1.0.1;Watts per square foot
+autodesk.unit.unit:wattsPerSquareMeter-1.0.1;Watts per square meter
+autodesk.unit.unit:inchesOfWater60DegreesFahrenheit-1.0.1;Inches of water (60 °F)
+autodesk.unit.unit:pascals-1.0.1;Pascals
+autodesk.unit.unit:kilopascals-1.0.1;Kilopascals
+autodesk.unit.unit:megapascals-1.0.1;Megapascals
+autodesk.unit.unit:poundsForcePerSquareInch-1.0.1;Pounds force per square inch
+autodesk.unit.unit:inchesOfMercury32DegreesFahrenheit-1.0.1;Inches of mercury (32 °F)
+autodesk.unit.unit:millimetersOfMercury-1.0.1;Millimeters of mercury
+autodesk.unit.unit:atmospheres-1.0.1;Atmospheres
+autodesk.unit.unit:bars-1.0.1;Bars
+autodesk.unit.unit:fahrenheit-1.0.1;Fahrenheit
+autodesk.unit.unit:celsius-1.0.1;Celsius
+autodesk.unit.unit:kelvin-1.0.0;Kelvin
+autodesk.unit.unit:rankine-1.0.1;Rankine
+autodesk.unit.unit:feetPerMinute-1.0.1;Feet per minute
+autodesk.unit.unit:metersPerSecond-1.0.1;Meters per second
+autodesk.unit.unit:centimetersPerMinute-1.0.1;Centimeters per minute
+autodesk.unit.unit:cubicFeetPerMinute-1.0.1;Cubic feet per minute
+autodesk.unit.unit:litersPerSecond-1.0.1;Liters per second
+autodesk.unit.unit:cubicMetersPerSecond-1.0.1;Cubic meters per second
+autodesk.unit.unit:cubicMetersPerHour-1.0.1;Cubic meters per hour
+autodesk.unit.unit:usGallonsPerMinute-1.0.1;US gallons per minute
+autodesk.unit.unit:usGallonsPerHour-1.0.1;US gallons per hour
+autodesk.unit.unit:amperes-1.0.0;Amperes
+autodesk.unit.unit:kiloamperes-1.0.1;Kiloamperes
+autodesk.unit.unit:milliamperes-1.0.1;Milliamperes
+autodesk.unit.unit:volts-1.0.1;Volts
+autodesk.unit.unit:kilovolts-1.0.1;Kilovolts
+autodesk.unit.unit:millivolts-1.0.1;Millivolts
+autodesk.unit.unit:hertz-1.0.1;Hertz
+autodesk.unit.unit:cyclesPerSecond-1.0.1;Cycles per second
+autodesk.unit.unit:lux-1.0.1;Lux
+autodesk.unit.unit:footcandles-1.0.1;Footcandles
+autodesk.unit.unit:footlamberts-1.0.1;Footlamberts
+autodesk.unit.unit:candelasPerSquareMeter-1.0.1;Candelas per square meter
+autodesk.unit.unit:candelas-1.0.0;Candelas
+autodesk.unit.unit:lumens-1.0.1;Lumens
+autodesk.unit.unit:voltAmperes-1.0.1;Volt amperes
+autodesk.unit.unit:kilovoltAmperes-1.0.1;Kilovolt amperes
+autodesk.unit.unit:horsepower-1.0.1;Horsepower
+autodesk.unit.unit:newtons-1.0.1;Newtons
+autodesk.unit.unit:dekanewtons-1.0.1;Dekanewtons
+autodesk.unit.unit:kilonewtons-1.0.1;Kilonewtons
+autodesk.unit.unit:meganewtons-1.0.1;Meganewtons
+autodesk.unit.unit:kips-1.0.1;Kips
+autodesk.unit.unit:kilogramsForce-1.0.1;Kilograms force
+autodesk.unit.unit:tonnesForce-1.0.1;Tonnes force
+autodesk.unit.unit:poundsForce-1.0.1;Pounds force
+autodesk.unit.unit:newtonsPerMeter-1.0.1;Newtons per meter
+autodesk.unit.unit:dekanewtonsPerMeter-1.0.1;Dekanewtons per meter
+autodesk.unit.unit:kilonewtonsPerMeter-1.0.1;Kilonewtons per meter
+autodesk.unit.unit:meganewtonsPerMeter-1.0.1;Meganewtons per meter
+autodesk.unit.unit:kipsPerFoot-1.0.1;Kips per foot
+autodesk.unit.unit:kilogramsForcePerMeter-1.0.1;Kilograms force per meter
+autodesk.unit.unit:tonnesForcePerMeter-1.0.1;Tonnes force per meter
+autodesk.unit.unit:poundsForcePerFoot-1.0.1;Pounds force per foot
+autodesk.unit.unit:newtonsPerSquareMeter-1.0.1;Newtons per square meter
+autodesk.unit.unit:dekanewtonsPerSquareMeter-1.0.1;Dekanewtons per square meter
+autodesk.unit.unit:kilonewtonsPerSquareMeter-1.0.1;Kilonewtons per square meter
+autodesk.unit.unit:meganewtonsPerSquareMeter-1.0.1;Meganewtons per square meter
+autodesk.unit.unit:kipsPerSquareFoot-1.0.1;Kips per square foot
+autodesk.unit.unit:kilogramsForcePerSquareMeter-1.0.1;Kilograms force per square meter
+autodesk.unit.unit:tonnesForcePerSquareMeter-1.0.1;Tonnes force per square meter
+autodesk.unit.unit:poundsForcePerSquareFoot-1.0.1;Pounds force per square foot
+autodesk.unit.unit:newtonMeters-1.0.1;Newton meters
+autodesk.unit.unit:dekanewtonMeters-1.0.1;Dekanewton meters
+autodesk.unit.unit:kilonewtonMeters-1.0.1;Kilonewton meters
+autodesk.unit.unit:meganewtonMeters-1.0.1;Meganewton meters
+autodesk.unit.unit:kipFeet-1.0.1;Kip feet
+autodesk.unit.unit:kilogramForceMeters-1.0.1;Kilogram force meters
+autodesk.unit.unit:tonneForceMeters-1.0.1;Tonne force meters
+autodesk.unit.unit:poundForceFeet-1.0.1;Pound force feet
+autodesk.unit.unit:metersPerKilonewton-1.0.0;Meters per kilonewton
+autodesk.unit.unit:feetPerKip-1.0.0;Feet per kip
+autodesk.unit.unit:squareMetersPerKilonewton-1.0.1;Square meters per kilonewton
+autodesk.unit.unit:squareFeetPerKip-1.0.1;Square feet per kip
+autodesk.unit.unit:cubicMetersPerKilonewton-1.0.1;Cubic meters per kilonewton
+autodesk.unit.unit:cubicFeetPerKip-1.0.1;Cubic feet per kip
+autodesk.unit.unit:inverseKilonewtons-1.0.0;Inverse kilonewtons
+autodesk.unit.unit:inverseKips-1.0.0;Inverse kips
+autodesk.unit.unit:feetOfWater39.2DegreesFahrenheitPer100Feet-1.0.1;Feet of water (39.2 °F) per 100 feet
+autodesk.unit.unit:feetOfWater39.2DegreesFahrenheit-1.0.1;Feet of water (39.2 °F)
+autodesk.unit.unit:pascalSeconds-1.0.1;Pascal seconds
+autodesk.unit.unit:poundsMassPerFootSecond-1.0.1;Pounds mass per foot second
+autodesk.unit.unit:centipoises-1.0.1;Centipoises
+autodesk.unit.unit:feetPerSecond-1.0.1;Feet per second
+autodesk.unit.unit:kipsPerSquareInch-1.0.1;Kips per square inch
+autodesk.unit.unit:kilonewtonsPerCubicMeter-1.0.1;Kilonewtons per cubic meter
+autodesk.unit.unit:poundsForcePerCubicFoot-1.0.1;Pounds force per cubic foot
+autodesk.unit.unit:kipsPerCubicInch-1.0.1;Kips per cubic inch
+autodesk.unit.unit:inverseDegreesFahrenheit-1.0.1;Inverse degrees Fahrenheit
+autodesk.unit.unit:inverseDegreesCelsius-1.0.1;Inverse degrees Celsius
+autodesk.unit.unit:newtonMetersPerMeter-1.0.1;Newton meters per meter
+autodesk.unit.unit:dekanewtonMetersPerMeter-1.0.1;Dekanewton meters per meter
+autodesk.unit.unit:kilonewtonMetersPerMeter-1.0.1;Kilonewton meters per meter
+autodesk.unit.unit:meganewtonMetersPerMeter-1.0.1;Meganewton meters per meter
+autodesk.unit.unit:kipFeetPerFoot-1.0.1;Kip feet per foot
+autodesk.unit.unit:kilogramForceMetersPerMeter-1.0.1;Kilogram force meters per meter
+autodesk.unit.unit:tonneForceMetersPerMeter-1.0.1;Tonne force meters per meter
+autodesk.unit.unit:poundForceFeetPerFoot-1.0.1;Pound force feet per foot
+autodesk.unit.unit:poundsMassPerFootHour-1.0.1;Pounds mass per foot hour
+autodesk.unit.unit:kipsPerInch-1.0.1;Kips per inch
+autodesk.unit.unit:kipsPerCubicFoot-1.0.1;Kips per cubic foot
+autodesk.unit.unit:kipFeetPerDegree-1.0.1;Kip feet per degree
+autodesk.unit.unit:kilonewtonMetersPerDegree-1.0.1;Kilonewton meters per degree
+autodesk.unit.unit:kipFeetPerDegreePerFoot-1.0.1;Kip feet per degree per foot
+autodesk.unit.unit:kilonewtonMetersPerDegreePerMeter-1.0.1;Kilonewton meters per degree per meter
+autodesk.unit.unit:wattsPerSquareMeterKelvin-1.0.1;Watts per square meter kelvin
+autodesk.unit.unit:britishThermalUnitsPerHourSquareFootDegreeFahrenheit-1.0.1;British thermal units per hour square foot degree Fahrenheit
+autodesk.unit.unit:cubicFeetPerMinuteSquareFoot-1.0.1;Cubic feet per minute square foot
+autodesk.unit.unit:litersPerSecondSquareMeter-1.0.1;Liters per second square meter
+autodesk.unit.unit:ratioTo10-1.0.1;Ratio : 10
+autodesk.unit.unit:ratioTo12-1.0.1;Ratio : 12
+autodesk.unit.unit:slopeDegrees-1.0.0;Degrees
+autodesk.unit.unit:riseDividedBy12Inches-1.0.1;Rise / 12 inches
+autodesk.unit.unit:riseDividedBy1Foot-1.0.1;Rise / 1 foot
+autodesk.unit.unit:riseDividedBy1000Millimeters-1.0.1;Rise / 1000 millimeters
+autodesk.unit.unit:wattsPerCubicFoot-1.0.1;Watts per cubic foot
+autodesk.unit.unit:wattsPerCubicMeter-1.0.1;Watts per cubic meter
+autodesk.unit.unit:britishThermalUnitsPerHourSquareFoot-1.0.1;British thermal units per hour square foot
+autodesk.unit.unit:britishThermalUnitsPerHourCubicFoot-1.0.1;British thermal units per hour cubic foot
+autodesk.unit.unit:tonsOfRefrigeration-1.0.1;Tons of refrigeration
+autodesk.unit.unit:cubicFeetPerMinuteCubicFoot-1.0.1;Cubic feet per minute cubic foot
+autodesk.unit.unit:litersPerSecondCubicMeter-1.0.1;Liters per second cubic meter
+autodesk.unit.unit:cubicFeetPerMinuteTonOfRefrigeration-1.0.1;Cubic feet per minute ton of refrigeration
+autodesk.unit.unit:litersPerSecondKilowatt-1.0.1;Liters per second kilowatt
+autodesk.unit.unit:squareFeetPerTonOfRefrigeration-1.0.1;Square feet per ton of refrigeration
+autodesk.unit.unit:squareMetersPerKilowatt-1.0.1;Square meters per kilowatt
+autodesk.unit.unit:currency-1.0.0;Currency
+autodesk.unit.unit:lumensPerWatt-1.0.1;Lumens per watt
+autodesk.unit.unit:squareFeetPer1000BritishThermalUnitsPerHour-1.0.1;Square feet per thousand British thermal units per hour
+autodesk.unit.unit:kilonewtonsPerSquareCentimeter-1.0.1;Kilonewtons per square centimeter
+autodesk.unit.unit:newtonsPerSquareMillimeter-1.0.1;Newtons per square millimeter
+autodesk.unit.unit:kilonewtonsPerSquareMillimeter-1.0.1;Kilonewtons per square millimeter
+autodesk.unit.unit:riseDividedBy120Inches-1.0.1;Rise / 120 inches
+autodesk.unit.unit:1ToRatio-1.0.1;1 : Ratio
+autodesk.unit.unit:riseDividedBy10Feet-1.0.1;Rise / 10 feet
+autodesk.unit.unit:hourSquareFootDegreesFahrenheitPerBritishThermalUnit-1.0.1;Hour square foot degrees Fahrenheit per British thermal unit
+autodesk.unit.unit:squareMeterKelvinsPerWatt-1.0.1;Square meter kelvins per watt
+autodesk.unit.unit:britishThermalUnitsPerDegreeFahrenheit-1.0.1;British thermal units per degree Fahrenheit
+autodesk.unit.unit:joulesPerKelvin-1.0.1;Joules per Kelvin
+autodesk.unit.unit:kilojoulesPerKelvin-1.0.1;Kilojoules per Kelvin
+autodesk.unit.unit:kilograms-1.0.0;Kilograms
+autodesk.unit.unit:tonnes-1.0.1;Tonnes
+autodesk.unit.unit:poundsMass-1.0.1;Pounds mass
+autodesk.unit.unit:metersPerSecondSquared-1.0.1;Meters per second squared
+autodesk.unit.unit:kilometersPerSecondSquared-1.0.1;Kilometers per second squared
+autodesk.unit.unit:inchesPerSecondSquared-1.0.1;Inches per second squared
+autodesk.unit.unit:feetPerSecondSquared-1.0.1;Feet per second squared
+autodesk.unit.unit:milesPerSecondSquared-1.0.1;Miles per second squared
+autodesk.unit.unit:feetToTheFourthPower-1.0.1;Feet to the fourth power
+autodesk.unit.unit:inchesToTheFourthPower-1.0.1;Inches to the fourth power
+autodesk.unit.unit:millimetersToTheFourthPower-1.0.1;Millimeters to the fourth power
+autodesk.unit.unit:centimetersToTheFourthPower-1.0.1;Centimeters to the fourth power
+autodesk.unit.unit:metersToTheFourthPower-1.0.1;Meters to the fourth power
+autodesk.unit.unit:feetToTheSixthPower-1.0.1;Feet to the sixth power
+autodesk.unit.unit:inchesToTheSixthPower-1.0.1;Inches to the sixth power
+autodesk.unit.unit:millimetersToTheSixthPower-1.0.1;Millimeters to the sixth power
+autodesk.unit.unit:centimetersToTheSixthPower-1.0.1;Centimeters to the sixth power
+autodesk.unit.unit:metersToTheSixthPower-1.0.1;Meters to the sixth power
+autodesk.unit.unit:squareFeetPerFoot-1.0.1;Square feet per foot
+autodesk.unit.unit:squareInchesPerFoot-1.0.1;Square inches per foot
+autodesk.unit.unit:squareMillimetersPerMeter-1.0.1;Square millimeters per meter
+autodesk.unit.unit:squareCentimetersPerMeter-1.0.1;Square centimeters per meter
+autodesk.unit.unit:squareMetersPerMeter-1.0.1;Square meters per meter
+autodesk.unit.unit:kilogramsPerMeter-1.0.1;Kilograms per meter
+autodesk.unit.unit:poundsMassPerFoot-1.0.1;Pounds mass per foot
+autodesk.unit.unit:radians-1.0.0;Radians
+autodesk.unit.unit:gradians-1.0.1;Gradians
+autodesk.unit.unit:radiansPerSecond-1.0.1;Radians per second
+autodesk.unit.unit:milliseconds-1.0.1;Milliseconds
+autodesk.unit.unit:seconds-1.0.0;Seconds
+autodesk.unit.unit:minutes-1.0.1;Minutes
+autodesk.unit.unit:hours-1.0.1;Hours
+autodesk.unit.unit:kilometersPerHour-1.0.1;Kilometers per hour
+autodesk.unit.unit:milesPerHour-1.0.1;Miles per hour
+autodesk.unit.unit:kilojoules-1.0.1;Kilojoules
+autodesk.unit.unit:kilogramsPerSquareMeter-1.0.1;Kilograms per square meter
+autodesk.unit.unit:poundsMassPerSquareFoot-1.0.1;Pounds mass per square foot
+autodesk.unit.unit:wattsPerMeterKelvin-1.0.1;Watts per meter kelvin
+autodesk.unit.unit:joulesPerGramDegreeCelsius-1.0.1;Joules per gram degree Celsius
+autodesk.unit.unit:joulesPerGram-1.0.1;Joules per gram
+autodesk.unit.unit:nanogramsPerPascalSecondSquareMeter-1.0.1;Nanograms per pascal second square meter
+autodesk.unit.unit:ohmMeters-1.0.1;Ohm meters
+autodesk.unit.unit:britishThermalUnitsPerHourFootDegreeFahrenheit-1.0.1;British thermal units per hour foot degree Fahrenheit
+autodesk.unit.unit:britishThermalUnitsPerPoundDegreeFahrenheit-1.0.1;British thermal units per pound degree Fahrenheit
+autodesk.unit.unit:britishThermalUnitsPerPound-1.0.1;British thermal units per pound
+autodesk.unit.unit:grainsPerHourSquareFootInchMercury-1.0.1;Grains per hour square foot inch mercury
+autodesk.unit.unit:perMille-1.0.1;Per mille
+autodesk.unit.unit:decimeters-1.0.1;Decimeters
+autodesk.unit.unit:joulesPerKilogramDegreeCelsius-1.0.1;Joules per kilogram degree Celsius
+autodesk.unit.unit:micrometersPerMeterDegreeCelsius-1.0.1;Micrometers per meter degree Celsius
+autodesk.unit.unit:microinchesPerInchDegreeFahrenheit-1.0.1;Microinches per inch degree Fahrenheit
+autodesk.unit.unit:usTonnesMass-1.0.1;US tonnes mass
+autodesk.unit.unit:usTonnesForce-1.0.1;US tonnes force
+autodesk.unit.unit:litersPerMinute-1.0.1;Liters per minute
+autodesk.unit.unit:fahrenheitInterval-1.0.1;Fahrenheit interval
+autodesk.unit.unit:celsiusInterval-1.0.1;Celsius interval
+autodesk.unit.unit:kelvinInterval-1.0.0;Kelvin interval
+autodesk.unit.unit:rankineInterval-1.0.1;Rankine interval
+autodesk.unit.unit:stationingMeters-1.0.0;Meters
+autodesk.unit.unit:stationingFeet-1.0.0;Feet
+autodesk.unit.unit:cubicFeetPerHour-1.0.0;Cubic feet per hour
+autodesk.unit.unit:litersPerHour-1.0.1;Liters per hour
+autodesk.unit.unit:ratioTo1-1.0.0;Ratio : 1
+autodesk.unit.unit:usSurveyFeet-1.0.0;US survey feet

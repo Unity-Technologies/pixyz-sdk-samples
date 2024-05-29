@@ -1,0 +1,8 @@
+pyinstaller
+imgui-bundle==1.0
+pyopengl
+pillow
+pynvml
+psutil
+jedi
+glfw

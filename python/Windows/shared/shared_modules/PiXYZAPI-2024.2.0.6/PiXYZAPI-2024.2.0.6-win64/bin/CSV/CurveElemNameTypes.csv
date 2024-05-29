@@ -1,0 +1,8 @@
+NAME(Used only as reminder for value);VALUE;LABEL
+OdBm::CurveElemNameType::None;-1;None
+OdBm::CurveElemNameType::ModelLines;0;Model Lines
+OdBm::CurveElemNameType::DetailsLines;1;Detail Lines
+OdBm::CurveElemNameType::RefLines;2;Reference Lines
+OdBm::CurveElemNameType::SymbolicLines;3;Symbolic Lines
+OdBm::CurveElemNameType::Line;4;Line
+OdBm::CurveElemNameType::SpanDirectionEdge;5;Span Direction Edges

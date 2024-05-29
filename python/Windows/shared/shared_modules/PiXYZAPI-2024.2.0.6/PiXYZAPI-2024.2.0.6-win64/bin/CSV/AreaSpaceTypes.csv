@@ -1,0 +1,10 @@
+NAME(Used only as reminder for value);VALUE;LABEL
+OdBm::AreaSpaceType::None;-1;None
+OdBm::AreaSpaceType::AreaGross;0;Gross Building Area
+OdBm::AreaSpaceType::AreaExterior;1;Exterior Area
+OdBm::AreaSpaceType::AreaBCA;2;Building Common Area
+OdBm::AreaSpaceType::AreaExterior_2;3;Exterior Area
+OdBm::AreaSpaceType::AreaFloor;4;Floor Area
+OdBm::AreaSpaceType::AreaMVP;5;Major Vertical Penetration
+OdBm::AreaSpaceType::AreaOffice;6;Office Area
+OdBm::AreaSpaceType::AreaStore;7;Store Area

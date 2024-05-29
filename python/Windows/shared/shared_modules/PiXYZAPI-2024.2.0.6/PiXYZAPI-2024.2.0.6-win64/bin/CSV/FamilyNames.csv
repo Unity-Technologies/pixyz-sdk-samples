@@ -1,0 +1,211 @@
+NAME(Used only as reminder for value);VALUE;LABEL
+OdBm::FamilyName::Unknown;-1;Unknown
+OdBm::FamilyName::Floor;0;Floor
+OdBm::FamilyName::Level;1;Level
+OdBm::FamilyName::BasicRoof;2;Basic Roof
+OdBm::FamilyName::SlopedGlazing;3;Sloped Glazing
+OdBm::FamilyName::BasicWall;4;Basic Wall
+OdBm::FamilyName::CurtainWall;5;Curtain Wall
+OdBm::FamilyName::RectangularCurtainWall;6;Rectangular Curtain Wall
+OdBm::FamilyName::NRCurtainWall;7;Non-Rectangular Curtain Wall
+OdBm::FamilyName::StackedWall;8;Stacked Wall
+OdBm::FamilyName::ReferencePlane;9;Reference Plane
+OdBm::FamilyName::HandrailType;10;Handrail Type
+OdBm::FamilyName::TopRailType;11;Top Rail Type
+OdBm::FamilyName::Railing;12;Railing
+OdBm::FamilyName::Pad;13;Pad
+OdBm::FamilyName::BasicCeiling;14;Basic Ceiling
+OdBm::FamilyName::CompoundCeiling;15;Compound Ceiling
+OdBm::FamilyName::RoofSoffit;16;Roof Soffit
+OdBm::FamilyName::FoundationSlab;17;Foundation Slab
+OdBm::FamilyName::ModelGroup;18;Model Group
+OdBm::FamilyName::DetailGroup;19;Detail Group
+OdBm::FamilyName::ContourLabels;20;Contour Labels
+OdBm::FamilyName::CurtainSystem;21;Curtain System
+OdBm::FamilyName::FilledRegion;22;Filled region
+OdBm::FamilyName::ElevationTag;23;Elevation Tag
+OdBm::FamilyName::SectionTag;24;Section Tag
+OdBm::FamilyName::NonMonolithicRun;25;Non-Monolithic Run
+OdBm::FamilyName::MonolithicRun;26;Monolithic Run
+OdBm::FamilyName::AssembledStair;27;Assembled Stair
+OdBm::FamilyName::PrecastStair;28;Precast Stair
+OdBm::FamilyName::CastInPlaceStair;29;Cast-In-Place Stair
+OdBm::FamilyName::FixedUpDirection;30;Fixed Up Direction
+OdBm::FamilyName::ContFootingType;31;Wall Foundation
+OdBm::FamilyName::AutomaticUpDownDirection;32;Automatic Up/Down Direction
+OdBm::FamilyName::Label;33;Label
+OdBm::FamilyName::Grid;34;Grid
+OdBm::FamilyName::Text;35;Text
+OdBm::FamilyName::RectangularDuct;36;Rectangular Duct
+OdBm::FamilyName::RoundDuct;37;Round Duct
+OdBm::FamilyName::OvalDuct;38;Oval Duct
+OdBm::FamilyName::DBView_ThreeDimensional;39;3D View
+OdBm::FamilyName::DBViews_ThreeDimensional;40;3D Views
+OdBm::FamilyName::DBView_Walkthrough;41;Walkthrough
+OdBm::FamilyName::DBViews_Walkthrough;42;Walkthroughs
+OdBm::FamilyName::DBView_ImageView;43;Rendering
+OdBm::FamilyName::DBViews_ImageView;44;Renderings
+OdBm::FamilyName::DBView_Schedule;45;Schedule
+OdBm::FamilyName::DBViews_Schedule;46;Schedules
+OdBm::FamilyName::DBView_CostReport;47;Cost Report
+OdBm::FamilyName::DBViews_CostReport;48;Cost Reports
+OdBm::FamilyName::DBView_Sheet;49;Sheet
+OdBm::FamilyName::DBViews_Sheet;50;Sheets
+OdBm::FamilyName::DBView_Drafting;51;Drafting View
+OdBm::FamilyName::DBViews_Drafting;52;Drafting Views
+OdBm::FamilyName::DBView_FloorPlan;53;Floor Plan
+OdBm::FamilyName::DBViews_FloorPlan;54;Floor Plans
+OdBm::FamilyName::DBView_AreaPlan;55;Area Plan
+OdBm::FamilyName::DBViews_AreaPlan;56;Area Plans
+OdBm::FamilyName::DBView_CeilingPlan;57;Ceiling Plan
+OdBm::FamilyName::DBViews_CeilingPlan;58;Ceiling Plans
+OdBm::FamilyName::DBView_Section;59;Section
+OdBm::FamilyName::DBViews_Section;60;Sections
+OdBm::FamilyName::DBView_Detail;61;Detail View
+OdBm::FamilyName::DBViews_Detail;62;Detail Views
+OdBm::FamilyName::DBView_Elevation;63;Elevation
+OdBm::FamilyName::DBViews_Elevation;64;Elevations
+OdBm::FamilyName::DBView_LoadsReport;65;Loads Report
+OdBm::FamilyName::DBViews_LoadsReport;66;Loads Reports
+OdBm::FamilyName::DBView_PressureLossReport;67;Pressure Loss Report
+OdBm::FamilyName::DBViews_PressureLossReport;68;Pressure Loss Reports
+OdBm::FamilyName::DBView_Legend;69;Legend
+OdBm::FamilyName::DBViews_Legend;70;Legends
+OdBm::FamilyName::DBView_PanelSchedule;71;Panel Schedule
+OdBm::FamilyName::DBViews_PanelSchedule;72;Panel Schedules
+OdBm::FamilyName::DBView_GraphicalColumnSchedule;73;Graphical Column Schedule
+OdBm::FamilyName::DBViews_GraphicalColumnSchedule;74;Graphical Column Schedules
+OdBm::FamilyName::DBView_StructuralPlan;75;Structural Plan
+OdBm::FamilyName::DBViews_StructuralPlan;76;Structural Plans
+OdBm::FamilyName::RebarBarType;77;Rebar Bar
+OdBm::FamilyName::DBView_AnalysisReport;78;Analysis Report
+OdBm::FamilyName::DBViews_AnalysisReport;79;Analysis Reports
+OdBm::FamilyName::RebarShape;80;Rebar Shape
+OdBm::FamilyName::RbsPipeType;81;Pipe Types
+OdBm::FamilyName::RbsCableTrayTypeWithFittings;82;Cable Tray with Fittings
+OdBm::FamilyName::RbsConduitTypeWithFittings;83;Conduit with Fittings
+OdBm::FamilyName::AbsFlexDuctType_Regular;84;Flex Duct Rectangular
+OdBm::FamilyName::AnalyticalLinkType;85;Analytical Link
+OdBm::FamilyName::AnalyticalModelBeam;86;
+OdBm::FamilyName::AppearanceAssetElem;87;System-Zones
+OdBm::FamilyName::AreaLoadType;88;Area Loads
+OdBm::FamilyName::AreaReinforcementType;89;Structural Area Reinforcement
+OdBm::FamilyName::AssemblyType_Parts;90;Parts Assembly
+OdBm::FamilyName::BrowserOrganization_Views;91;Browser - Views
+OdBm::FamilyName::CalloutTag;92;Callout Tag
+OdBm::FamilyName::CategoryElem;93;Mechanical Equipment Sets
+OdBm::FamilyName::ColorFillSymbol;94;Color Fill Legend
+OdBm::FamilyName::ComponentRepeaterSlotSpecialType;95; Repeated Component Type
+OdBm::FamilyName::ConceptualConstructionType_Wall;96;Mass Walls
+OdBm::FamilyName::ConduitFittingCenterLine;97;Conduit Elbow - without Fittings1
+OdBm::FamilyName::ConduitStandardType;98;Conduit Standard Types
+OdBm::FamilyName::ConstructionSet;99;Construction Types
+OdBm::FamilyName::ConstructionSetProject;100;Construction Types
+OdBm::FamilyName::CorniceAttr;101;Wall Sweep
+OdBm::FamilyName::CoverType;102;Rebar Cover Settings
+OdBm::FamilyName::CutMarkType;103;Stair Cut Mark
+OdBm::FamilyName::DecalType;104;Decal
+OdBm::FamilyName::DimensionStyle_Linear;105;Linear Dimension Style
+OdBm::FamilyName::DirectShapeType;106;Coordination Model
+OdBm::FamilyName::DivisionRule;107;Rectangular Grid
+OdBm::FamilyName::DuctFittingCenterLine;108;Sattelstutzen rund
+OdBm::FamilyName::EdgeSlabAttr;109;Slab Edge
+OdBm::FamilyName::EndTreatmentType;110;End Treatment
+OdBm::FamilyName::FabricAreaType;111;Structural Fabric Area
+OdBm::FamilyName::FabricSheetType;112;Fabric Sheet
+OdBm::FamilyName::FabricWireType;113;Fabric Wire
+OdBm::FamilyName::FamilyInstance;114;
+OdBm::FamilyName::FasciaAttr;115;Fascia
+OdBm::FamilyName::FlexCenterLine;116;Flex Duct Round
+OdBm::FamilyName::GStyleElem;117;Analysis Report
+OdBm::FamilyName::GutterAttr;118;Gutter
+OdBm::FamilyName::ImageHolder;119;Decal
+OdBm::FamilyName::ImageSymbol;120;Raster image
+OdBm::FamilyName::JoistSystemAttr;121;Structural Beam System
+OdBm::FamilyName::LeaderStyle;122;Arrowhead
+OdBm::FamilyName::LineLoadType;123;Line Loads
+OdBm::FamilyName::LinePatternElem;124;Analysis Report
+OdBm::FamilyName::MasterImportSymbol;125;Import Symbol
+OdBm::FamilyName::MechanicalEquipmentSetType;126;Mechanical Equipment Sets
+OdBm::FamilyName::MEPAnalyticalConnectionElementType;127;Analytical Pipe Connections
+OdBm::FamilyName::MEPSystemZoneType;128;System-Zones
+OdBm::FamilyName::MultiReferenceAnnotationType;129;Multi-Rebar Annotations
+OdBm::FamilyName::MultistoryStairsType;130;Multistory Stairs
+OdBm::FamilyName::PathReinforcementType;131;Structural Path Reinforcement
+OdBm::FamilyName::PipeFittingCenterLine;132;Bogen - allgemein
+OdBm::FamilyName::PointLoadType;133;Point Loads
+OdBm::FamilyName::PropertyAttr;134;Property Lines
+OdBm::FamilyName::RampAttributes;135;Ramp
+OdBm::FamilyName::RbsDistributionSysType;136;Distribution System
+OdBm::FamilyName::RbsDuctInsulationType;137;Duct Insulation
+OdBm::FamilyName::RbsDuctLiningType;138;Duct Lining
+OdBm::FamilyName::RbsFlexPipeType;139;Flex Pipe Round
+OdBm::FamilyName::RbsFluidType;140;Fluid Types
+OdBm::FamilyName::RbsHvacSystemType;141;Duct System
+OdBm::FamilyName::RbsPipeConnectionType;142;Pipe Connection Types
+OdBm::FamilyName::RbsPipeInsulationType;143;Pipe Insulation
+OdBm::FamilyName::RbsPipeMaterialType;144;Pipe Material Types
+OdBm::FamilyName::RbsPipeScheduleType;145;Pipe Schedule Types
+OdBm::FamilyName::RbsPipingSystemType;146;Piping System
+OdBm::FamilyName::RbsVoltageType;147;Voltage Types
+OdBm::FamilyName::RbsWireInsulationType;148;Wire Insulation Types
+OdBm::FamilyName::RbsWireMaterialType;149;Wire Material Types
+OdBm::FamilyName::RbsWireTemperatureRatingType;150;Wire Temperature Rating Types
+OdBm::FamilyName::RbsWireType;151;Wire Types
+OdBm::FamilyName::RebarContainerType;152;Structural Rebar Container
+OdBm::FamilyName::RebarHookType;153;Rebar Hook
+OdBm::FamilyName::RebarInSystem;154;
+OdBm::FamilyName::ReferenceViewerAttributes;155;View Reference
+OdBm::FamilyName::RepeatingDetailAttributes;156;Repeating Detail
+OdBm::FamilyName::RevealAttr;157;Reveal
+OdBm::FamilyName::RevisionCloudAttr;158;Revision Clouds
+OdBm::FamilyName::RvtLinkSymbol;159;Linked Revit Model
+OdBm::FamilyName::SegmentCenterLine;160;Pipe Types
+OdBm::FamilyName::SharedSymbol;161;Fabric Sheet
+OdBm::FamilyName::SlaveImportSymbol;162;Import Symbol
+OdBm::FamilyName::SpotElevationStyle_Elevations;163;Spot Elevations
+OdBm::FamilyName::StairsAttributes;164;Stair
+OdBm::FamilyName::StairsLanding;165;
+OdBm::FamilyName::StairsLandingType_Monolithic;166;Monolithic Landing
+OdBm::FamilyName::StairsSupportType_Stringer;167;Stringer
+OdBm::FamilyName::StructuralConnectionHandlerType;168;Grundplatte Rohr
+OdBm::FamilyName::Text3dAttrSymbol;169;Model Text
+OdBm::FamilyName::TilePatternType_NoPattern;170;_No Pattern
+OdBm::FamilyName::ViewportAttributes;171;Viewport
+OdBm::FamilyName::ConceptualConstructionType_Roof;172;Mass Roof
+OdBm::FamilyName::RbsCableTrayTypeWithoutFittings;173;Cable Tray without Fittings
+OdBm::FamilyName::RbsConduitTypeWithoutFittings;174;Conduit without Fittings
+OdBm::FamilyName::TilePatternType_Rectangle;175;Rectangle
+OdBm::FamilyName::StairsSupportType_Carriage;176;Carriage
+OdBm::FamilyName::BrowserOrganization_Sheets;177;Browser - Sheets
+OdBm::FamilyName::AssemblyType_Doors;178;Doors Assembly
+OdBm::FamilyName::TilePatternType_Triangle;179;Triangle (bent)
+OdBm::FamilyName::TilePatternType_Rhomboid;180;Rhomboid
+OdBm::FamilyName::TilePatternType_Hexagon;181;Hexagon
+OdBm::FamilyName::TilePatternType_HalfStep;182;1/2 Step
+OdBm::FamilyName::TilePatternType_ThirdStep;183;1/3 Step
+OdBm::FamilyName::TilePatternType_TriangleCBBent;184;Triangle Checkerboard (bent)
+OdBm::FamilyName::TilePatternType_RectangleCB;185;Rectangle Checkerboard
+OdBm::FamilyName::TilePatternType_RhomboidCB;186;Rhomboid Checkerboard
+OdBm::FamilyName::TilePatternType_TriangleStepBent;187;Triangle Step (bent)
+OdBm::FamilyName::TilePatternType_Arrows;188;Arrows
+OdBm::FamilyName::TilePatternType_ZigZag;189;Zig Zag
+OdBm::FamilyName::TilePatternType_Octagon;190;Octagon
+OdBm::FamilyName::TilePatternType_OctagonRotate;191;Octagon Rotate
+OdBm::FamilyName::TilePatternType_TriangleFlat;192;Triangle (flat)
+OdBm::FamilyName::TilePatternType_TriangleCBFlat;193;Triangle Checkerboard (flat)
+OdBm::FamilyName::DimensionStyle_Angular;194;Angular Dimension Style
+OdBm::FamilyName::DimensionStyle_Radial;195;Radial Dimension Style
+OdBm::FamilyName::DimensionStyle_ArcLength;196;ArcLength Dimension Style
+OdBm::FamilyName::DimensionStyle_SpotElevation;197;SpotElevation Dimension Style
+OdBm::FamilyName::DimensionStyle_SpotCoordinate;198;SpotCoordinate Dimension Style
+OdBm::FamilyName::DimensionStyle_LinearFixed;199;LinearFixed Dimension Style
+OdBm::FamilyName::DimensionStyle_SpotSlope;200;SpotSlope Dimension Style
+OdBm::FamilyName::DimensionStyle_Diameter;201;Diameter Dimension Style
+OdBm::FamilyName::SpotElevationStyle_Coordinates;202;Spot Coordinates
+OdBm::FamilyName::SpotElevationStyle_Slope;203;Spot Slopes
+OdBm::FamilyName::SpotElevationStyle_Alignment;204;Alignment Station Labels
+OdBm::FamilyName::AbsFlexDuctType_Round;205;Flex Duct Round
+OdBm::FamilyName::AbsFlexDuctType_Oval;206;Flex Duct Oval
+OdBm::FamilyName::AbsFlexDuctType_Square;207;Flex Duct Square
+OdBm::FamilyName::StairsLandingType_NonMonolithic;208;Non-Monolithic Landing
