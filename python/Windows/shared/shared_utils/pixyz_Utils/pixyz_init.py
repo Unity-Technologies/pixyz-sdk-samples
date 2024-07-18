@@ -7,7 +7,7 @@ current_progress = 0
 def init_pixyz():
     # init Pixyz
     print("Initializing pixyz sdk")
-    pxz.initialize("PixyzSDK", "204b0ede26cfc54774cbbdaa175c1456c43b253144396405304009f926c0ebfcd5")
+    pxz.initialize("PixyzSDK", "VALIDATION_KEY")
 
     if debugger_is_active():
         # set log level to INFO so that we can see the logs in the console
@@ -46,7 +46,7 @@ def get_pixyz_license():
     print(f"Getting pixyz license ")
     # if no license is found, try to configure a license server
     if not pxz.core.checkLicense():
-        pxz.core.configureLicenseServer("lics-it-gcp-p01", 27005, True)
+        pxz.core.configureLicenseServer("SERVER_HOSTNAME", 27005, True)
 def onProgressChangedCallback(progress):
     global current_progress
     if progress != -1:

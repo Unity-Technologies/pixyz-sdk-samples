@@ -1,0 +1,75 @@
+[2024/05/28 16:43:05] [2024/05/28 16:43:05] FlexLM server version : 11.16
+[2024/05/28 16:43:05] Connection successful to server lics-it-gcp-p01 on port 27005
+[2024/05/28 16:43:21] 
+[2024/05/28 16:43:21] executing command algo.removeHoles
+[2024/05/28 16:43:21] occurrences:	 [4]
+[2024/05/28 16:43:21] throughHoles:	 True
+[2024/05/28 16:43:21] blindHoles:	 False
+[2024/05/28 16:43:21] surfacicHoles:	 False
+[2024/05/28 16:43:21] maxDiameter:	 10
+[2024/05/28 16:43:21] fillWithMaterial:	 0
+[2024/05/28 16:43:22] - 4 holes filled
+[2024/05/28 16:43:22] Command execution time : 0.688 s
+[2024/05/28 16:43:22] 
+[2024/05/28 16:43:22] executing command algo.deletePatches
+[2024/05/28 16:43:22] occurrences:	 [4]
+[2024/05/28 16:43:22] keepOnePatchByMaterial:	 True
+[2024/05/28 16:43:22] Command execution time : 0.001 s
+[2024/05/28 16:43:22] 
+[2024/05/28 16:43:22] executing command algo.decimate
+[2024/05/28 16:43:22] occurrences:	 [4]
+[2024/05/28 16:43:22] surfacicTolerance:	 1
+[2024/05/28 16:43:22] lineicTolerance:	 0.10000000000000001
+[2024/05/28 16:43:22] normalTolerance:	 3
+[2024/05/28 16:43:22] texCoordTolerance:	 -1
+[2024/05/28 16:43:22] releaseConstraintOnSmallArea:	 False
+[2024/05/28 16:43:22] Command execution time : 0.748 s
+[2024/05/28 16:43:22] 
+[2024/05/28 16:43:22] executing command algo.removeOccludedGeometries
+[2024/05/28 16:43:22] occurrences:	 [4]
+[2024/05/28 16:43:22] level:	 algo.SelectionLevel.Polygons
+[2024/05/28 16:43:22] resolution:	 1024
+[2024/05/28 16:43:22] sphereCount:	 16
+[2024/05/28 16:43:22] fovX:	 90
+[2024/05/28 16:43:22] considerTransparentOpaque:	 False
+[2024/05/28 16:43:22] adjacencyDepth:	 1
+[2024/05/28 16:43:22] root:	 0
+[2024/05/28 16:43:22] Analysing device NVIDIA GeForce RTX 3090
+[2024/05/28 16:43:22] Device: NVIDIA GeForce RTX 3090 => eDiscreteGpu
+[2024/05/28 16:43:22] - maxMemoryAllocationSize = 4292870144
+[2024/05/28 16:43:22] - maxPerSetDescriptors    = 4294967295
+[2024/05/28 16:43:22] found suitable physical device: NVIDIA GeForce RTX 3090
+[2024/05/28 16:43:28] Command execution time : 5.788 s
+[2024/05/28 16:43:28] 
+[2024/05/28 16:43:28] executing command io.exportScene
+[2024/05/28 16:43:28] fileName:	 "D:\GithubRepos\pixyz_SDK_Samples\python\Windows\FolderWatcher\_output/Impact driver DCF850.pxz"
+[2024/05/28 16:43:28] root:	 0
+[2024/05/28 16:43:28] 71278 entities to save
+[2024/05/28 16:43:28] Command execution time : 0.292 s
+[2024/05/28 16:43:28] 
+[2024/05/28 16:43:28] executing command io.exportScene
+[2024/05/28 16:43:28] fileName:	 "D:\GithubRepos\pixyz_SDK_Samples\python\Windows\FolderWatcher\_output/Impact driver DCF850.fbx"
+[2024/05/28 16:43:28] root:	 0
+[2024/05/28 16:43:28] [FBX] Exporting using version 2020
+[2024/05/28 16:43:29] Command execution time : 0.044 s
+[2024/05/28 16:43:29] 
+[2024/05/28 16:43:29] executing command io.exportScene
+[2024/05/28 16:43:29] fileName:	 "D:\GithubRepos\pixyz_SDK_Samples\python\Windows\FolderWatcher\_output/Impact driver DCF850.glb"
+[2024/05/28 16:43:29] root:	 0
+[2024/05/28 16:43:29] Command execution time : 0.054 s
+[2024/05/28 16:43:29] 
+[2024/05/28 16:43:29] executing command io.exportScene
+[2024/05/28 16:43:29] fileName:	 "D:\GithubRepos\pixyz_SDK_Samples\python\Windows\FolderWatcher\_output/Impact driver DCF850.pdf"
+[2024/05/28 16:43:29] root:	 0
+[2024/05/28 16:43:30] Command execution time : 1.234 s
+[2024/05/28 16:43:30] 
+[2024/05/28 16:43:30] executing command io.exportScene
+[2024/05/28 16:43:30] fileName:	 "D:\GithubRepos\pixyz_SDK_Samples\python\Windows\FolderWatcher\_output/Impact driver DCF850.obj"
+[2024/05/28 16:43:30] root:	 0
+[2024/05/28 16:43:30] Command execution time : 0.048 s
+[2024/05/28 16:43:30] 
+[2024/05/28 16:43:30] executing command io.exportScene
+[2024/05/28 16:43:30] fileName:	 "D:\GithubRepos\pixyz_SDK_Samples\python\Windows\FolderWatcher\_output/Impact driver DCF850.3dxml"
+[2024/05/28 16:43:30] root:	 0
+[2024/05/28 16:43:30] Command execution time : 0.127 s
+[2024/05/28 16:44:21] PixyzSDK v2024.2.0.6

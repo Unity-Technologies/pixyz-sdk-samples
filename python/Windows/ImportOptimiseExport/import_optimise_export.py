@@ -77,6 +77,8 @@ def exportmodel(filepath, extension, root):
     print(f"Exporting {finalPath}... ")
     io.exportScene(str(finalPath), root)
 
+
+
 if __name__ == '__main__':
     pixyz_init.init_pixyz()
     pixyz_init.get_pixyz_license()
@@ -86,6 +88,7 @@ if __name__ == '__main__':
         pixyz_utils.save_screenshot(root, os.path.join(os.path.dirname(model_file_path), "before.png"), Orientation.LEFT)
         preparemodel(root)
         pixyz_utils.save_screenshot(root, os.path.join(os.path.dirname(model_file_path), "after.png"), Orientation.FRONT)
+        pixyz_utils.extract_hierarchy_tojson(root,os.path.join(os.path.dirname(model_file_path), f"{os.path.splitext(os.path.basename(model_file_path))[0]}.json"))
         exportmodel(model_file_path, "_new.glb", root)
     else:
         print("No License Available")

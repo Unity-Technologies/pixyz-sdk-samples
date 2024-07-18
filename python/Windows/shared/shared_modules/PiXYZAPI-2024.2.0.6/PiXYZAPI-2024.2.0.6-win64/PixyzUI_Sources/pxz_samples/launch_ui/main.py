@@ -11,7 +11,7 @@ for package in needed_packages:
 
 # Initialize Pixyz Engine
 import pxz
-pxz.initialize("PixyzSDK", "204b0ede26cfc54774cbbdaa175c1456c43b253144396405304009f926c0ebfcd5")
+pxz.initialize("PixyzSDK", "VALIDATION_KEY")
 
 from pxzui.Window import Window
 

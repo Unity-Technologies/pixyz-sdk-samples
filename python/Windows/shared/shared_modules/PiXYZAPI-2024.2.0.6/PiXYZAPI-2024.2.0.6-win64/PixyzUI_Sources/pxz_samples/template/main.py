@@ -1,13 +1,13 @@
 import os
 from pxz import core, algo, io, view, geom, scene
-from pxz_utils import init, process, screenshot, math_utils
+from shared.shared_utils.pixyz_Utils import pixyz_init, screenshot, math_utils
 import pxzui
 from pxzui import Window
 
 
 def main():
     # init Pixyz
-    init.init_pixyz()
+    pixyz_init.init_pixyz()
     dir_path = os.path.dirname(os.path.realpath(__file__))
 
     # import CAD file and save screenshot

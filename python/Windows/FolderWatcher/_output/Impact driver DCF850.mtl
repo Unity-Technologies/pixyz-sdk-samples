@@ -1,0 +1,30 @@
+newmtl Color__e0a100ff
+Ka 0 0 0
+Kd 0.88 0.6336 0
+Ks 0 0 0
+d 1
+Ns 0
+newmtl Color__333333ff
+Ka 0 0 0
+Kd 0.2 0.2 0.2
+Ks 0 0 0
+d 1
+Ns 0
+newmtl Color__545659ff
+Ka 0 0 0
+Kd 0.331739 0.34087 0.35
+Ks 0 0 0
+d 1
+Ns 0
+newmtl Color__000000ff
+Ka 0 0 0
+Kd 0 0 0
+Ks 0 0 0
+d 1
+Ns 0
+newmtl Color__f2f2f2ff
+Ka 0 0 0
+Kd 0.95 0.95 0.95
+Ks 0 0 0
+d 1
+Ns 0
