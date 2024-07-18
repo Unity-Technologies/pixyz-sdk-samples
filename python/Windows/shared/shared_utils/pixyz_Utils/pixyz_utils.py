@@ -3,7 +3,6 @@ from pxz import core, scene, view, geom
 from enum import Enum
 import json
 
-
 def getStats(root):
     core.configureInterfaceLogger(False, False, False)  # hide next lines from logs
 

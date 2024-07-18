@@ -25,11 +25,11 @@ def CreateAndPublishFilesToAsset(asset_name, model_files, org_id, project_id, co
         source_dataset_id = GetSourceDataSet(asset.id, asset.version, org_id, project_id)
         for modelFile in model_files:
             UploadAsset(asset.id, asset.version, modelFile, org_id, project_id, source_dataset_id)
-        #if CheckCollectionExists(org_id, project_id, collection_path):
-            #LinkAssetToCollection(org_id, project_id, collection_path, asset.id)
-        #else:
-            #CreateCollection(collection_path, org_id, project_id)
-            #LinkAssetToCollection(org_id, project_id, collection_path, asset.id)
+        # if CheckCollectionExists(org_id, project_id, collection_path):
+        #     LinkAssetToCollection(org_id, project_id, collection_path, asset.id)
+        # else:
+        #     CreateCollection(collection_path, org_id, project_id)
+        #     LinkAssetToCollection(org_id, project_id, collection_path, asset.id)
         PublishAsset(asset.id, asset.version, org_id, project_id)
 
     except Exception as e:
