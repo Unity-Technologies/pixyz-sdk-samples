@@ -12,8 +12,8 @@
     ],
     "optimization":  "True",
     "publish_to_assetmanager": "True",
-    "orgid": "20066821662104",
-    "projid": "898fa0cf-c776-49fe-8197-18b30aa37e2d",
-    "collectionpath": "pixyzSDK",
-    "tags": ["CAD"]
+    "orgid": "ORG_ID",
+    "projid": "PROJ_ID",
+    "collectionpath": "COLLECTION_PATH",
+    "tags": ["TAG"]
 }

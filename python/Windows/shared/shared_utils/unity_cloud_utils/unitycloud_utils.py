@@ -1,5 +1,4 @@
 import os
-from pathlib import PurePosixPath
 
 import unity_cloud
 from unity_cloud import AssetCreation, FileUploadInformation, AssetType, CollectionCreation, AssetUpdate
