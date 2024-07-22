@@ -37,10 +37,25 @@ Then Select the bin and lib folder located at [Project directory]/shared/shared_
 **The Project is now installed and setup. To use the samples please follow the usage instructions below**
 
 ## Usage Instructions
-
-1. Step 1: Describe the first usage step.
+**The samples repository is split up into three samples**
+Note: All the samples use the common functions defined in the ImportOptimiseExport script. You will need to follow these first initial steps for other samples to work.
+**Import Optimise Export**
+1. Pixyz SDK license setup
 2. Step 2: Describe the second usage step.
 3. Step 3: Describe the third usage step.
+
+**Folder Watcher**
+1. 
+2. Service Account
+3. Step 2: Describe the second usage step.
+4. Step 3: Describe the third usage step.
+
+**Parallel Processing**
+Note: This sample consumes multiple pixyz licenses at the same time as they are initialized in separate processes that run in parallel
+1. Make sure that you have pyside6 installed as per step 8 in the installation doc. This is what is used to create the user interface
+2. Locate the main parallel processign folder. You will see two scripts, one is the main script that controls the UI and exectues the second script per process that is started.
+3. Run the main script, you will see a new window appear, you can use this window to add new files to import by using the + button at the bottom. Each file that you import will start a new process and consume a node of pixyz SDK. These will run in parallel until completed or terminated.  
+4. All processes that are running or completed will be present in the main UI process. Any information that is printed to the console will be shown in the label field
 
 # Converting to public repository
 Any and all Unity software of any description (including components) (1) whose source is to be made available other than under a Unity source code license or (2) in respect of which a public announcement is to be made concerning its inner workings, may be licensed and released only upon the prior approval of Legal.
