@@ -24,13 +24,17 @@ This repository uses Git LFS (Large File Storage) to manage large files. To ensu
 3. Create a python project using your script editor of choice. This example is using PyCharm and you simply point to the python/Windows folder
    
    <img src="https://github.com/user-attachments/assets/e4f3c2eb-3e07-4c51-86fb-71f24e284287" alt="pycharm64_HCQ2Ogd087" width="400">
-   <img src="https://github.com/user-attachments/assets/a38ff03b-6568-4cc5-814c-a0f8b0a84904" alt="pycharm64_7rylkrg18y" width="400">
+   <img src="https://github.com/user-attachments/assets/e2a16094-a327-42ea-a93e-beed960ab03b" alt="pycharm64_YgdAnDVArh" width="400">
 
+5. Add pixyz SDK bin and lib folder to the projects interpreter path. To do this in pycharm go to Settings>Python Interpreter>Show All>Show Interpreter Paths>Add(+)
+Then Select the bin and lib folder located at [Project directory]/shared/shared_modules/PiXYZAPI-XXXX.X.X.X/
+<img src="https://github.com/user-attachments/assets/e6f031b4-83f8-40d6-99de-9b13506b63f5" alt="NVIDIA_Share_QB9oyf7bev" width ="400">
+<img src="https://github.com/user-attachments/assets/ea6dc905-67bc-4d13-87d1-33a90921abf3" alt="NVIDIA_Share_sPbZ4yqFK1" width ="400">
 
-5. Add local interpreter to create a virtual environment for this project
+7. To install the local Unity Cloud SDK package for the folder watcher sample run "pip install shared/shared_modules/unity_cloud-0.9.0-py3-none-win_amd64.whl" in the local terminal
+8. To install the python QT package for the parallel processing sample run "pip install pyside6" in the local terminal
 
-6. 
-7. Step 3: Describe the third installation step.
+**The Project is now installed and setup. To use the samples please follow the usage instructions below**
 
 ## Usage Instructions
 
