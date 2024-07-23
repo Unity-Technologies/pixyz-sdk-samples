@@ -1,6 +1,6 @@
 import sys
 
-from shared.shared_utils.pixyz_Utils import pixyz_init as pixyz_init
+from shared.shared_utils.pixyz_utils import pixyz_init as pixyz_init
 from ImportOptimiseExport import import_optimise_export as importoptimiseexport
 
 from pxz import core

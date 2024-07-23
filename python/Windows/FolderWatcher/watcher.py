@@ -2,9 +2,8 @@ import json
 import os
 from ctypes import windll
 
-from shared.shared_utils.unity_cloud_utils import unitycloud_init as unitycloud_init
 from ImportOptimiseExport import import_optimise_export as import_optimise_export
-from shared.shared_utils.pixyz_Utils import pixyz_init as pixyz_init
+from shared.shared_utils.pixyz_utils import pixyz_init as pixyz_init
 
 
 def main(config_file):
@@ -93,7 +92,8 @@ def getFileExtension(file):
 def executepixyzSDK(input_file, output_folder, extensions, optimization, publish_to_assetmanager, orgid, projid,
                     collection_path, tags):
     pixyz_init.init_pixyz()
-    if publish_to_assetmanager:
+    if publish_to_assetmanager == "True":
+        from shared.shared_utils.unity_cloud_utils import unitycloud_init as unitycloud_init
         unitycloud_init.unitycloud_init()
     import_optimise_export.convertFile(input_file, output_folder, extensions, optimization, publish_to_assetmanager,
                                        orgid, projid, collection_path, tags)

@@ -1,6 +1,6 @@
 import os
 from pxz import core, algo, io, view, geom, scene
-from shared.shared_utils.pixyz_Utils import pixyz_init, screenshot, math_utils
+from shared.shared_utils.pixyz_utils import pixyz_init, screenshot, math_utils
 import pxzui
 from pxzui import Window
 

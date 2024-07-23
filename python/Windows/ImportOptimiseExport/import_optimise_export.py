@@ -1,9 +1,8 @@
 import os
-from shared.shared_utils.pixyz_Utils import math_utils as math_utils
-from shared.shared_utils.pixyz_Utils import pixyz_init as pixyz_init
-from shared.shared_utils.pixyz_Utils import pixyz_utils as pixyz_utils
-from shared.shared_utils.pixyz_Utils.pixyz_utils import Orientation
-from shared.shared_utils.unity_cloud_utils import unitycloud_utils as unitycloud_utils
+from shared.shared_utils.pixyz_utils import math_utils as math_utils
+from shared.shared_utils.pixyz_utils import pixyz_init as pixyz_init
+from shared.shared_utils.pixyz_utils import pixyz_utils as pixyz_utils
+from shared.shared_utils.pixyz_utils.pixyz_utils import Orientation
 from pxz import algo, scene, io, core
 
 #These functions are used for the folder watcher sample
@@ -51,7 +50,8 @@ def convertFile(inputFile, outputFolder, extensions, optimization, publish_to_as
         print(f"Exporting {extension}...")
         io.exportScene(outputFolder + '/' + fileName + extension)
         modelFiles.append(outputFolder + '/' + fileName + extension)
-    if publish_to_assetmanager:
+    if publish_to_assetmanager == "True":
+        from shared.shared_utils.unity_cloud_utils import unitycloud_utils as unitycloud_utils
         unitycloud_utils.CreateAndPublishFilesToAsset(fileName, modelFiles,
                                                       orgid, projid,
                                                       collection_path, tags)
