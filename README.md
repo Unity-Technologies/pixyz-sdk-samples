@@ -2,10 +2,17 @@
 
 This GitHub repo contains a set of Pixyz Engine SDK samples to help users get started with the Pixyz SDK.
 
+## Documentation
+**Unity Cloud SDK** 
+https://docs.unity.com/cloud/en-us/asset-manager/python-sdk
+
+**pixyz SDK**
+https://www.pixyz-software.com/documentations/html/2024.2/sdk/manual/index.html
+
 ## Samples
 
-- Import Optimize Export: This simple sample forms the basis of all the other samples. It demonstrates how to simply initialize pixyz SDK, import a model, tesselate it and export the model. In addition it demonstrates how you can use pixyz SDK to capture screen shots and extract metadata from your model hierarchy.
-- Folder Watcher: This samples simply watches a folder for new models to be pasted into it and then imports and processes them using the functions defined in the previous sample. The sample also demonstrates how to import settings via a config.json file and upload exported files to Unity Cloud Asset Manager. This sample is based on the old pixyz Scenario Processor sample and is a great way to see the differences between SDK and the legacy Scenario Processor.
+- Import Optimize Export: This simple sample forms the basis of all the other samples. It demonstrates how to simply initialize pixyz SDK, import a model, tesselate it, and export the model. In addition, it demonstrates how you can use pixyz SDK to capture screenshots and extract metadata from your model hierarchy.
+- Folder Watcher: This sample watches a folder for new models to be pasted into it and then imports and processes them using the functions defined in the previous sample. The sample also demonstrates how to import settings via a config.json file and upload exported files to Unity Cloud Asset Manager. This sample is based on the old pixyz Scenario Processor sample and is a great way to see the differences between SDK and the legacy Scenario Processor.
 - Parallel Processing: This sample shows how pixyz SDK can be used across multiple processes, demonstrating how you can start a process, terminate a process and monitor processes in parallel from a simple py QT UI. This sample requires multiple pixyz SDK licenses but demonstrates the power of parallel processing and operating using individual processes rather than a single process that runs for a long time.
 
 ## Git LFS Setup
@@ -48,7 +55,7 @@ Note: All the samples use the common functions defined in the ImportOptimiseExpo
 4. Change your port number to that of your license server
 5. Open the script ImportOptimiseExport/import_optimise_export.py
 6. This script contains the main functions that are used by the other samples. At the bottom of the script you will see a section like below
-<img src="https://github.com/user-attachments/assets/e79bca94-4eef-4a17-b4f6-bb41bf4f04d7" alt="NVIDIA_Share_AvTRwD6MaK" width="400">
+<img src="https://github.com/user-attachments/assets/e79bca94-4eef-4a17-b4f6-bb41bf4f04d7" alt="NVIDIA_Share_AvTRwD6MaK" width="800">
 
 7. To run the script just press the play button indicated in the image.
    This will:
@@ -72,14 +79,14 @@ Note: This sample can use the Unity cloud SDK to upload files straight to Asset 
 5. If you aren't going to upload to Unity Cloud set "publish_to_assetmanager" to "False" and you can skip to step 14
 6. Make sure "publish_to_assetmanager" is set True
 7. Replace "ORG_ID" with the Organization Id of your Organization where you want your files to go to, this can be found in the browser bar after organizations/XXXXXXXXXXXX
-8. Replace "PROJ_ID" with the Project Id of your Project where you want your files to go to, this can be found in the browser bar after projects/XXXXXXXXXXXX. If you dont have a project setup then create one by going to cloud.unity.com, your organization, Asset Manager, Manage Projects, Create Project
+8. Replace "PROJ_ID" with the Project Id of your Project where you want your files to go to, this can be found in the browser bar after projects/XXXXXXXXXXXX. If you dont have a project setup then create one by going to cloud.unity.com>your organization>Asset Manager>Manage Projects> Create Project
 9. Replace "COLLECTION_PATH" with the collection that you want created/updated in your project. Leave it blank if you dont want a collection to be used
 10. Replace/Append "TAG" with a comma seperated list of Tags that you want added to your asset when the asset is created on asset manager
 11. To upload to Unity Cloud Asset Manager without logging in manually we need to use a service account. Go to cloud.unity.com your organization>Administration>Service Accounts
-<img src="https://github.com/user-attachments/assets/cdfe506b-f0df-4b67-accb-4e0fcdd05a36" alt="chrome_wTcpnRdPZy" width="400">
+<img src="https://github.com/user-attachments/assets/cdfe506b-f0df-4b67-accb-4e0fcdd05a36" alt="chrome_wTcpnRdPZy" width="800">
 
 12. Firstly add a key, you will need to copy paste the key details into the script shared/shared_utils/unity_cloud_utils/unitycloud_utils.py into their respective fields
-13. Then assign the Asset Manager Search Organization role under Manage Organization Roles. Under Project Roles Assign Asset Manager Contributor and Unity Environments Admin. These need to be linked to the specific project that you created/used in step 8
+13. Then assign the Asset Manager Admin Organization role under Manage Organization Roles. Under Project Roles Assign Asset Manager Contributor and Unity Environments Admin. These need to be linked to the specific project that you created/used in step 8
 14. Open FolderWatcher/watcher.py At the bottom you will see a play button, press this to execute the main function. Parsing the config.json file that we already updated.
 15. You will see in the console that it will print out the values of the config file and display that it is waiting for files
 16. Copy paste a single file into the folder watcher input folder directory
