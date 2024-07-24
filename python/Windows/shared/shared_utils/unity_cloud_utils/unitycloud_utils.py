@@ -10,9 +10,9 @@ def AssetExists(asset_name, org_id, project_id):
         if asset.name == asset_name:
             print("Asset Exists")
             return asset
-        else:
-            print("Asset Doesnt Exist")
-            return None
+    else:
+        print("Asset Doesnt Exist")
+        return None
 
 
 def CreateAndPublishFilesToAsset(asset_name, model_files, org_id, project_id, collection_path, tags):
@@ -20,12 +20,17 @@ def CreateAndPublishFilesToAsset(asset_name, model_files, org_id, project_id, co
         asset = AssetExists(asset_name, org_id, project_id)
         if asset is None:
             asset = CreateAsset(asset_name, org_id, project_id, tags)
+        else:
+            if asset.is_frozen is False:
+                FreezeAssetVersion(org_id, project_id, asset.id, asset.version)
+
+            asset = CreateUnfrozenAssetVersion(org_id, project_id, asset.id, asset.version)
 
         source_dataset_id = GetSourceDataSet(asset.id, asset.version, org_id, project_id)
         for modelFile in model_files:
             UploadAsset(asset.id, asset.version, modelFile, org_id, project_id, source_dataset_id)
-        if(collection_path!=""):
-            if CheckCollectionExists(org_id, project_id, collection_path):
+        if collection_path != "":
+            if CheckCollectionExists(collection_path, org_id, project_id):
                 LinkAssetToCollection(org_id, project_id, collection_path, asset.id)
             else:
                 CreateCollection(collection_path, org_id, project_id)
@@ -35,7 +40,13 @@ def CreateAndPublishFilesToAsset(asset_name, model_files, org_id, project_id, co
     except Exception as e:
         print(f'Failed to create asset: {asset_name}')
         print(e)
-
+def CreateUnfrozenAssetVersion(org_id, project_id, asset_id, asset_version):
+    print("Creating unfrozen asset version")
+    asset = unity_cloud.assets.create_unfrozen_asset_version(org_id, project_id, asset_id, asset_version)
+    return asset
+def FreezeAssetVersion(org_id, project_id,asset_id, asset_version):
+    print("Freezing asset version")
+    unity_cloud.assets.freeze_asset_version(org_id, project_id, asset_id, asset_version, "")
 
 def PublishAsset(asset_id, asset_version, org_id, project_id):
     print("Publish the asset")
@@ -48,11 +59,14 @@ def PublishAsset(asset_id, asset_version, org_id, project_id):
 
 def CheckCollectionExists(collection_name, org_id, project_id):
     collections = unity_cloud.assets.list_collections(org_id, project_id)
+    found = False
     for collection in collections:
         if collection.name == collection_name:
-            return True
-        else:
-            return False
+            found = True
+            print("Collection Found")
+            return found
+    print("Collection Not Found")
+    return found
 
 
 def CreateCollection(collection_name, org_id, project_id):
