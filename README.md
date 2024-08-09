@@ -85,7 +85,7 @@ Note: This sample can use the Unity cloud SDK to upload files straight to Asset 
 11. To upload to Unity Cloud Asset Manager without logging in manually we need to use a service account. Go to cloud.unity.com your organization>Administration>Service Accounts
 <img src="https://github.com/user-attachments/assets/cdfe506b-f0df-4b67-accb-4e0fcdd05a36" alt="chrome_wTcpnRdPZy" width="800">
 
-12. Firstly add a key, you will need to copy paste the key details into the script shared/shared_utils/unity_cloud_utils/unitycloud_utils.py into their respective fields
+12. Firstly add a key, you will need to copy paste the key details into the script shared/shared_utils/unity_cloud_utils/unitycloud_init.py into their respective fields
 13. Then assign the Asset Manager Admin Organization role under Manage Organization Roles. Under Project Roles Assign Asset Manager Contributor and Unity Environments Admin. These need to be linked to the specific project that you created/used in step 8
 14. Open FolderWatcher/watcher.py At the bottom you will see a play button, press this to execute the main function. Parsing the config.json file that we already updated.
 15. You will see in the console that it will print out the values of the config file and display that it is waiting for files
