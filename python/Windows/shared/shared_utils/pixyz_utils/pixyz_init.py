@@ -6,6 +6,8 @@ import pxz
 
 current_progress = 0
 product_name = "PixyzSDK"
+validation_key = "VALIDATION_KEY"
+server_name = "SERVER_HOSTNAME"
 port = 27005
 
 
