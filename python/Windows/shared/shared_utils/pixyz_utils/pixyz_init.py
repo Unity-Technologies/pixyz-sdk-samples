@@ -3,17 +3,20 @@ import platform
 import sys
 import ctypes
 import pxz
+
 current_progress = 0
 product_name = "PixyzSDK"
 validation_key = "VALIDATION_KEY"
 server_name = "SERVER_HOSTNAME"
 port = 27005
-def init_pixyz():
+
+
+def initPixyz():
     # init Pixyz
     print("Initializing pixyz sdk")
     pxz.initialize(product_name, validation_key)
 
-    if debugger_is_active():
+    if debuggerIsActive():
         # set log level to INFO so that we can see the logs in the console
         pxz.core.configureInterfaceLogger(True, True, True)
         pxz.core.addConsoleVerbose(pxz.core.Verbose.INFO)
@@ -24,12 +27,13 @@ def init_pixyz():
     for token in pxz.core.listTokens():
         pxz.core.addWantedToken(token)
     if os.name == "nt":
-        initialize_dedicated_graphics()
+        initializeDedicatedGraphics()
 
     pxz.core.addProgressChangedCallback(onProgressChangedCallback, 0)
     pxz.core.addOnSessionResetCallback(onSessionResetCallback, 0)
 
-def initialize_dedicated_graphics():
+
+def initializeDedicatedGraphics():
     """force program to be executed on discrete GPU in case of a dual integrated/discrete architecture
     """
     try:
@@ -42,15 +46,19 @@ def initialize_dedicated_graphics():
     except:
         pass  # Ignore any exceptions since the 'fake' entry point doesn't exist
 
-def debugger_is_active() -> bool:
+
+def debuggerIsActive() -> bool:
     """Return true if the debugger is currently active"""
     return hasattr(sys, 'gettrace') and sys.gettrace() is not None
 
-def get_pixyz_license():
+
+def getPixyzLicense():
     print(f"Getting pixyz license ")
     # if no license is found, try to configure a license server
     if not pxz.core.checkLicense():
         pxz.core.configureLicenseServer(server_name, port, True)
+
+
 def onProgressChangedCallback(progress):
     global current_progress
     if progress != -1:

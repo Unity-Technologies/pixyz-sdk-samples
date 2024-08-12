@@ -5,8 +5,9 @@ from shared.shared_utils.pixyz_utils import pixyz_utils as pixyz_utils
 from shared.shared_utils.pixyz_utils.pixyz_utils import Orientation
 from pxz import algo, scene, io, core
 
-#These functions are used for the folder watcher sample
-def optimisemodel(root, fileName):
+
+# These functions are used for the folder watcher sample
+def optimiseModel(root, fileName):
     t0, n_triangles, n_vertices, n_parts = pixyz_utils.getStats(root)
 
     # Removes through holes from CAD models whose diameter is below the defined diameter
@@ -28,6 +29,8 @@ def optimisemodel(root, fileName):
 
     t1, _n_triangles, _n_vertices, _n_parts = pixyz_utils.getStats(root)
     pixyz_utils.printStats(fileName, t1 - t0, n_triangles, _n_triangles, n_vertices, _n_vertices, n_parts, _n_parts)
+
+
 def convertFile(inputFile, outputFolder, extensions, optimization, publish_to_assetmanager, orgid, projid,
                 collection_path, tags):
     modelFiles = []
@@ -37,13 +40,13 @@ def convertFile(inputFile, outputFolder, extensions, optimization, publish_to_as
     core.setLogFile(outputFolder + '/' + fileName + '.log')
 
     # Imports the input_files
-    root = importmodel(inputFile)
+    root = importModel(inputFile)
 
     # Tesselate the model based on its size
-    preparemodel(root)
+    prepareModel(root)
 
     if optimization:  # Comment or delete the lines not necessary to your workflow, adjust parameters' values if necessary
-        optimisemodel(root, fileName)
+        optimiseModel(root, fileName)
 
     # Export files
     for extension in extensions:
@@ -55,11 +58,15 @@ def convertFile(inputFile, outputFolder, extensions, optimization, publish_to_as
         unitycloud_utils.CreateAndPublishFilesToAsset(fileName, modelFiles,
                                                       orgid, projid,
                                                       collection_path, tags)
-def importmodel(filepath):
+
+
+def importModel(filepath):
     print(f"Importing {filepath}... ")
     root = io.importScene(filepath)
     return root
-def preparemodel(root):
+
+
+def prepareModel(root):
     # prepare model, use tolerance based AABB so
     print("Calculating Tolerances... ")
     tolerance = min(math_utils.aabb_diag_length(scene.getAABB([root])) / 1000, 0.1)
@@ -69,26 +76,32 @@ def preparemodel(root):
     algo.repairMesh([root], tolerance, True, False)
     print("Tessellating Meshes... ")
     algo.tessellate([root], tolerance, -1, -1)
-def exportmodel(filepath, extension, root):
+
+
+def exportModel(filepath, extension, root):
     folder_path = os.path.dirname(filepath)
     filename = os.path.splitext(os.path.basename(filepath))[0]
     global finalPath
     finalPath = os.path.join(folder_path, filename + extension)
-    print(f"Exporting {finalPath}... ")
+    print(f"Exporting {finalPath} ... ")
     io.exportScene(str(finalPath), root)
 
 
-
 if __name__ == '__main__':
-    pixyz_init.init_pixyz()
-    pixyz_init.get_pixyz_license()
+
+    pixyz_init.initPixyz()
+    pixyz_init.getPixyzLicense()
     model_file_path = "../shared/shared_models/SkidLoaderSolidworks/Skid Loader ASSM 11-4-21.SLDASM"
+
     if core.checkLicense():
-        root = importmodel(model_file_path)
-        pixyz_utils.save_screenshot(root, os.path.join(os.path.dirname(model_file_path), "before.png"), Orientation.LEFT)
-        preparemodel(root)
-        pixyz_utils.save_screenshot(root, os.path.join(os.path.dirname(model_file_path), "after.png"), Orientation.FRONT)
-        pixyz_utils.extract_hierarchy_tojson(root,os.path.join(os.path.dirname(model_file_path), f"{os.path.splitext(os.path.basename(model_file_path))[0]}.json"))
-        exportmodel(model_file_path, "_new.glb", root)
+        root = importModel(model_file_path)
+        pixyz_utils.saveScreenshot(root, os.path.join(os.path.dirname(model_file_path), "before.png"),
+                                   Orientation.LEFT)
+        prepareModel(root)
+        pixyz_utils.saveScreenshot(root, os.path.join(os.path.dirname(model_file_path), "after.png"),
+                                   Orientation.FRONT)
+        pixyz_utils.extractHierarchyToJson(root, os.path.join(os.path.dirname(model_file_path),
+                                                                f"{os.path.splitext(os.path.basename(model_file_path))[0]}.json"))
+        exportModel(model_file_path, "_new.glb", root)
     else:
         print("No License Available")

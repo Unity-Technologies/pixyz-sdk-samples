@@ -8,7 +8,7 @@ from shared.shared_utils.pixyz_utils import pixyz_init as pixyz_init
 
 def main(config_file):
     printLogo()
-    input_folder, output_folder, extensions, optimization, publish_to_assetmanager, orgid, projid, collection_path, tags = read_config(
+    input_folder, output_folder, extensions, optimization, publish_to_assetmanager, orgid, projid, collection_path, tags = readConfig(
         config_file)
 
     waiting = False
@@ -36,7 +36,7 @@ def main(config_file):
         os.remove(input_file)  # remove when finishing processing
 
 
-def read_config(config_file):
+def readConfig(config_file):
     with open(config_file) as config:
         inputs = json.load(config)
 
@@ -91,7 +91,7 @@ def getFileExtension(file):
 
 def executepixyzSDK(input_file, output_folder, extensions, optimization, publish_to_assetmanager, orgid, projid,
                     collection_path, tags):
-    pixyz_init.init_pixyz()
+    pixyz_init.initPixyz()
     if publish_to_assetmanager == "True":
         from shared.shared_utils.unity_cloud_utils import unitycloud_init as unitycloud_init
         unitycloud_init.unitycloud_init()

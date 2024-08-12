@@ -25,8 +25,8 @@ class Orientation(Enum):
     RIGHT = 5
 
 
-def save_screenshot(occurrence, path, orientation=Orientation.FRONT, type=view.CameraType.Perspective, resolution=1024,
-                    fov=60, show_edges=False, show_lines=False):
+def saveScreenshot(occurrence, path, orientation=Orientation.FRONT, type=view.CameraType.Perspective, resolution=1024,
+                   fov=60, show_edges=False, show_lines=False):
     print("Taking Screenshot...")
     if orientation == Orientation.FRONT:
         direction = geom.Point3(0, 0, -1)
@@ -46,13 +46,14 @@ def save_screenshot(occurrence, path, orientation=Orientation.FRONT, type=view.C
     viewer = view.createViewer(resolution, resolution)
     gpu_scene = view.createGPUScene([occurrence], show_edges)
     view.addGPUScene(gpu_scene, viewer)
-    view.fitCamera(direction, type, fov, viewer, occurrence)
+    view.fitCamera(direction, type, fov, viewer, [occurrence])
     if show_edges:
         view.setViewerProperty("ShowEdges", "True", viewer)
     if show_lines:
         view.setViewerProperty("ShowLines", "False", viewer)
 
     view.takeScreenshot(path, viewer)
+    print("Screenshot saved at: " + path)
     view.destroyViewer(viewer)
     view.destroyGPUScene(gpu_scene)
 
@@ -66,14 +67,14 @@ def printStats(fileName, t, n_triangles, _n_triangles, n_vertices, _n_vertices, 
     print('{:<20s}{:<3s}\n'.format('parts ', str(n_parts) + ' -> ' + str(_n_parts)))
 
 
-def get_metadata_dict(metadata):
+def getMetadataDict(metadata):
     metadata_dict = dict()
     metadata_dict['name'] = metadata.name
     metadata_dict['value'] = metadata.value
     return metadata_dict
 
 
-def get_hierarchy_dict(occurrence):
+def getHierarchyDict(occurrence):
     hierarchy_dict = dict()
     hierarchy_dict['name'] = core.getProperty(occurrence, "Name")
     matrix = scene.getLocalMatrix(occurrence)
@@ -81,18 +82,18 @@ def get_hierarchy_dict(occurrence):
     hierarchy_dict['translation'] = str([vector3lst[0].x, vector3lst[0].y,vector3lst[0].z])
     hierarchy_dict['rotation'] = str([vector3lst[1].x, vector3lst[1].y,vector3lst[1].z])
     hierarchy_dict['scale'] = str([vector3lst[2].x, vector3lst[2].y,vector3lst[2].z])
-    hierarchy_dict['children'] = [get_hierarchy_dict(child) for child in scene.getChildren(occurrence)]
+    hierarchy_dict['children'] = [getHierarchyDict(child) for child in scene.getChildren(occurrence)]
     if scene.hasComponent(occurrence, scene.ComponentType.Metadata):
         metadata = scene.getComponent(occurrence, scene.ComponentType.Metadata)
         metadata_definitions = scene.getMetadatasDefinitions([metadata])[0]
-        hierarchy_dict['metadata'] = [get_metadata_dict(metadata_definition) for metadata_definition in
+        hierarchy_dict['metadata'] = [getMetadataDict(metadata_definition) for metadata_definition in
                                       metadata_definitions]
 
     return hierarchy_dict
 
 
-def extract_hierarchy_tojson(root, file_path):
-    hierarchy_dict = get_hierarchy_dict(root)
+def extractHierarchyToJson(root, file_path):
+    hierarchy_dict = getHierarchyDict(root)
     with open(file_path, 'w') as file:
         json.dump(hierarchy_dict, file)
 
