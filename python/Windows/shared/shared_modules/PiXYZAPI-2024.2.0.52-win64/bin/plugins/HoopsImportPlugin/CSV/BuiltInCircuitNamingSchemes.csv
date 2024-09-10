@@ -1,0 +1,6 @@
+NAME(Used only as reminder for value);VALUE;LABEL
+OdBm::BuiltInCircuitNamingScheme::PREFIXED;-7000010;Prefixed
+OdBm::BuiltInCircuitNamingScheme::STANDARD;-7000011;Standard
+OdBm::BuiltInCircuitNamingScheme::PANEL_NAME;-7000012;Panel Name
+OdBm::BuiltInCircuitNamingScheme::BY_PHASE;-7000013;By Phase
+OdBm::BuiltInCircuitNamingScheme::BY_PROJECT;-7000014;By Project

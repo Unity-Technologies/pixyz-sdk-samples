@@ -1,0 +1,18 @@
+{
+    "input_folder":  "_input/",
+    "output_folder": "_output/",
+    "extensions":
+    [
+        ".pxz",
+        ".fbx",
+        ".glb",
+        ".obj",
+        ".3dxml"
+    ],
+    "optimization":  "True",
+    "publish_to_assetmanager": "True",
+    "orgid": "ORG_ID",
+    "projid": "PROJ_ID",
+    "collectionpath": "COLLECTION_PATH",
+    "tags": ["TAG"]
+}

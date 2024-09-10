@@ -1,0 +1,2 @@
+*.SLDASM filter=lfs diff=lfs merge=lfs -text
+*.SLDPRT filter=lfs diff=lfs merge=lfs -text
