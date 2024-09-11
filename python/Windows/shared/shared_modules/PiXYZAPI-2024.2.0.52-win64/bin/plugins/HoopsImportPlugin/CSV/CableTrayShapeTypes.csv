@@ -1,4 +1,0 @@
-NAME(Used only as reminder for value);VALUE;LABEL
-OdBm::CableTrayShapeType::Invalid;0;Invalid
-OdBm::CableTrayShapeType::Channel;1;Channel
-OdBm::CableTrayShapeType::Ladder;2;Ladder

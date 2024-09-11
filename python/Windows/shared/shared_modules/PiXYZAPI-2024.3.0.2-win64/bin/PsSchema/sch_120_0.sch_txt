@@ -1,0 +1,586 @@
+**ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz**************************
+**PARASOLID !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789**************************
+**PART1;MC=vax;MC_MODEL=4200;MC_ID=SHAPEL:335544326;OS=vms;OS_RELEASE=V5.4;FRU=s
+dl_parasolid_test_vax;APPL=unknown;SITE=sdl-cambridge-u.k.;USER=SUE;FORMAT=text;
+GUISE=schema;KEY=SCH_120_0;FILE=P_SCHEMA:SCH_120_0.SCH_TXT;DATE=23-aug-1991;
+**PART2;
+**PART3;
+**END_OF_HEADER*****************************************************************
+T 
+1 
+: SCHEMA FILE created by modeller version 120/0; 
+120 68 505 7067 
+1 NULLP; Null; 1 0 0 
+2 WORKSPACE; Workspace; 1 1 1 
+ws; c; 1 0 1 
+3 USFD_TABLE; Userfield Table; 1 1 1 
+usfd; d; 1 0 1 
+4 TAG_TABLE; Tag Table; 1 7 1 
+level; d; 1 0 0 
+access_mode; d; 1 0 0 
+n_slots_total; d; 1 0 0 
+first_free_slot; d; 1 0 0 
+n_dead_tags; d; 1 0 0 
+usfd_table; p; 1 3 0 
+down; p; 1 1024 1 
+5 INTERNAL_DS_STATE; internal DS state; 1 2 0 
+root_tag_table; p; 1 4 0 
+max_tag; d; 1 0 0 
+10 ASSEMBLY; Assembly; 1 17 0 
+highest_node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+attribute_chains; p; 1 70 0 
+list; p; 1 70 0 
+surface; p; 1 1006 0 
+curve; p; 1 1008 0 
+point; p; 1 29 0 
+res_size; f; 1 0 0 
+res_linear; f; 1 0 0 
+assembly_box; b; 0 0 0 
+key; p; 1 102 0 
+state; d; 1 0 0 
+ref_instance; p; 1 11 0 
+next; p; 1 10 0 
+previous; p; 1 10 0 
+type; d; 1 0 0 
+sub_instance; p; 1 11 0 
+11 INSTANCE; Instance; 1 10 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+type; d; 1 0 0 
+part; p; 1 1005 0 
+transform; p; 1 100 0 
+assembly; p; 1 10 0 
+next_in_part; p; 1 11 0 
+prev_in_part; p; 1 11 0 
+next_of_part; p; 1 11 0 
+prev_of_part; p; 1 11 0 
+12 BODY; Body; 1 17 0 
+highest_node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+attribute_chains; p; 1 70 0 
+list; p; 0 70 0 
+surface; p; 1 1006 0 
+curve; p; 1 1008 0 
+point; p; 1 29 0 
+res_size; f; 1 0 0 
+res_linear; f; 1 0 0 
+body_box; b; 0 0 0 
+key; p; 1 102 0 
+state; d; 1 0 0 
+ref_instance; p; 1 11 0 
+next; p; 1 12 0 
+previous; p; 1 12 0 
+body_type; d; 1 0 0 
+shell; p; 1 13 0 
+13 SHELL; Shell; 1 10 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+body; p; 1 12 0 
+next; p; 1 13 0 
+face; p; 1 14 0 
+edge; p; 1 16 0 
+vertex; p; 1 18 0 
+surface; p; 1 1006 0 
+curve; p; 1 1008 0 
+point; p; 1 29 0 
+14 FACE; Face; 1 9 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+face_box; b; 0 0 0 
+next; p; 1 14 0 
+previous; p; 1 14 0 
+loop; p; 1 15 0 
+shell; p; 1 13 0 
+surface; p; 1 1006 0 
+sense; c; 1 0 0 
+15 LOOP; Loop; 1 5 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+halfedge; p; 1 17 0 
+face; p; 1 14 0 
+next; p; 1 15 0 
+16 EDGE; Edge; 1 7 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+edge_box; b; 0 0 0 
+halfedge; p; 1 17 0 
+previous; p; 1 16 0 
+next; p; 1 16 0 
+curve; p; 1 1008 0 
+17 HALFEDGE; Halfedge; 1 6 0 
+loop; p; 1 15 0 
+forward; p; 1 17 0 
+backward; p; 1 17 0 
+vertex; p; 1 18 0 
+other; p; 1 17 0 
+edge; p; 1 16 0 
+18 VERTEX; Vertex; 1 6 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+halfedge; p; 1 17 0 
+previous; p; 1 18 0 
+next; p; 1 18 0 
+point; p; 1 29 0 
+29 POINT; Point; 1 6 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1011 0 
+next; p; 1 29 0 
+previous; p; 1 29 0 
+pvec; v; 1 0 0 
+30 LINE; Straight line; 1 9 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1010 0 
+next; p; 1 1008 0 
+previous; p; 1 1008 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+pvec; v; 1 0 0 
+direction; v; 1 0 0 
+31 CIRCLE; Circle; 1 11 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1010 0 
+next; p; 1 1008 0 
+previous; p; 1 1008 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+centre; v; 1 0 0 
+normal; v; 1 0 0 
+x_axis; v; 1 0 0 
+radius; f; 1 0 0 
+32 ELLIPSE; Ellipse; 1 12 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1010 0 
+next; p; 1 1008 0 
+previous; p; 1 1008 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+centre; v; 1 0 0 
+normal; v; 1 0 0 
+x_axis; v; 1 0 0 
+major_radius; f; 1 0 0 
+minor_radius; f; 1 0 0 
+33 PARABOLA; Parabola; 1 11 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1010 0 
+next; p; 1 1008 0 
+previous; p; 1 1008 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+origin; v; 1 0 0 
+normal; v; 1 0 0 
+x_axis; v; 1 0 0 
+focal_length; f; 1 0 0 
+34 HYPERBOLA; Hyperbola; 1 12 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1010 0 
+next; p; 1 1008 0 
+previous; p; 1 1008 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+origin; v; 1 0 0 
+normal; v; 1 0 0 
+x_axis; v; 1 0 0 
+transverse_radius; f; 1 0 0 
+conjugate_radius; f; 1 0 0 
+35 PARACURVE; Parametric curve; 1 9 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1010 0 
+next; p; 1 1008 0 
+previous; p; 1 1008 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+seg; n; 1 0 0 
+cpc; p; 1 36 0 
+36 CPC; Composite paracurve; 1 11 1 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1010 0 
+next; p; 1 1008 0 
+previous; p; 1 1008 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+vertex_dimension; n; 1 0 0 
+segment_count; n; 1 0 0 
+order; n; 1 0 0 
+segment; p; 1 42 1 
+37 PATCH_BOUND; Patch boundary; 1 10 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1010 0 
+next; p; 1 1008 0 
+previous; p; 1 1008 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+boundary; c; 1 0 0 
+lh_patch; p; 1 61 0 
+rh_patch; p; 1 61 0 
+38 INTERSECTION; Intersection; 1 11 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1010 0 
+next; p; 1 1008 0 
+previous; p; 1 1008 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+surface; p; 1 1006 2 
+chart; p; 0 40 0 
+start; p; 1 41 0 
+end; p; 1 41 0 
+39 SILHOUETTE; Silhouette; 1 13 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1010 0 
+next; p; 1 1008 0 
+previous; p; 1 1008 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+analytic_root; c; 1 0 0 
+from_infinity; l; 1 0 0 
+eye; v; 1 0 0 
+surface; p; 1 1006 0 
+start; p; 1 41 0 
+end; p; 1 41 0 
+40 CHART; Chart; 0 6 1 
+base_parameter; n; 1 0 0 
+chart_count; n; 1 0 0 
+chordal_error; f; 1 0 0 
+angular_error; f; 1 0 0 
+parameter_error; f; 1 0 2 
+hvec; h; 1 0 1 
+41 LIMIT; Limit; 1 2 1 
+type; c; 1 0 0 
+hvec; h; 1 0 1 
+42 SEGMENT; segment of CPC; 1 4 1 
+segment_box; b; 0 0 0 
+t_length; f; 1 0 0 
+hull; p; 0 65 0 
+bezier_vertices; f; 1 0 1 
+50 PLANE; Plane; 1 10 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+pvec; v; 1 0 0 
+normal; v; 1 0 0 
+x_axis; v; 1 0 0 
+51 CYLINDER; Cylinder; 1 11 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+pvec; v; 1 0 0 
+axis; v; 1 0 0 
+radius; f; 1 0 0 
+x_axis; v; 1 0 0 
+52 CONE; Cone; 1 13 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+pvec; v; 1 0 0 
+axis; v; 1 0 0 
+radius; f; 1 0 0 
+sin_half_angle; f; 1 0 0 
+cos_half_angle; f; 1 0 0 
+x_axis; v; 1 0 0 
+53 SPHERE; Sphere; 1 11 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+centre; v; 1 0 0 
+radius; f; 1 0 0 
+axis; v; 1 0 0 
+x_axis; v; 1 0 0 
+54 TORUS; Torus; 1 12 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+centre; v; 1 0 0 
+axis; v; 1 0 0 
+major_radius; f; 1 0 0 
+minor_radius; f; 1 0 0 
+x_axis; v; 1 0 0 
+55 PIPE; Pipe; 1 9 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+spine; p; 1 1008 0 
+radius; f; 1 0 0 
+56 BLENDED_EDGE; Blended edge; 1 13 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+blend_type; c; 1 0 0 
+surface; p; 1 1006 2 
+range; f; 1 0 2 
+thumb_weight; f; 1 0 2 
+spine; p; 1 1008 0 
+boundary; p; 1 1006 2 
+57 BLENDED_VERTEX; Blended vertex; 1 14 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+surface; p; 1 1006 3 
+sub_surface; p; 1 1006 3 
+range; f; 1 0 3 
+thumb_weight; f; 1 0 3 
+blend_type; c; 1 0 0 
+centre; v; 1 0 0 
+boundary; p; 1 1006 3 
+58 BLEND_OVERLAP; Blend overlap; 1 14 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+surface; p; 1 1006 2 
+sub_surface; p; 1 1006 4 
+range; f; 1 0 4 
+thumb_weight; f; 1 0 4 
+blend_type; c; 1 0 2 
+overlap_type; c; 1 0 0 
+swap_u_v; l; 1 0 0 
+59 BLEND_BOUND; Blend boundary; 1 9 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+boundary; n; 1 0 0 
+blend; p; 1 1006 0 
+60 OFFSET_SURF; Offset surface; 1 9 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+surface; p; 1 1006 0 
+offset; f; 1 0 0 
+61 PARASURF; Parametric surface; 1 10 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+col; n; 1 0 0 
+row; n; 1 0 0 
+cps; p; 1 62 0 
+62 CPS; Composite parasurf; 1 13 1 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+vertex_dimension; n; 1 0 0 
+col_count; n; 1 0 0 
+row_count; n; 1 0 0 
+u_order; n; 1 0 0 
+v_order; n; 1 0 0 
+patch; p; 1 64 1 
+63 SILH_SURF; Silhouette surface; 1 10 0 
+node_id; d; 1 0 0 
+attributes_features; p; 1 1019 0 
+owner; p; 1 1007 0 
+next; p; 1 1006 0 
+previous; p; 1 1006 0 
+use_count; n; 1 0 0 
+sense; c; 1 0 0 
+from_infinity; l; 1 0 0 
+eye; v; 1 0 0 
+surface; p; 1 1006 0 
+64 PATCH; Patch of CPS; 1 5 1 
+patch_box; b; 0 0 0 
+u_length; f; 1 0 0 
+v_length; f; 1 0 0 
+hull; p; 0 65 0 
+bezier_vertices; f; 1 0 1 
+65 HULL; Convex hull; 0 4 1 
+dimension; n; 1 0 0 
+plane_count; n; 1 0 0 
+corner_count; n; 1 0 0 
+vecs; v; 1 0 1 
+70 LIST; List Header; 1 11 0 
+node_id; d; 1 0 0 
+owner; p; 1 1013 0 
+next; p; 1 70 0 
+previous; p; 1 70 0 
+list_type; d; 1 0 0 
+list_length; d; 1 0 0 
+block_length; d; 1 0 0 
+size_of_entry; d; 1 0 0 
+list_block; p; 1 1012 0 
+finger_block; p; 1 1012 0 
+finger_index; d; 1 0 0 
+71 REAL_LIS_BLOCK; Real List; 1 3 1 
+n_entries; d; 1 0 0 
+next_block; p; 1 71 0 
+entries; f; 1 0 1 
+72 INTEGER_LIS_BLOCK; Integer List; 1 3 1 
+n_entries; d; 1 0 0 
+next_block; p; 1 72 0 
+entries; d; 1 0 1 
+73 TAG_LIS_BLOCK; Tag List; 1 3 1 
+n_entries; d; 1 0 0 
+next_block; p; 1 73 0 
+entries; d; 1 0 1 
+74 POINTER_LIS_BLOCK; Pointer List; 1 3 1 
+n_entries; d; 1 0 0 
+next_block; p; 1 74 0 
+entries; p; 1 1001 1 
+75 CHAR_LIS_BLOCK; Character List; 1 3 1 
+n_entries; d; 1 0 0 
+next_block; p; 1 75 0 
+entries; c; 1 0 1 
+80 ATTRIB_DEF; attribute definition; 1 5 1 
+next; p; 1 80 0 
+type_id; d; 1 0 0 
+actions; d; 1 0 8 
+legal_owners; l; 1 0 12 
+fields; d; 1 0 1 
+81 ATTRIBUTE; Attribute; 1 8 1 
+node_id; d; 1 0 0 
+definition; p; 1 80 0 
+owner; p; 1 1015 0 
+next; p; 1 1019 0 
+previous; p; 1 1019 0 
+next_of_type; p; 1 81 0 
+previous_of_type; p; 1 81 0 
+fields; p; 1 1018 1 
+82 INT_VALUES; Int values; 1 1 1 
+values; d; 1 0 1 
+83 REAL_VALUES; Real values; 1 1 1 
+values; f; 1 0 1 
+84 CHAR_VALUES; Character values; 1 1 1 
+values; c; 1 0 1 
+85 POINT_VALUES; Point values; 1 1 1 
+values; v; 1 0 1 
+86 VECTOR_VALUES; Vector values; 1 1 1 
+values; v; 1 0 1 
+87 AXIS_VALUES; Axis values; 1 1 1 
+values; v; 1 0 1 
+88 TAG_VALUES; Tag values; 1 1 1 
+values; d; 1 0 1 
+89 DIRECTION_VALUES; Direction values; 1 1 1 
+values; v; 1 0 1 
+90 FEATURE; Feature; 1 7 0 
+node_id; d; 1 0 0 
+attributes; p; 1 1019 0 
+owner; p; 1 1005 0 
+next; p; 1 1019 0 
+previous; p; 1 1019 0 
+type; d; 1 0 0 
+first_member; p; 1 91 0 
+91 MEMBER_OF_FEATURE; Member of feature; 1 7 0 
+dummy_node_id; d; 1 0 0 
+owning_feature; p; 1 90 0 
+owner; p; 1 1017 0 
+next; p; 1 1019 0 
+previous; p; 1 1019 0 
+next_member; p; 1 91 0 
+previous_member; p; 1 91 0 
+100 TRANSFORM; Transformation; 1 8 0 
+node_id; d; 1 0 0 
+owner; p; 1 1023 0 
+next; p; 1 100 0 
+previous; p; 1 100 0 
+rotation_matrix; f; 1 0 9 
+translation_vector; v; 1 0 0 
+scale; f; 1 0 0 
+flag; d; 1 0 0 
+101 WORLD; World; 1 26 0 
+assembly; p; 1 10 0 
+attribute; p; 1 81 0 
+body; p; 1 12 0 
+attrib_def; p; 1 80 0 
+list; p; 1 70 0 
+transform; p; 1 100 0 
+surface; p; 1 1006 0 
+curve; p; 1 1008 0 
+point; p; 1 29 0 
+tag_table; p; 1 4 0 
+linear_prec; f; 1 0 0 
+angular_prec; f; 1 0 0 
+parameter_check_on; l; 1 0 0 
+journal_open; d; 1 0 0 
+journal_on; l; 1 0 0 
+bulletin_board_on; d; 1 0 0 
+empty_bulletin_board; l; 1 0 0 
+rollback_size; d; 1 0 0 
+binary_text; d; 1 0 0 
+receive_user_fld; l; 1 0 0 
+local_check_on; l; 1 0 0 
+bb_created_list; p; 1 70 0 
+bb_changed_list; p; 1 70 0 
+bb_deleted_list; p; 1 70 0 
+bb_deleted_ufd_list; p; 1 70 0 
+bb_deleted_nt_list; p; 1 70 0 
+102 KEY; Key; 1 1 1 
+string; c; 1 0 1 
+110 SET_ELEMENT_TAG; Set Element Tag; 1 6 0 
+next; p; 1 110 0 
+forward; p; 1 110 0 
+backward; p; 1 110 0 
+class; d; 1 0 0 
+set; p; 1 1021 0 
+node; p; 1 1022 0 
+111 FACE_SET; Face Set; 1 5 0 
+tag; p; 1 110 0 
+next; p; 1 111 0 
+class; d; 1 0 0 
+he_set; p; 1 112 0 
+surfaces; p; 1 1006 0 
+112 HALFEDGE_SET; Halfedge Set; 1 6 0 
+tag; p; 1 110 0 
+next; p; 1 112 0 
+previous; p; 1 112 0 
+class; d; 1 0 0 
+fa_set; p; 1 111 0 
+co_he_set; p; 1 112 0 
+**************** end of schema SCH_120_0 **************** 

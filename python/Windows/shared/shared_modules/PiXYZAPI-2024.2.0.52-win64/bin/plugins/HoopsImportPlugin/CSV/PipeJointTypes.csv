@@ -1,8 +1,0 @@
-NAME(Used only as reminder for value);VALUE;LABEL
-OdBm::PipeJointType::Generic;0;Generic
-OdBm::PipeJointType::Flanged;1;Flanged
-OdBm::PipeJointType::Welded;2;Welded
-OdBm::PipeJointType::Threaded;3;Threaded
-OdBm::PipeJointType::Grooved;4;Grooved
-OdBm::PipeJointType::Glued;5;Glued
-OdBm::PipeJointType::Soldered;6;Soldered

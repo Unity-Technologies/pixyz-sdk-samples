@@ -7,7 +7,7 @@ This GitHub repo contains a set of Pixyz Engine SDK samples to help users get st
 https://docs.unity.com/cloud/en-us/asset-manager/python-sdk
 
 **pixyz SDK**
-https://www.pixyz-software.com/documentations/html/2024.2/sdk/manual/index.html
+https://www.pixyz-software.com/documentations/html/2024.3/sdk/manual/index.html
 
 ## Samples
 
@@ -25,18 +25,20 @@ This repository uses Git LFS (Large File Storage) to manage large files. To ensu
 
 1. Clone the GitHub Repo using your tool of choice. The example below uses GitHub Desktop by copying and pasting the GitHub repo URL
 
-   <img src="https://github.com/user-attachments/assets/b038e8b6-cc25-4906-870a-a25a0ee8ddd0" alt="chrome_7XEMK8S1q6" width="400">
-   <img src="https://github.com/user-attachments/assets/5ba4f11b-b536-4c66-abaa-8aa5351126e3" alt="GitHubDesktop_WqFnh62IFS" width="400">
+   <img src="documentation/img/git_clone_1.png" alt="git clone https link" width="350">
+   <img src="documentation/img/git_clone_1.png" alt="git client gui" width="350">
 
 2. Create a python project using your script editor of choice. This example is using PyCharm and you simply point to the python/Windows folder
    
-   <img src="https://github.com/user-attachments/assets/e4f3c2eb-3e07-4c51-86fb-71f24e284287" alt="pycharm64_HCQ2Ogd087" width="400">
-   <img src="https://github.com/user-attachments/assets/e2a16094-a327-42ea-a93e-beed960ab03b" alt="pycharm64_YgdAnDVArh" width="400">
+   <img src="documentation/img/pycharm_setup_1.png" alt="pycharm new project" width="360">
+   <img src="documentation/img/pycharm_setup_2.png" alt="pycharm setup project" width="600">
 
 3. Add pixyz SDK bin and lib folder to the projects interpreter path. To do this in pycharm go to Settings>Python Interpreter>Show All>Show Interpreter Paths>Add(+)
 Then Select the bin and lib folder located at [Project directory]/shared/shared_modules/PiXYZAPI-XXXX.X.X.X/
-<img src="https://github.com/user-attachments/assets/e6f031b4-83f8-40d6-99de-9b13506b63f5" alt="NVIDIA_Share_QB9oyf7bev" width ="400">
-<img src="https://github.com/user-attachments/assets/ea6dc905-67bc-4d13-87d1-33a90921abf3" alt="NVIDIA_Share_sPbZ4yqFK1" width ="400">
+
+<img src="documentation/img/pycharm_interpreter.png" alt="pycharm create interpreter" width ="600">
+<img src="documentation/img/pycharm_interpreter_setup_2.jpg" alt="pycharm setup interpreter" width ="600">
+<img src="documentation/img/pycharm_interpreter_setup.png" alt="pycharm setup interpreter" width ="600">
 
 4. To install the local Unity Cloud SDK package for the folder watcher sample run "pip install shared/shared_modules/unity_cloud-0.9.0-py3-none-win_amd64.whl" in the local terminal
 5. To install the python QT package for the parallel processing sample run "pip install pyside6" in the local terminal
@@ -55,7 +57,7 @@ Note: All the samples use the common functions defined in the ImportOptimiseExpo
 4. Change your port number to that of your license server
 5. Open the script ImportOptimiseExport/import_optimise_export.py
 6. This script contains the main functions that are used by the other samples. At the bottom of the script you will see a section like below
-<img src="https://github.com/user-attachments/assets/e79bca94-4eef-4a17-b4f6-bb41bf4f04d7" alt="NVIDIA_Share_AvTRwD6MaK" width="800">
+<img src="documentation/img/run_import_optimise_export.png" alt="run import-optimise-export script" width="800">
 
 7. To run the script just press the play button indicated in the image.
    This will:
@@ -63,10 +65,10 @@ Note: All the samples use the common functions defined in the ImportOptimiseExpo
    2. Get a pixyz license from the server
    3. Import the SkidLoader model located in the shared models folder contained in this repository
    4. Generate a screen shot before tesselation, saving it to the skidloaders folder
-   5. Tesselate the model using the prepare function defined in this script
+   5. Tessellate the model using the prepare function defined in this script
    6. Save a screen shot after tesselation
    7. Extract the models objects names, transforms and metadata to a json file in the models folder
-   8. Export the tesselated model as a glb file. You can change the extension by simply changing the extension argument given in the exportmodel function call
+   8. Export the tessellated model as a glb file. You can change the extension by simply changing the extension argument given in the exportmodel function call
 
 **Folder Watcher**
 
@@ -75,7 +77,7 @@ Note: This sample can use the Unity cloud SDK to upload files straight to Asset 
 1. Open the config.json file under FolderWatcher/config.json
 2. Enter your location of your input and output folder. In this sample they are two local folders under this sample directory
 3. Enter any file extensions you want to generate for each processed file that you import. These are exported into the output folder
-4. Optimaztion runs an additonal function after tesselation that decimates and removes hidden components
+4. Optimization runs an additional function after tesselation that decimates and removes hidden components
 5. If you aren't going to upload to Unity Cloud set "publish_to_assetmanager" to "False" and you can skip to step 14
 6. Make sure "publish_to_assetmanager" is set True
 7. Replace "ORG_ID" with the Organization Id of your Organization where you want your files to go to, this can be found in the browser bar after organizations/XXXXXXXXXXXX
@@ -102,7 +104,3 @@ Note: This sample consumes multiple pixyz licenses at the same time as they are 
 5. These will run in parallel until completed or terminated.  
 6. All processes that are running or completed will be present in the main UI process.
 7. Any information that is printed to the console from the sub process will be shown in the label field of that process in the UI
-
-# Converting to public repository
-Any and all Unity software of any description (including components) (1) whose source is to be made available other than under a Unity source code license or (2) in respect of which a public announcement is to be made concerning its inner workings, may be licensed and released only upon the prior approval of Legal.
-The process for that is to access, complete, and submit this [FORM](https://airtable.com/appj757BYrNIMuTBI/shriEdWiQuxWmJOku).

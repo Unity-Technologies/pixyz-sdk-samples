@@ -1,0 +1,3 @@
+NAME(Used only as reminder for value);VALUE;LABEL
+OdBm::ColorSchemeMessage::NoSchemeAssigned;0;No color scheme assigned to view
+OdBm::ColorSchemeMessage::NoColorsDefined;1;No colors defined
