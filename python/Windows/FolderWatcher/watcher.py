@@ -13,10 +13,9 @@ def main(config_file):
 
     waiting = False
 
-    while (1):
-        input_files = [file for file in os.listdir(input_folder) \
-                       if (os.path.isfile(input_folder + '/' + file) \
-                           and getFileExtension(file) not in ['.xml', ''])]
+    while 1:
+        input_files = [file for file in os.listdir(input_folder)
+                       if (os.path.isfile(input_folder + '/' + file) and getFileExtension(file) not in ['.xml', ''])]
 
         if len(input_files) == 0:
             if not waiting:
@@ -30,7 +29,7 @@ def main(config_file):
             waiting = False
 
         input_file = input_folder + '/' + input_files[0]
-        executepixyzSDK(input_file, output_folder, extensions, optimization, publish_to_assetmanager, orgid, projid,
+        executePixyzSDK(input_file, output_folder, extensions, optimization, publish_to_assetmanager, orgid, projid,
                         collection_path, tags)
 
         os.remove(input_file)  # remove when finishing processing
@@ -89,7 +88,7 @@ def getFileExtension(file):
     return os.path.splitext(file)[1]
 
 
-def executepixyzSDK(input_file, output_folder, extensions, optimization, publish_to_assetmanager, orgid, projid,
+def executePixyzSDK(input_file, output_folder, extensions, optimization, publish_to_assetmanager, orgid, projid,
                     collection_path, tags):
     pixyz_init.initPixyz()
     if publish_to_assetmanager == "True":
