@@ -1,8 +1,3 @@
-from django.contrib.flatpages.models import FlatPage
-from django.core.handlers.wsgi import WSGIRequest
-from django.http.response import HttpResponse
-
-DEFAULT_TEMPLATE: str
-
-def flatpage(request: WSGIRequest, url: str) -> HttpResponse: ...
-def render_flatpage(request: WSGIRequest, f: FlatPage) -> HttpResponse: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:4fdf1b8c214e80dfab222fe7a762ba6a1e59f65e2adbf36cb34ce1b869a3889f
+size 323

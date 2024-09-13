@@ -1,11 +1,3 @@
-from typing import Any, Optional
-
-from django.contrib.sessions.backends.db import SessionStore as DBStore
-
-KEY_PREFIX: str
-
-class SessionStore(DBStore):
-    cache_key_prefix: Any = ...
-    def __init__(self, session_key: Optional[str] = ...) -> None: ...
-    @property
-    def cache_key(self) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:84c2948671286921e4afad2a6001100d3ea5ed6711ae9747116a3136515fdf6d
+size 316

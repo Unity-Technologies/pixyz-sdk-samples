@@ -1,11 +1,3 @@
-from typing import Any, List, Iterable, Optional
-
-from django.core.checks.messages import Warning
-
-from django.apps.config import AppConfig
-
-W003: Any
-W016: Any
-
-def check_csrf_middleware(app_configs: Optional[Iterable[AppConfig]], **kwargs: Any) -> List[Warning]: ...
-def check_csrf_cookie_secure(app_configs: Optional[Iterable[AppConfig]], **kwargs: Any) -> List[Warning]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:b00d4eb1ed0082f2cb2f4101432f44104690deed08476f421b4a7eb22ab01674
+size 390

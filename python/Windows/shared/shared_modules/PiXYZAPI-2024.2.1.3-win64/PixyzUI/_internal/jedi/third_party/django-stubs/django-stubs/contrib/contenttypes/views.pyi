@@ -1,8 +1,3 @@
-from typing import Union
-
-from django.http.request import HttpRequest
-from django.http.response import HttpResponseRedirect
-
-def shortcut(
-    request: HttpRequest, content_type_id: Union[int, str], object_id: Union[int, str]
-) -> HttpResponseRedirect: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c27dc4722b8914f7bfd3660a212191906f636b9c61c5992f93e22a4ec6b624d
+size 265

@@ -1,10 +1,3 @@
-from typing import Any
-
-from werkzeug.wrappers import BaseRequest as Request, BaseResponse as Response
-
-logo: Any
-TEMPLATE: Any
-
-def iter_sys_path(): ...
-def render_testapp(req): ...
-def test_app(environ, start_response): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:e1caa6cd5075c8643936ebfbc796473bceff3db26d4ed2770d5ea6f52625259c
+size 236

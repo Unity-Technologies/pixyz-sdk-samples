@@ -1,9 +1,3 @@
-from typing import Tuple
-
-from . import _LangModelType
-
-Latin7_char_to_order_map: Tuple[int, ...]
-win1253_char_to_order_map: Tuple[int, ...]
-GreekLangModel: Tuple[int, ...]
-Latin7GreekModel: _LangModelType
-Win1253GreekModel: _LangModelType
+version https://git-lfs.github.com/spec/v1
+oid sha256:c9c106bfe152915b58325cf666ba5e04736bbe337445204d46591a491f64d402
+size 249

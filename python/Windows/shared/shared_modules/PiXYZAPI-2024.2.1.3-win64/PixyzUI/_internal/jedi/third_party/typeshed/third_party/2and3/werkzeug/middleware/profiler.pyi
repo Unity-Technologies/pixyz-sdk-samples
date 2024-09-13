@@ -1,14 +1,3 @@
-from _typeshed.wsgi import StartResponse, WSGIApplication, WSGIEnvironment
-from typing import IO, Iterable, List, Optional, Text, Tuple, Union
-
-class ProfilerMiddleware(object):
-    def __init__(
-        self,
-        app: WSGIApplication,
-        stream: IO[str] = ...,
-        sort_by: Tuple[Text, Text] = ...,
-        restrictions: Iterable[Union[str, float]] = ...,
-        profile_dir: Optional[Text] = ...,
-        filename_format: Text = ...,
-    ) -> None: ...
-    def __call__(self, environ: WSGIEnvironment, start_response: StartResponse) -> List[bytes]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d7c6f5fdc3bc5babd8aae88d2212590abc617e4649c68c61ab70274997cb1745
+size 583

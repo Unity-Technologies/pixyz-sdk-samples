@@ -1,10 +1,3 @@
-from typing import Any
-
-from django.http.request import HttpRequest
-from django.http.response import HttpResponse
-from django.utils.deprecation import MiddlewareMixin
-
-class RedirectFallbackMiddleware(MiddlewareMixin):
-    response_gone_class: Any = ...
-    response_redirect_class: Any = ...
-    def process_response(self, request: HttpRequest, response: HttpResponse) -> HttpResponse: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ae5dd4f4ad87d8668e0b6b334c743b2059cae4fce11c16215fefcdd1c37b855
+size 401

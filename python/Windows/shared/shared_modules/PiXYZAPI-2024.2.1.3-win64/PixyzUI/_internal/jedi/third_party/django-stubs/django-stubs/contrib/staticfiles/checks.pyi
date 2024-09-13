@@ -1,7 +1,3 @@
-from typing import Any, List, Iterable, Optional
-
-from django.core.checks.messages import Error
-
-from django.apps.config import AppConfig
-
-def check_finders(app_configs: Optional[Iterable[AppConfig]] = ..., **kwargs: Any) -> List[Error]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:ebf5d8b2f1559c1761c39176525a53e7a1440be169742d676d7b7414ab2c46ad
+size 249

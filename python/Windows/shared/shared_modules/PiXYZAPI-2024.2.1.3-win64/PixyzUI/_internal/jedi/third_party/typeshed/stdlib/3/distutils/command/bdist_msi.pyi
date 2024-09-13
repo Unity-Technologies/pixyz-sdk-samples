@@ -1,6 +1,3 @@
-from distutils.cmd import Command
-
-class bdist_msi(Command):
-    def initialize_options(self) -> None: ...
-    def finalize_options(self) -> None: ...
-    def run(self) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:291c76a1c606df49d84c98ec720360004d985b4f1629dee780842b591cdf64cc
+size 188

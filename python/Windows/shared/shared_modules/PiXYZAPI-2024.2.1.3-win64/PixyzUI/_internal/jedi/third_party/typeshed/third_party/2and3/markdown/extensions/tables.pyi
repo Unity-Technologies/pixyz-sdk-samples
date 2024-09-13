@@ -1,19 +1,3 @@
-from typing import Any
-
-from markdown.blockprocessors import BlockProcessor
-from markdown.extensions import Extension
-
-PIPE_NONE: int
-PIPE_LEFT: int
-PIPE_RIGHT: int
-
-class TableProcessor(BlockProcessor):
-    RE_CODE_PIPES: Any
-    RE_END_BORDER: Any
-    border: bool = ...
-    separator: str = ...
-    def __init__(self, parser) -> None: ...
-
-class TableExtension(Extension): ...
-
-def makeExtension(**kwargs): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:c9d31b4d7d68f4a7afbd0ffee88ee5201c31607e35a3f74a468f68f81b9e31ef
+size 433

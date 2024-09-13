@@ -1,18 +1,3 @@
-from yaml.composer import Composer
-from yaml.constructor import BaseConstructor, Constructor, FullConstructor, SafeConstructor
-from yaml.parser import Parser
-from yaml.reader import Reader
-from yaml.resolver import BaseResolver, Resolver
-from yaml.scanner import Scanner
-
-class BaseLoader(Reader, Scanner, Parser, Composer, BaseConstructor, BaseResolver):
-    def __init__(self, stream) -> None: ...
-
-class FullLoader(Reader, Scanner, Parser, Composer, FullConstructor, Resolver):
-    def __init__(self, stream) -> None: ...
-
-class SafeLoader(Reader, Scanner, Parser, Composer, SafeConstructor, Resolver):
-    def __init__(self, stream) -> None: ...
-
-class Loader(Reader, Scanner, Parser, Composer, Constructor, Resolver):
-    def __init__(self, stream) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:f965ccac3d895368302cae22c600b55b7489e189829d57a4b3e80258f02a2965
+size 785

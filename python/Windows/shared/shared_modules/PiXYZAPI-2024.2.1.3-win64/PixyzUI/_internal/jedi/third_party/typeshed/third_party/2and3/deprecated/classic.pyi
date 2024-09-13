@@ -1,21 +1,3 @@
-from typing import Any, Callable, Optional, Type, TypeVar, overload
-
-_F = TypeVar("_F", bound=Callable[..., Any])
-
-class ClassicAdapter:
-    reason: str
-    version: str
-    action: Optional[str]
-    category: Type[DeprecationWarning]
-    def __init__(
-        self, reason: str = ..., version: str = ..., action: Optional[str] = ..., category: Type[DeprecationWarning] = ...
-    ) -> None: ...
-    def get_deprecated_msg(self, wrapped: Callable[..., Any], instance: object) -> str: ...
-    def __call__(self, wrapped: _F) -> Callable[[_F], _F]: ...
-
-@overload
-def deprecated(__wrapped: _F) -> _F: ...
-@overload
-def deprecated(
-    reason: str = ..., *, version: str = ..., action: Optional[str] = ..., category: Optional[Type[DeprecationWarning]] = ...
-) -> Callable[[_F], _F]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:c1e37c0033ed1e7ef42f8e5784f8cd499d1fc98737073a46562f1748ed325ae5
+size 804

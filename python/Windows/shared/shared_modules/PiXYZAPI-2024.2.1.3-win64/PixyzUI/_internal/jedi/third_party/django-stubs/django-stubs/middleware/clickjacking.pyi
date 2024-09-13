@@ -1,7 +1,3 @@
-from django.http.request import HttpRequest
-from django.http.response import HttpResponse
-from django.utils.deprecation import MiddlewareMixin
-
-class XFrameOptionsMiddleware(MiddlewareMixin):
-    def process_response(self, request: HttpRequest, response: HttpResponse) -> HttpResponse: ...
-    def get_xframe_options_value(self, request: HttpRequest, response: HttpResponse) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:950f9e8d666cad0f81b5b3f3bc4505d5d32e081f41404deeaee12d1d0ca6e370
+size 394

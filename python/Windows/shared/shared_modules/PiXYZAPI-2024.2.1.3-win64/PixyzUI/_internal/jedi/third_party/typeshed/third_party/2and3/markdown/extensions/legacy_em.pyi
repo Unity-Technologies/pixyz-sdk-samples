@@ -1,13 +1,3 @@
-from typing import Any
-
-from markdown.extensions import Extension
-from markdown.inlinepatterns import UnderscoreProcessor
-
-EMPHASIS_RE: str
-STRONG_RE: str
-STRONG_EM_RE: str
-
-class LegacyUnderscoreProcessor(UnderscoreProcessor): ...
-class LegacyEmExtension(Extension): ...
-
-def makeExtension(**kwargs): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:61bf7a67e306f489ccd39610742ee5c2b8ad4aab228dbb0f2b4a5410117d6f81
+size 319

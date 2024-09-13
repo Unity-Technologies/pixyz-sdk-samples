@@ -1,18 +1,3 @@
-from typing import Optional, Sequence, Tuple, Union
-
-from django.db.models.constraints import BaseConstraint
-from django.db.models.expressions import Combinable
-from django.db.models.query_utils import Q
-
-class ExclusionConstraint(BaseConstraint):
-    expressions: Sequence[Tuple[Union[str, Combinable], str]]
-    index_type: str
-    condition: Optional[Q]
-    def __init__(
-        self,
-        *,
-        name: str,
-        expressions: Sequence[Tuple[Union[str, Combinable], str]],
-        condition: Optional[Q] = ...,
-        index_type: Optional[str] = ...,
-    ): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:13e2237dc78d9abebb1b437baa6c63d81c684dacbf7e9c735b7c1ed01e73c291
+size 594

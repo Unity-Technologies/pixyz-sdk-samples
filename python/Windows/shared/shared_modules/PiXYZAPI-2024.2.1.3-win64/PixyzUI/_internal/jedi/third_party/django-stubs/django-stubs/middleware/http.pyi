@@ -1,7 +1,3 @@
-from django.http.request import HttpRequest
-from django.http.response import HttpResponseBase
-from django.utils.deprecation import MiddlewareMixin
-
-class ConditionalGetMiddleware(MiddlewareMixin):
-    def process_response(self, request: HttpRequest, response: HttpResponseBase) -> HttpResponseBase: ...
-    def needs_etag(self, response: HttpResponseBase) -> bool: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:e7a01735e8d441ac50036b6d90593e66c92326b80daa9d64448fe7d899cdcd49
+size 376

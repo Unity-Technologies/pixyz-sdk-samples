@@ -1,16 +1,3 @@
-from typing import Any, Optional
-
-from django import template
-from django.template.base import Parser, Token
-from django.template.context import Context
-
-register: Any
-
-class AdminLogNode(template.Node):
-    limit: str
-    user: str
-    varname: str
-    def __init__(self, limit: str, varname: str, user: Optional[str]) -> None: ...
-    def render(self, context: Context) -> str: ...
-
-def get_admin_log(parser: Parser, token: Token) -> AdminLogNode: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:90366a2623abdc5b4792e80bb201d8f50da68705ecc006b6a1785ba4c59fa0fc
+size 470

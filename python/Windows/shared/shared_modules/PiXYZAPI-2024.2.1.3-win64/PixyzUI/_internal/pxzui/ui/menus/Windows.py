@@ -1,31 +1,3 @@
-from imgui_bundle import imgui
-
-class Windows:
-    def __init__(self, shortcuts):
-        self.nameToWindow = {}
-        self.shortcuts = shortcuts
-        self.shortcutNames = {}
-
-    def addWindow(self, window):
-        # adding window
-        self.nameToWindow[window.name] = window
-        # sorting names alphabetically
-        tmpDict = self.nameToWindow
-        sortedKeys = sorted(list(self.nameToWindow.keys()))
-        self.nameToWindow = {i: tmpDict[i] for i in sortedKeys}
-        # assigning hotkey
-        self.shortcutNames[window.name] = self.shortcuts.getAvailableHotkey(window.name, ctrl=True, shift=True)
-        self.shortcuts.addShortcutCtrlShift(self.shortcutNames[window.name], window.toggle)
-
-    def removeWindow(self, window):
-        self.shortcuts.removeShortcutCtrlShift(self.shortcutNames[window.name])
-        self.shortcutNames.pop(window.name)
-        self.nameToWindow.pop(window.name)
-
-    def draw(self):
-        if imgui.begin_menu("Windows", True):
-            for name, window in self.nameToWindow.items():
-                clicked, selected = imgui.menu_item(name, 'Ctrl+Shift+'+self.shortcutNames[name].upper(), window.isEnabled())
-                if clicked:
-                    window.toggle()
-            imgui.end_menu()
+version https://git-lfs.github.com/spec/v1
+oid sha256:83f2b5d5ab775104bf63f1533b67d4b5fe724ced4373044892de393ef32e8cc3
+size 1296

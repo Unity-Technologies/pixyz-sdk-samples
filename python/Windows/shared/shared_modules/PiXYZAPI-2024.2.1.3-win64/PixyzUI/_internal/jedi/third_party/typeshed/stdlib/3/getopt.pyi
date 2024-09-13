@@ -1,10 +1,3 @@
-from typing import List, Tuple
-
-def getopt(args: List[str], shortopts: str, longopts: List[str] = ...) -> Tuple[List[Tuple[str, str]], List[str]]: ...
-def gnu_getopt(args: List[str], shortopts: str, longopts: List[str] = ...) -> Tuple[List[Tuple[str, str]], List[str]]: ...
-
-class GetoptError(Exception):
-    msg: str
-    opt: str
-
-error = GetoptError
+version https://git-lfs.github.com/spec/v1
+oid sha256:002966e1159d752b40915497a657e9237c80f465c7b984d4a09ce61361f34e6b
+size 362

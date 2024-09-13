@@ -1,16 +1,3 @@
-from subprocess import Popen
-from typing import List, Optional
-
-from paramiko.util import ClosingContextManager
-
-class ProxyCommand(ClosingContextManager):
-    cmd: List[str]
-    process: Popen
-    timeout: Optional[float]
-    def __init__(self, command_line: str) -> None: ...
-    def send(self, content: bytes) -> int: ...
-    def recv(self, size: int) -> bytes: ...
-    def close(self) -> None: ...
-    @property
-    def closed(self) -> bool: ...
-    def settimeout(self, timeout: float) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:24d71524937b37cc9390def3b0e62ac9f9f4d69a9210c43579754e0cc9fa1bbf
+size 520

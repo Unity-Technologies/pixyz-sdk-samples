@@ -1,16 +1,3 @@
-from email.mime.nonmultipart import MIMENonMultipart
-from email.policy import Policy
-from typing import Callable, Optional, Tuple, Union
-
-_ParamsType = Union[str, None, Tuple[str, Optional[str], str]]
-
-class MIMEAudio(MIMENonMultipart):
-    def __init__(
-        self,
-        _audiodata: Union[str, bytes],
-        _subtype: Optional[str] = ...,
-        _encoder: Callable[[MIMEAudio], None] = ...,
-        *,
-        policy: Optional[Policy] = ...,
-        **_params: _ParamsType,
-    ) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:076d993d3e5a3725374b87d9522349e46ebc96c35a4600ef5e1a031d7288404e
+size 518

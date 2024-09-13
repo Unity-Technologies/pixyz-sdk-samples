@@ -1,7 +1,3 @@
-import sys
-from typing import Any, Callable, TypeVar
-
-_T = TypeVar("_T")
-
-if sys.version_info >= (3, 9):
-    async def to_thread(__func: Callable[..., _T], *args: Any, **kwargs: Any) -> _T: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ae191f4225b3780bb500d9f05425913e86b2a68b7eca81bf935084775f54448
+size 201

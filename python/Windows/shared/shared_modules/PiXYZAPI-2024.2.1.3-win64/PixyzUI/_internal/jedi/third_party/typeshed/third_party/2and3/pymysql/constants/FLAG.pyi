@@ -1,17 +1,3 @@
-from typing import Any
-
-NOT_NULL: Any
-PRI_KEY: Any
-UNIQUE_KEY: Any
-MULTIPLE_KEY: Any
-BLOB: Any
-UNSIGNED: Any
-ZEROFILL: Any
-BINARY: Any
-ENUM: Any
-AUTO_INCREMENT: Any
-TIMESTAMP: Any
-SET: Any
-PART_KEY: Any
-GROUP: Any
-UNIQUE: Any
+version https://git-lfs.github.com/spec/v1
+oid sha256:8f5e11211e8ea6e8da16488ab035e354cd161c52c73cc09ae7c1e3fa3807a4cd
+size 243

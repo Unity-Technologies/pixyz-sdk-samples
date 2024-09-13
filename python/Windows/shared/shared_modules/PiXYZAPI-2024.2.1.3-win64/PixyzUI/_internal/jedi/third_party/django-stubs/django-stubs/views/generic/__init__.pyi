@@ -1,15 +1,3 @@
-from .base import RedirectView as RedirectView, TemplateView as TemplateView, View as View
-from .dates import (
-    ArchiveIndexView as ArchiveIndexView,
-    DateDetailView as DateDetailView,
-    DayArchiveView as DayArchiveView,
-    MonthArchiveView as MonthArchiveView,
-    TodayArchiveView as TodayArchiveView,
-    WeekArchiveView as WeekArchiveView,
-    YearArchiveView as YearArchiveView,
-)
-from .detail import DetailView as DetailView
-from .edit import CreateView as CreateView, DeleteView as DeleteView, FormView as FormView, UpdateView as UpdateView
-from .list import ListView as ListView
-
-class GenericViewError(Exception): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d18dc7db5680f6a7b2b84f2528677629f167ce6ab4c5a38079920729245b5f3f
+size 652

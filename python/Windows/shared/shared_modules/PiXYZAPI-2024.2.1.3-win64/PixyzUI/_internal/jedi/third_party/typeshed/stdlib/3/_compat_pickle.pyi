@@ -1,10 +1,3 @@
-from typing import Dict, Tuple
-
-IMPORT_MAPPING: Dict[str, str]
-NAME_MAPPING: Dict[Tuple[str, str], Tuple[str, str]]
-PYTHON2_EXCEPTIONS: Tuple[str, ...]
-MULTIPROCESSING_EXCEPTIONS: Tuple[str, ...]
-REVERSE_IMPORT_MAPPING: Dict[str, str]
-REVERSE_NAME_MAPPING: Dict[Tuple[str, str], Tuple[str, str]]
-PYTHON3_OSERROR_EXCEPTIONS: Tuple[str, ...]
-PYTHON3_IMPORTERROR_EXCEPTIONS: Tuple[str, ...]
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a90b4e0a9118fe1a7a7271e5764993b007ed665c6fda8a38db7a76bfaf35dd6
+size 398

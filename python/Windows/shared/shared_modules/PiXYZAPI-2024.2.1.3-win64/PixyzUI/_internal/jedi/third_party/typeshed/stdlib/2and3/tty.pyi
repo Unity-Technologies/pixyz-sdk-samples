@@ -1,15 +1,3 @@
-from typing import IO, Union
-
-_FD = Union[int, IO[str]]
-
-# XXX: Undocumented integer constants
-IFLAG: int
-OFLAG: int
-CFLAG: int
-LFLAG: int
-ISPEED: int
-OSPEED: int
-CC: int
-
-def setraw(fd: _FD, when: int = ...) -> None: ...
-def setcbreak(fd: _FD, when: int = ...) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d7d43278413530b25b27c31903e9817c76203fd7c1dccb08d80eb75a3ed0c095
+size 290

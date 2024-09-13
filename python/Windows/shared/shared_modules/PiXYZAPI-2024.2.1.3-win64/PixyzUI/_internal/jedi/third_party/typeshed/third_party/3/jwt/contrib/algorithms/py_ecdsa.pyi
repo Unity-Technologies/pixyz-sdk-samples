@@ -1,10 +1,3 @@
-import hashlib
-from typing import Any
-
-from jwt.algorithms import Algorithm
-
-class ECAlgorithm(Algorithm[Any]):
-    SHA256: hashlib._Hash
-    SHA384: hashlib._Hash
-    SHA512: hashlib._Hash
-    def __init__(self, hash_alg: hashlib._Hash) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:e67a180826945dbed3c6fb571d3411ade4f0031d8286a8294c999867a9824d76
+size 261

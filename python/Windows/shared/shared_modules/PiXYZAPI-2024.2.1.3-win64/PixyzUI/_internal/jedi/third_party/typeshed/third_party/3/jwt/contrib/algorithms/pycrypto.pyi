@@ -1,10 +1,3 @@
-import hashlib
-from typing import Any
-
-from jwt.algorithms import Algorithm
-
-class RSAAlgorithm(Algorithm[Any]):
-    SHA256: hashlib._Hash
-    SHA384: hashlib._Hash
-    SHA512: hashlib._Hash
-    def __init__(self, hash_alg: hashlib._Hash) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a970d9adc35bb394b52a154c23d28a371289728eaa15f3a4439f381bb9daa3a
+size 262

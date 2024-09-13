@@ -1,10 +1,3 @@
-from typing import Dict
-
-from django.core.signing import JSONSerializer as BaseJSONSerializer
-from django.db.models.base import Model
-
-class PickleSerializer:
-    def dumps(self, obj: Dict[str, Model]) -> bytes: ...
-    def loads(self, data: bytes) -> Dict[str, Model]: ...
-
-JSONSerializer = BaseJSONSerializer
+version https://git-lfs.github.com/spec/v1
+oid sha256:141cc8e0f95bbc06311585340fa4254512ac604c54aa4ed6aed858b632f6f907
+size 321

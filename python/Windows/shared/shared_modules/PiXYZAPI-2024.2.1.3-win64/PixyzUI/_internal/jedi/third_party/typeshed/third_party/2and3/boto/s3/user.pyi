@@ -1,10 +1,3 @@
-from typing import Any, Optional
-
-class User:
-    type: Any
-    id: Any
-    display_name: Any
-    def __init__(self, parent: Optional[Any] = ..., id: str = ..., display_name: str = ...) -> None: ...
-    def startElement(self, name, attrs, connection): ...
-    def endElement(self, name, value, connection): ...
-    def to_xml(self, element_name: str = ...): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:620c5f522d7b2a72557ca0139b205aca72e60f3642862e3963973643ce2f141e
+size 372

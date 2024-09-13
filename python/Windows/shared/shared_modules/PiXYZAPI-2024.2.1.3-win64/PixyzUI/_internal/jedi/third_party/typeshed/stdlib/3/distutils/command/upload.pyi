@@ -1,8 +1,3 @@
-from distutils.config import PyPIRCCommand
-from typing import ClassVar, List
-
-class upload(PyPIRCCommand):
-    description: ClassVar[str]
-    boolean_options: ClassVar[List[str]]
-    def run(self) -> None: ...
-    def upload_file(self, command, pyversion, filename) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:2db8afbe1411cc6f7d87445ca7d8ff26870767890f91674d663d85c6b15a71b5
+size 287

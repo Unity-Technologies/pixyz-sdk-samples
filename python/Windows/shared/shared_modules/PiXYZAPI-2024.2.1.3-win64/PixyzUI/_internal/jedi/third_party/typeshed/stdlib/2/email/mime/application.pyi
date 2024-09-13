@@ -1,9 +1,3 @@
-from email.mime.nonmultipart import MIMENonMultipart
-from typing import Callable, Optional, Tuple, Union
-
-_ParamsType = Union[str, None, Tuple[str, Optional[str], str]]
-
-class MIMEApplication(MIMENonMultipart):
-    def __init__(
-        self, _data: bytes, _subtype: str = ..., _encoder: Callable[[MIMEApplication], None] = ..., **_params: _ParamsType
-    ) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:b913c2a63f75373afb4cad332232110a94d38a161043e5011fdc383e03dead6b
+size 380

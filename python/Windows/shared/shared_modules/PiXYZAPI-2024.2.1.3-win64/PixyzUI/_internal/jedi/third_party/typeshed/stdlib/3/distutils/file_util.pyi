@@ -1,14 +1,3 @@
-from typing import Optional, Sequence, Tuple
-
-def copy_file(
-    src: str,
-    dst: str,
-    preserve_mode: bool = ...,
-    preserve_times: bool = ...,
-    update: bool = ...,
-    link: Optional[str] = ...,
-    verbose: bool = ...,
-    dry_run: bool = ...,
-) -> Tuple[str, str]: ...
-def move_file(src: str, dst: str, verbose: bool = ..., dry_run: bool = ...) -> str: ...
-def write_file(filename: str, contents: Sequence[str]) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:f703aa42e5d59007bbaf2f25437d648bee4f2abcddee7b372bd9393f422009a2
+size 453

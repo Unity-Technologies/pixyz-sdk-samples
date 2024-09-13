@@ -1,10 +1,3 @@
-from typing import Any
-
-from django.http.request import HttpRequest
-
-class RequestSite:
-    name: str
-    domain: str = ...
-    def __init__(self, request: HttpRequest) -> None: ...
-    def save(self, force_insert: bool = ..., force_update: bool = ...) -> Any: ...
-    def delete(self) -> Any: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:1fb37136f98af371c325053ed23518873b0ac6e6346c171f3e87dbf626b7d526
+size 308

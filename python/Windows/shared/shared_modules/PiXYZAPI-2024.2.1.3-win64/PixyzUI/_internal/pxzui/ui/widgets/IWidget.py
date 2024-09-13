@@ -1,14 +1,3 @@
-
-class IWidget:
-    def draw(self):
-        raise NotImplementedError
-
-    def getValue(self):
-        raise NotImplementedError
-
-    def setValue(self, value):
-        raise NotImplementedError
-
-    def destroy(self):
-        # can be overwritten to clean up before the widget is destroyed (e.g. listeners)
-        pass
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ded4572879e6072fa21624cf2a8d19678a9e5bfc0eb08c2cb0e969d919a588f
+size 335

@@ -1,16 +1,3 @@
-from typing import Any, Callable, Hashable, List, Optional, SupportsInt, Tuple, TypeVar, Union
-
-_Type = TypeVar("_Type", bound=type)
-_Reduce = Union[Tuple[Callable[..., _Type], Tuple[Any, ...]], Tuple[Callable[..., _Type], Tuple[Any, ...], Optional[Any]]]
-
-__all__: List[str]
-
-def pickle(
-    ob_type: _Type,
-    pickle_function: Callable[[_Type], Union[str, _Reduce[_Type]]],
-    constructor_ob: Optional[Callable[[_Reduce[_Type]], _Type]] = ...,
-) -> None: ...
-def constructor(object: Callable[[_Reduce[_Type]], _Type]) -> None: ...
-def add_extension(module: Hashable, name: Hashable, code: SupportsInt) -> None: ...
-def remove_extension(module: Hashable, name: Hashable, code: int) -> None: ...
-def clear_extension_cache() -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b8f558df4c105413da50c7e39a91ab74325f40eb5823e33695a70c330fd8297
+size 755

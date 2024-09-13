@@ -1,8 +1,3 @@
-from typing import Dict, List, Tuple
-
-class ModulusPack:
-    pack: Dict[int, List[Tuple[int, int]]]
-    discarded: List[Tuple[int, str]]
-    def __init__(self) -> None: ...
-    def read_file(self, filename: str) -> None: ...
-    def get_modulus(self, min: int, prefer: int, max: int) -> Tuple[int, int]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:e56846f1147c732ecbe9ec863532bb2439a7165db2571f59ff53ac1f74a5f204
+size 316

@@ -1,11 +1,3 @@
-from typing import Any, Optional
-
-from django.contrib.auth.base_user import AbstractBaseUser
-
-class PasswordResetTokenGenerator:
-    key_salt: str = ...
-    secret: Any = ...
-    def make_token(self, user: AbstractBaseUser) -> str: ...
-    def check_token(self, user: Optional[AbstractBaseUser], token: Optional[str]) -> bool: ...
-
-default_token_generator: Any
+version https://git-lfs.github.com/spec/v1
+oid sha256:38541bee16a70adc51879222f0ee61077c4546909d40e9777524f0e369aa8401
+size 372

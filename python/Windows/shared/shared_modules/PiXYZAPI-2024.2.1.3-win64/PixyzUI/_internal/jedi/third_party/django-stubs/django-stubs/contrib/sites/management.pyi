@@ -1,13 +1,3 @@
-from typing import Any
-
-from django.apps.config import AppConfig
-from django.apps.registry import Apps
-
-def create_default_site(
-    app_config: AppConfig,
-    verbosity: int = ...,
-    interactive: bool = ...,
-    using: str = ...,
-    apps: Apps = ...,
-    **kwargs: Any
-) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:aab6991bb99d7f62fcfc1f2e23791d5aa3ee0f01198b38a9dee5837d49a77ce4
+size 301

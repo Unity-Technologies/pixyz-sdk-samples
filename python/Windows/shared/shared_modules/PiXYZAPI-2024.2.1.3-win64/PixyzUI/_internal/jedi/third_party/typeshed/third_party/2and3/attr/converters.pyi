@@ -1,11 +1,3 @@
-from typing import Callable, Optional, TypeVar, overload
-
-from . import _ConverterType
-
-_T = TypeVar("_T")
-
-def optional(converter: _ConverterType[_T]) -> _ConverterType[Optional[_T]]: ...
-@overload
-def default_if_none(default: _T) -> _ConverterType[_T]: ...
-@overload
-def default_if_none(*, factory: Callable[[], _T]) -> _ConverterType[_T]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:b7cf0eb13bdce8e3c18b2090cd620f3f3777cc0809c6a767822478803e1e0d04
+size 357

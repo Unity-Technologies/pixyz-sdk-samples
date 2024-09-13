@@ -1,11 +1,3 @@
-from typing import Any, List, Iterable, Optional
-
-from django.core.checks.messages import Error
-
-from django.apps.config import AppConfig
-
-E001: Any
-E002: Any
-
-def check_setting_app_dirs_loaders(app_configs: Optional[Iterable[AppConfig]], **kwargs: Any) -> List[Error]: ...
-def check_string_if_invalid_is_string(app_configs: Optional[Iterable[AppConfig]], **kwargs: Any) -> List[Error]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:b77e84442883403f1493a185c8692e72f317e7ab778f03607ec5807c309d827a
+size 402

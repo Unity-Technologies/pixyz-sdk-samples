@@ -1,17 +1,3 @@
-from typing import Tuple
-
-from . import _LangModelType
-
-KOI8R_char_to_order_map: Tuple[int, ...]
-win1251_char_to_order_map: Tuple[int, ...]
-latin5_char_to_order_map: Tuple[int, ...]
-macCyrillic_char_to_order_map: Tuple[int, ...]
-IBM855_char_to_order_map: Tuple[int, ...]
-IBM866_char_to_order_map: Tuple[int, ...]
-RussianLangModel: Tuple[int, ...]
-Koi8rModel: _LangModelType
-Win1251CyrillicModel: _LangModelType
-Latin5CyrillicModel: _LangModelType
-MacCyrillicModel: _LangModelType
-Ibm866Model: _LangModelType
-Ibm855Model: _LangModelType
+version https://git-lfs.github.com/spec/v1
+oid sha256:3e0e76b263d63effd4b3c8b551a0294dc2a1eed38c806a3f38619b5aefd4c851
+size 553

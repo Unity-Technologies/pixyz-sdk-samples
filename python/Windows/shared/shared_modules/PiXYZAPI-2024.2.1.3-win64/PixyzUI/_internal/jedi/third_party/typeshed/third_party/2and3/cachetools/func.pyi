@@ -1,11 +1,3 @@
-from typing import Any, Callable, Optional, Sequence, TypeVar
-
-_T = TypeVar("_T")
-
-_F = TypeVar("_F", bound=Callable[..., Any])
-_RET = Callable[[_F], _F]
-
-def lfu_cache(maxsize: int = ..., typed: bool = ...) -> _RET: ...
-def lru_cache(maxsize: int = ..., typed: bool = ...) -> _RET: ...
-def rr_cache(maxsize: int = ..., choice: Optional[Callable[[Sequence[_T]], _T]] = ..., typed: bool = ...) -> _RET: ...
-def ttl_cache(maxsize: int = ..., ttl: float = ..., timer: float = ..., typed: bool = ...) -> _RET: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd835ac640b301244ace9eb3a8f1ecc1856c88e93aa983692c8375df0322a819
+size 521

@@ -1,14 +1,3 @@
-from . import mapper, util
-
-class _RequestConfig:
-    def __getattr__(self, name): ...
-    def __setattr__(self, name, value): ...
-    def __delattr__(self, name): ...
-    def load_wsgi_environ(self, environ): ...
-
-def request_config(original=...): ...
-
-Mapper = mapper.Mapper
-redirect_to = util.redirect_to
-url_for = util.url_for
-URLGenerator = util.URLGenerator
+version https://git-lfs.github.com/spec/v1
+oid sha256:58b1e36f4cd2c523960ede7b7375174bdbe9d1c55d5b8dbc834c2ebfbe7d4d39
+size 378

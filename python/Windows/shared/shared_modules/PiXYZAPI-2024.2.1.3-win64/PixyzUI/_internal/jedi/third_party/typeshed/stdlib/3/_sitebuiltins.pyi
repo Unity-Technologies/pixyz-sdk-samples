@@ -1,16 +1,3 @@
-from typing import ClassVar, Iterable, NoReturn, Optional
-from typing_extensions import Literal
-
-class Quitter:
-    name: str
-    eof: str
-    def __init__(self, name: str, eof: str) -> None: ...
-    def __call__(self, code: Optional[int] = ...) -> NoReturn: ...
-
-class _Printer:
-    MAXLINES: ClassVar[Literal[23]]
-    def __init__(self, name: str, data: str, files: Iterable[str] = ..., dirs: Iterable[str] = ...) -> None: ...
-    def __call__(self) -> None: ...
-
-class _Helper:
-    def __call__(self, request: object) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:20fc7e09ba98075aaa8cf63a86c2e828d8bad53a13d46a4c785e5c4c72b02cfe
+size 550

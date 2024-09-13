@@ -1,5 +1,3 @@
-from django.http.request import HttpRequest
-from django.utils.deprecation import MiddlewareMixin
-
-class CurrentSiteMiddleware(MiddlewareMixin):
-    def process_request(self, request: HttpRequest) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:697c6bfe64f58825360d178196398744d319c41bcf3b2c928c180f14df9480ba
+size 214

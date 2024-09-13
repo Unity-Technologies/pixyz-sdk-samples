@@ -1,6 +1,3 @@
-from typing import Any, Optional
-from xml.sax.xmlreader import XMLReader
-
-def parse(file: str, parser: Optional[XMLReader] = ..., bufsize: Optional[int] = ...): ...
-def parseString(string: str, parser: Optional[XMLReader] = ...): ...
-def __getattr__(name: str) -> Any: ...  # incomplete
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c1ea4398901ea15a1d1f09936fa08d13bb732b12265d512446113895479846e
+size 293

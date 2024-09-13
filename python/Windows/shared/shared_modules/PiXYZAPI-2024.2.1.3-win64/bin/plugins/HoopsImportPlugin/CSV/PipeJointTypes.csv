@@ -1,8 +1,3 @@
-NAME(Used only as reminder for value);VALUE;LABEL
-OdBm::PipeJointType::Generic;0;Generic
-OdBm::PipeJointType::Flanged;1;Flanged
-OdBm::PipeJointType::Welded;2;Welded
-OdBm::PipeJointType::Threaded;3;Threaded
-OdBm::PipeJointType::Grooved;4;Grooved
-OdBm::PipeJointType::Glued;5;Glued
-OdBm::PipeJointType::Soldered;6;Soldered
+version https://git-lfs.github.com/spec/v1
+oid sha256:391f93fd2d78e6ed5ee725144a36d49ca956974b40c69439712a0e4f8b2b1f68
+size 327

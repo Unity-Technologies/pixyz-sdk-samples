@@ -1,16 +1,3 @@
-import ctypes.wintypes
-import sys
-
-assert sys.platform == "win32"
-
-win32con_WM_COPYDATA: int
-
-def can_talk_to_agent(): ...
-
-class COPYDATASTRUCT(ctypes.Structure): ...
-
-class PageantConnection:
-    def __init__(self) -> None: ...
-    def send(self, data: bytes) -> None: ...
-    def recv(self, n: int) -> bytes: ...
-    def close(self) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:0fd1030ee2db23c19139da220a69df72e5e62d33a5d30866cd9bd0cdc30000a7
+size 365

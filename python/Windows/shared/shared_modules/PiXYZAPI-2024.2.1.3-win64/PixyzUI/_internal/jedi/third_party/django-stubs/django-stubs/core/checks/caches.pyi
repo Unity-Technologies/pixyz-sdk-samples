@@ -1,9 +1,3 @@
-from typing import Any, List, Iterable, Optional
-
-from django.core.checks.messages import Error
-
-from django.apps.config import AppConfig
-
-E001: Any
-
-def check_default_cache_is_configured(app_configs: Optional[Iterable[AppConfig]], **kwargs: Any) -> List[Error]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:676d88ee8e09ba1070e741fe96b9bd5cc053d368d607e7c8d4151865a550a5d8
+size 276

@@ -1,14 +1,3 @@
-import sys
-from typing import List, Optional, Tuple
-
-if sys.platform == "win32":
-
-    _SequenceType = List[Tuple[str, Optional[str], int]]
-
-    AdminExecuteSequence: _SequenceType
-    AdminUISequence: _SequenceType
-    AdvtExecuteSequence: _SequenceType
-    InstallExecuteSequence: _SequenceType
-    InstallUISequence: _SequenceType
-
-    tables: List[str]
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa2d859326cbd240a33a08a4eba7a3fbf93d860df8748c4bc598053dbc8ec574
+size 370

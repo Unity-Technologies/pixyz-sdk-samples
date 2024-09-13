@@ -1,16 +1,3 @@
-import types
-from typing import Any, TypeVar, Type, Iterable, Optional
-
-from django.core.mail.message import EmailMessage
-
-_T = TypeVar("_T", bound="BaseEmailBackend")
-
-class BaseEmailBackend:
-    def __init__(self, fail_silently: bool = ..., **kwargs: Any) -> None: ...
-    def open(self) -> Optional[bool]: ...
-    def close(self) -> None: ...
-    def __enter__(self: _T) -> _T: ...
-    def __exit__(
-        self, exc_type: Type[BaseException], exc_value: BaseException, traceback: types.TracebackType
-    ) -> None: ...
-    def send_messages(self, email_messages: Iterable[EmailMessage]) -> int: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:50aabbea62281481dcba6bc572cdb520851af74315e6a650435d4ca5480e4f06
+size 620

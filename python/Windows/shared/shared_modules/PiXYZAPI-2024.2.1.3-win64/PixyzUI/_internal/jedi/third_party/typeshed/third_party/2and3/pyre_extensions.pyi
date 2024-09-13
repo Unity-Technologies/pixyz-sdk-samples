@@ -1,7 +1,3 @@
-from typing import Any, List, Optional, Type, TypeVar
-
-_T = TypeVar("_T")
-
-def none_throws(optional: Optional[_T], message: str = ...) -> _T: ...
-def safe_cast(new_type: Type[_T], value: Any) -> _T: ...
-def ParameterSpecification(__name: str) -> List[Type[Any]]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:bbe1593d3e1e807f5b45ba3c6150eac8f119e72d4da3d0f1145aec4c52012636
+size 274

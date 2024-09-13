@@ -1,8 +1,3 @@
-import sys
-from typing import List
-
-if sys.version_info < (3, 7):
-    PY34: bool
-    PY35: bool
-    PY352: bool
-    def flatten_list_bytes(list_of_data: List[bytes]) -> bytes: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:ecbe02a511b217d7e1ec4a798c71b403cb7618283c4f501c9af28d34103cdd15
+size 188

@@ -1,7 +1,3 @@
-from typing import Callable, TypeVar, Any
-
-_F = TypeVar("_F", bound=Callable[..., Any])
-
-def xframe_options_deny(view_func: _F) -> _F: ...
-def xframe_options_sameorigin(view_func: _F) -> _F: ...
-def xframe_options_exempt(view_func: _F) -> _F: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:3103aea923f49c59c08c812723cf10806e04c6f27f62b7613f59abe3131396f2
+size 254

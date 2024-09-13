@@ -1,19 +1,3 @@
-from typing import Iterable, Optional
-
-def smart_truncate(
-    string: str, max_length: int = ..., word_boundary: bool = ..., separator: str = ..., save_order: bool = ...
-) -> str: ...
-def slugify(
-    text: str,
-    entities: bool = ...,
-    decimal: bool = ...,
-    hexadecimal: bool = ...,
-    max_length: int = ...,
-    word_boundary: bool = ...,
-    separator: str = ...,
-    save_order: bool = ...,
-    stopwords: Iterable[str] = ...,
-    regex_pattern: Optional[str] = ...,
-    lowercase: bool = ...,
-    replacements: Iterable[str] = ...,
-) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:b7b99d6963f6a3f34e58e0cdf40d58cd15ab00a306bdc539f006d64ebdcec773
+size 580

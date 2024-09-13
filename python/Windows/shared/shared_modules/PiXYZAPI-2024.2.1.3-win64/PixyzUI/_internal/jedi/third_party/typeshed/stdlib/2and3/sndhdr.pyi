@@ -1,17 +1,3 @@
-import sys
-from _typeshed import AnyPath
-from typing import NamedTuple, Optional, Tuple, Union
-
-if sys.version_info >= (3, 5):
-    class SndHeaders(NamedTuple):
-        filetype: str
-        framerate: int
-        nchannels: int
-        nframes: int
-        sampwidth: Union[int, str]
-    _SndHeaders = SndHeaders
-else:
-    _SndHeaders = Tuple[str, int, int, int, Union[int, str]]
-
-def what(filename: AnyPath) -> Optional[_SndHeaders]: ...
-def whathdr(filename: AnyPath) -> Optional[_SndHeaders]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:75d1e941848aef60d01833ae70d0c2757c56b4ef5cdf7d4683357e78e6dd0a7c
+size 518

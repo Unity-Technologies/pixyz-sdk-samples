@@ -1,13 +1,3 @@
-from typing import Any, Optional
-
-from django.db.backends.base.introspection import BaseDatabaseIntrospection
-
-field_size_re: Any
-
-def get_field_size(name: str) -> Optional[int]: ...
-
-class FlexibleFieldLookupDict:
-    base_data_types_reverse: Any = ...
-    def __getitem__(self, key: str) -> Any: ...
-
-class DatabaseIntrospection(BaseDatabaseIntrospection): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d51894bd8a13da83c972ff27009e5119984f4fd76b2c9ccf2347da33ed10eeb4
+size 376

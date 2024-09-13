@@ -1,18 +1,3 @@
-from typing import Any
-
-fastbinary: Any
-
-class ResultCode:
-    OK: Any
-    TRY_LATER: Any
-
-class LogEntry:
-    thrift_spec: Any
-    category: Any
-    message: Any
-    def __init__(self, category=..., message=...) -> None: ...
-    def read(self, iprot): ...
-    def write(self, oprot): ...
-    def validate(self): ...
-    def __eq__(self, other): ...
-    def __ne__(self, other): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce60f83305f901d39343bdf084ffb1d3fe2e64969156ebeb4c6220db86816305
+size 401

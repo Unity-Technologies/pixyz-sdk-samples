@@ -1,23 +1,3 @@
-from _typeshed.wsgi import StartResponse, WSGIApplication, WSGIEnvironment
-from typing import Iterable, Optional
-
-class ProxyFix(object):
-    app: WSGIApplication
-    x_for: int
-    x_proto: int
-    x_host: int
-    x_port: int
-    x_prefix: int
-    num_proxies: int
-    def __init__(
-        self,
-        app: WSGIApplication,
-        num_proxies: Optional[int] = ...,
-        x_for: int = ...,
-        x_proto: int = ...,
-        x_host: int = ...,
-        x_port: int = ...,
-        x_prefix: int = ...,
-    ) -> None: ...
-    def get_remote_addr(self, forwarded_for: Iterable[str]) -> Optional[str]: ...
-    def __call__(self, environ: WSGIEnvironment, start_response: StartResponse) -> Iterable[bytes]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:048d6ffeee6db11b6ce75a52f6f5e5228142c7b3b6f07eb958edff60d549555c
+size 735

@@ -1,7 +1,3 @@
-from typing import Optional, Union
-
-from django.contrib.sites.models import Site
-from django.contrib.sites.requests import RequestSite
-from django.http.request import HttpRequest
-
-def get_current_site(request: Optional[HttpRequest]) -> Union[Site, RequestSite]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:f7a80c770c791dc35b9803100ee36a40f43b53102997c3de6b7e3bd56f86ebff
+size 273

@@ -1,12 +1,3 @@
-from decimal import Decimal
-from typing import Optional, Sequence, Union
-
-def format(
-    number: Union[Decimal, float, str],
-    decimal_sep: str,
-    decimal_pos: Optional[int] = ...,
-    grouping: Union[int, Sequence[int]] = ...,
-    thousand_sep: str = ...,
-    force_grouping: bool = ...,
-    use_l10n: Optional[bool] = ...,
-) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:20f6ee1f96f7f37e7dd5dfea7ab05fcd2fb09b9ab04c5e7e426b2c8ea1a0b0cb
+size 356

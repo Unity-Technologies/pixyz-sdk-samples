@@ -1,14 +1,3 @@
-from typing import Any, List, Type
-
-from django.contrib.admin.options import InlineModelAdmin
-from django.db.models.base import Model
-
-class GenericInlineModelAdminChecks:
-    def _check_exclude_of_parent_model(self, obj: GenericInlineModelAdmin, parent_model: Type[Model]) -> List[Any]: ...
-    def _check_relation(self, obj: GenericInlineModelAdmin, parent_model: Type[Model]) -> List[Any]: ...
-
-class GenericInlineModelAdmin(InlineModelAdmin):
-    template: str = ...
-
-class GenericStackedInline(GenericInlineModelAdmin): ...
-class GenericTabularInline(GenericInlineModelAdmin): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:19015a16f7c3faf88280c0e3238cca7fe85283f9d6a4999abfd21e946ada8452
+size 600

@@ -1,6 +1,3 @@
-from typing import Dict
-
-name2codepoint: Dict[str, int]
-html5: Dict[str, str]
-codepoint2name: Dict[int, str]
-entitydefs: Dict[str, str]
+version https://git-lfs.github.com/spec/v1
+oid sha256:67e0f0e539b4adf827b256920441eed77e5ab14dc7fa6967341434b46b908169
+size 142

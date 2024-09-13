@@ -1,8 +1,3 @@
-from typing import Any
-
-poll: Any
-select: Any
-HAS_IPV6: bool
-
-def is_connection_dropped(conn): ...
-def create_connection(address, timeout=..., source_address=..., socket_options=...): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:feb2eeb3344784aaa97aa694807ff6b9b30d42d8757b6298da50ea6153caecd2
+size 196

@@ -1,18 +1,3 @@
-from typing import Optional
-
-from cryptography.hazmat.backends.interfaces import HMACBackend
-from cryptography.hazmat.primitives.hashes import HashAlgorithm
-
-class TOTP(object):
-    def __init__(
-        self,
-        key: bytes,
-        length: int,
-        algorithm: HashAlgorithm,
-        time_step: int,
-        backend: HMACBackend,
-        enforce_key_length: bool = ...,
-    ): ...
-    def generate(self, time: int) -> bytes: ...
-    def get_provisioning_uri(self, account_name: str, issuer: Optional[str]) -> str: ...
-    def verify(self, totp: bytes, time: int) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:94b052e2fe72b867fc80df42cebd53c9be01082054aeea8d9ac1935edeba9d39
+size 603

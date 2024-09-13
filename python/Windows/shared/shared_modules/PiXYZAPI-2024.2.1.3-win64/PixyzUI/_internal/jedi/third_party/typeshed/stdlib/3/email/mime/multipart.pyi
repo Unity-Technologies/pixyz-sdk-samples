@@ -1,17 +1,3 @@
-from email.message import Message
-from email.mime.base import MIMEBase
-from email.policy import Policy
-from typing import Optional, Sequence, Tuple, Union
-
-_ParamsType = Union[str, None, Tuple[str, Optional[str], str]]
-
-class MIMEMultipart(MIMEBase):
-    def __init__(
-        self,
-        _subtype: str = ...,
-        boundary: Optional[str] = ...,
-        _subparts: Optional[Sequence[Message]] = ...,
-        *,
-        policy: Optional[Policy] = ...,
-        **_params: _ParamsType,
-    ) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:21639662229b363ffd808c3cb79685ae72b5111ee58d1a9f7f99f0749ff18772
+size 524

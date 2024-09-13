@@ -1,13 +1,3 @@
-from typing import Any, Pattern
-
-from markdown.extensions import Extension
-from markdown.treeprocessors import Treeprocessor
-
-ATTR_RE: Pattern
-
-class LegacyAttrs(Treeprocessor):
-    def handleAttributes(self, el, txt): ...
-
-class LegacyAttrExtension(Extension): ...
-
-def makeExtension(**kwargs): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:68a04d48db8a80769cf9c936f7eea0240395c938e55a6935f1c58f23f76d37b4
+size 313

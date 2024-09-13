@@ -1,34 +1,3 @@
-from pxzui.ui.widgets.IWidget import IWidget
-from imgui_bundle import imgui
-
-class EnumWidget(IWidget):
-    def __init__(self, name, defaultValue, labels, readonly=False, valueAsInt=True):
-        self.valueAsInt = valueAsInt
-        self.name = name
-        self.labels = labels
-        self.value = defaultValue if defaultValue != "" else "0"
-        self.readonly = readonly
-
-    def draw(self):
-        if self.valueAsInt:
-            if self.readonly:
-                imgui.begin_disabled()
-            changed, self.value = imgui.combo("##" + self.name, int(self.value), self.labels)
-            self.value = str(self.value)
-            if self.readonly:
-                imgui.end_disabled()
-            return changed, self.value
-        else:
-            if self.readonly:
-                imgui.begin_disabled()
-            changed, valueInt = imgui.combo("##" + self.name, self.labels.index(self.value), self.labels)
-            self.value = self.labels[valueInt]
-            if self.readonly:
-                imgui.end_disabled()
-            return changed, self.value
-
-    def getValue(self):
-        return self.value
-
-    def setValue(self, value):
-        self.value = value
+version https://git-lfs.github.com/spec/v1
+oid sha256:43000a367008a1ec90c002aea10931e74a8ed6e9ed372235cdbaafc9a67cd5bf
+size 1223

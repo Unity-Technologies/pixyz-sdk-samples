@@ -1,6 +1,3 @@
-from typing import Dict, Text
-
-EMOJI_ALIAS_UNICODE: Dict[Text, Text]
-EMOJI_UNICODE: Dict[Text, Text]
-UNICODE_EMOJI: Dict[Text, Text]
-UNICODE_EMOJI_ALIAS: Dict[Text, Text]
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f81abdf2752a519b62839b21083332cfa5cc6ed5304c34ac84756f3c8c6e61a
+size 177

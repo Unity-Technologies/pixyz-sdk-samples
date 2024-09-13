@@ -1,5 +1,3 @@
-import six.moves.urllib.error as error
-import six.moves.urllib.parse as parse
-import six.moves.urllib.request as request
-import six.moves.urllib.response as response
-import six.moves.urllib.robotparser as robotparser
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee1f8c5ce1df9b35c750c70ea72cb9813d08044d202a219dd73d289c49071a3c
+size 222

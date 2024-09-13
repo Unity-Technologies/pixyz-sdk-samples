@@ -1,10 +1,3 @@
-# Stub-only types. This module does not exist at runtime.
-
-from typing import Any, Optional
-from typing_extensions import Protocol
-
-# As defined https://docs.python.org/3/library/xml.dom.html#domimplementation-objects
-class DOMImplementation(Protocol):
-    def hasFeature(self, feature: str, version: Optional[str]) -> bool: ...
-    def createDocument(self, namespaceUri: str, qualifiedName: str, doctype: Optional[Any]) -> Any: ...
-    def createDocumentType(self, qualifiedName: str, publicId: str, systemId: str) -> Any: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:5973db42adfb46dc55d2df25a93ba2272c7af24e38e4858cffc415fcdebeb554
+size 538

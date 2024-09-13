@@ -1,8 +1,3 @@
-# Stubs for six.moves.urllib.response
-#
-# Note: Commented out items means they weren't implemented at the time.
-# Uncomment them when the modules have been added to the typeshed.
-# from urllib.response import addbase as addbase
-# from urllib.response import addclosehook as addclosehook
-# from urllib.response import addinfo as addinfo
-from urllib.response import addinfourl as addinfourl
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d88775d230567db81488f83c79698ab1cb2d65585b805fa05049190b9d484a5
+size 397

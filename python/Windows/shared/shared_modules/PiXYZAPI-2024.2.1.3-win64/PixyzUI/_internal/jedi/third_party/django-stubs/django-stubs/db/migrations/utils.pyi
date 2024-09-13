@@ -1,10 +1,3 @@
-from typing import Any
-
-COMPILED_REGEX_TYPE: Any
-
-class RegexObject:
-    pattern: str = ...
-    flags: int = ...
-    def __init__(self, obj: Any) -> None: ...
-
-def get_migration_name_timestamp() -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:f620398b73f00857ce9a8ef063c06891e20ebc32130e87fb34db1a9883e8d705
+size 217

@@ -1,14 +1,3 @@
-// !!! This is a generated file, do not edit !!!
-#ifndef _PXZ_RAYTRACE_INTERFACE_RAYTRACEINTERFACE_C_H_
-#define _PXZ_RAYTRACE_INTERFACE_RAYTRACEINTERFACE_C_H_
-
-#include "RaytraceTypes_c.h"
-
-PXZ_EXPORTED char * Raytrace_getLastError();
-
-PXZ_EXPORTED void Raytrace_configureFunctionLogger(Session * pxzSession, Core_String functionName, Core_Boolean enableFunction, Core_Boolean enableParameters, Core_Boolean enableExecutionTime);
-PXZ_EXPORTED void Raytrace_renderImage(Session * pxzSession, Core_Int width, Core_Int height, Raytrace_Camera camera, Core_OutputFilePath outputImagePath);
-
-
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:d438387f870f77b85b5a8be7c80175def60b6409f4a7d7d0439e8cc29bd3bf1c
+size 610

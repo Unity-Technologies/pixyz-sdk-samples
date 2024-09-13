@@ -1,16 +1,3 @@
-from typing import Any
-
-from werkzeug.local import LocalStack
-
-from .app import Flask
-from .wrappers import Request
-
-class _FlaskLocalProxy(Flask):
-    def _get_current_object(self) -> Flask: ...
-
-_request_ctx_stack: LocalStack
-_app_ctx_stack: LocalStack
-current_app: _FlaskLocalProxy
-request: Request
-session: Any
-g: Any
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa25eefe9025779d384ef17e9bc4d5ef9a3725742d7974bae6f57f9012c81a49
+size 338

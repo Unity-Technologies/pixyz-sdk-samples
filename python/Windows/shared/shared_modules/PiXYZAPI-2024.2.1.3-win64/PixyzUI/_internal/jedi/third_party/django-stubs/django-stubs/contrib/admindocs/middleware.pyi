@@ -1,10 +1,3 @@
-from typing import Any, Callable, Dict, Optional, Tuple
-
-from django.core.handlers.wsgi import WSGIRequest
-from django.http.response import HttpResponse
-from django.utils.deprecation import MiddlewareMixin
-
-class XViewMiddleware(MiddlewareMixin):
-    def process_view(
-        self, request: WSGIRequest, view_func: Callable, view_args: Tuple, view_kwargs: Dict[Any, Any]
-    ) -> Optional[HttpResponse]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:47555bb8f4ed8594413cd78b035dc66d2dd265e0ef82bfc770495d1faa2a1588
+size 419

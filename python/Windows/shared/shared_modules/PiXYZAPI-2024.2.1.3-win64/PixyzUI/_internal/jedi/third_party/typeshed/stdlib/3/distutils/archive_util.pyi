@@ -1,12 +1,3 @@
-from typing import Optional
-
-def make_archive(
-    base_name: str,
-    format: str,
-    root_dir: Optional[str] = ...,
-    base_dir: Optional[str] = ...,
-    verbose: int = ...,
-    dry_run: int = ...,
-) -> str: ...
-def make_tarball(base_name: str, base_dir: str, compress: Optional[str] = ..., verbose: int = ..., dry_run: int = ...) -> str: ...
-def make_zipfile(base_name: str, base_dir: str, verbose: int = ..., dry_run: int = ...) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:4505229eb303ab90d2e63fbac3f8a811851423a161b507c1fffe7e17ddeab408
+size 459

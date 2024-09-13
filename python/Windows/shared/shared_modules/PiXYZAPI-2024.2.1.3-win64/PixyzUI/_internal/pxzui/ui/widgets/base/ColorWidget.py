@@ -1,25 +1,3 @@
-from imgui_bundle import imgui
-from pxzui.ui.widgets.IWidget import IWidget
-
-
-class ColorWidget(IWidget):
-    def __init__(self, name, defaultValue, readOnly=False):
-        self.name = name
-        self.value = defaultValue if defaultValue != "" else "[0.0, 0.0, 0.0]"
-        self.readOnly = readOnly
-
-    def draw(self):
-        if self.readOnly:
-            imgui.begin_disabled()
-        changed, floatValue = imgui.color_edit3("##" + self.name, eval(self.value))
-        self.value = str(floatValue)
-        if self.readOnly:
-            imgui.end_disabled()
-        return changed, self.value
-
-    def getValue(self):
-        return self.value
-
-    def setValue(self, value):
-        self.value = value
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f347360997469b6c0537a40e8b44c9074ce952240a62d9a0f683583abb2939a
+size 736

@@ -1,16 +1,3 @@
-from datetime import datetime
-from typing import Any, List
-
-def __getattr__(name: str) -> Any: ...  # incomplete
-
-class Event:
-    createdTime: datetime
-
-class EventFilterSpec:
-    class ByTime:
-        def __init__(self, beginTime: datetime): ...
-    time: EventFilterSpec.ByTime
-
-class EventManager:
-    latestEvent: Event
-    def QueryEvents(self, filer: EventFilterSpec) -> List[Event]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f74e093ffbeccfae24e3214ca407c0d4b2558377e3a7d4b393dd0cd14093986
+size 411

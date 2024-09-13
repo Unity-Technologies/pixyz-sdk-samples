@@ -1,28 +1,3 @@
-from imgui_bundle import imgui
-from pxzui.ui.widgets.IWidget import IWidget
-
-
-class StringWidget(IWidget):
-    def __init__(self, ui, name, defaultValue, readOnly=False):
-        self.ui = ui
-        self.name = name
-        # string default values are already escaped
-        self.value = defaultValue.replace("'", "").replace('"', '')
-        self.readOnly = readOnly
-
-    def draw(self):
-        flags = imgui.InputTextFlags_.none
-        if self.readOnly:
-            flags = imgui.InputTextFlags_.read_only
-        changed, self.value = imgui.input_text("##" + self.name, self.value, flags)
-        if imgui.is_item_active():
-            # don't fire shortcuts when typing in the text field
-            self.ui.shortcuts.skipBasicThisFrame()
-        return changed, self.value
-
-    def getValue(self):
-        return self.value
-
-    def setValue(self, value):
-        self.value = value
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:70483b665b8e993b3083401b928d11c1acbbefeda3c3ca550d8085d3ac5a7950
+size 921

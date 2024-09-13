@@ -1,12 +1,3 @@
-from typing import Optional
-
-from cryptography.hazmat.backends.interfaces import PBKDF2HMACBackend
-from cryptography.hazmat.primitives.hashes import HashAlgorithm
-from cryptography.hazmat.primitives.kdf import KeyDerivationFunction
-
-class PBKDF2HMAC(KeyDerivationFunction):
-    def __init__(
-        self, algorithm: HashAlgorithm, length: int, salt: bytes, iterations: int, backend: Optional[PBKDF2HMACBackend] = ...
-    ): ...
-    def derive(self, key_material: bytes) -> bytes: ...
-    def verify(self, key_material: bytes, expected_key: bytes) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:00eedbe8ebd255be9246afe14168665f5d8892860555d352d02a0b3ba7e07a09
+size 573
