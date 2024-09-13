@@ -95,6 +95,6 @@ def getHierarchyDict(occurrence):
 def extractHierarchyToJson(root, file_path):
     hierarchy_dict = getHierarchyDict(root)
     with open(file_path, 'w') as file:
-        json.dump(hierarchy_dict, file)
+        json.dump(hierarchy_dict, file, indent=4)
 
     print('\nDone: structure tree exported at ' + file_path)
