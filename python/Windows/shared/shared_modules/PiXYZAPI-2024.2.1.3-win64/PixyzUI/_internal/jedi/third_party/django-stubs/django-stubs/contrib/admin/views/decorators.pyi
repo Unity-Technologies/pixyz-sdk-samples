@@ -1,7 +1,3 @@
-from typing import Callable, TypeVar, overload
-
-_C = TypeVar("_C", bound=Callable)
-@overload
-def staff_member_required(view_func: _C = ..., redirect_field_name: str = ..., login_url: str = ...) -> _C: ...
-@overload
-def staff_member_required(view_func: None = ..., redirect_field_name: str = ..., login_url: str = ...) -> Callable: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:813fb9ea9306cd67dfeb1bd6b1ea10327f659479fb3956917f8d71a3897abe13
+size 342

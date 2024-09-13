@@ -1,20 +1,3 @@
-import json
-from typing import Any
-
-from django.contrib.messages.storage.base import BaseStorage
-
-class MessageEncoder(json.JSONEncoder):
-    allow_nan: bool
-    check_circular: bool
-    ensure_ascii: bool
-    skipkeys: bool
-    sort_keys: bool
-    message_key: str = ...
-
-class MessageDecoder(json.JSONDecoder):
-    def process_messages(self, obj: Any) -> Any: ...
-
-class CookieStorage(BaseStorage):
-    cookie_name: str = ...
-    max_cookie_size: int = ...
-    not_finished: str = ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:73120b469e027c94b301a5cb233fd6f84694dfb476e9fba84cc295710f34ad37
+size 507

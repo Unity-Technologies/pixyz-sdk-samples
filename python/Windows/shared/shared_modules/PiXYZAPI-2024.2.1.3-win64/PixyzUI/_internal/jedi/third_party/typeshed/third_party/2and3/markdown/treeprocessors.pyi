@@ -1,19 +1,3 @@
-from typing import Any, Optional
-
-from . import util
-
-def build_treeprocessors(md, **kwargs): ...
-def isString(s): ...
-
-class Treeprocessor(util.Processor):
-    def run(self, root) -> None: ...
-
-class InlineProcessor(Treeprocessor):
-    inlinePatterns: Any
-    ancestors: Any
-    def __init__(self, md) -> None: ...
-    stashed_nodes: Any
-    parent_map: Any
-    def run(self, tree, ancestors: Optional[Any] = ...): ...
-
-class PrettifyTreeprocessor(Treeprocessor): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:554b3f3ead0df2651094d8c632427b4e52e69bf0cf1eeae12f8222cc73aeb855
+size 488

@@ -1,12 +1,3 @@
-import sys
-from typing import Any, Awaitable, Callable, Iterable, List, Optional, Tuple
-
-from . import events
-
-if sys.version_info >= (3, 8):
-    async def staggered_race(
-        coro_fns: Iterable[Callable[[], Awaitable[Any]]],
-        delay: Optional[float],
-        *,
-        loop: Optional[events.AbstractEventLoop] = ...,
-    ) -> Tuple[Any, Optional[int], List[Optional[Exception]]]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce08834c5b7d68ddfcab1ee1cb00943ed77c1fdf75aee5376d9b0f3417cfe297
+size 408

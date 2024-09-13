@@ -1,6 +1,3 @@
-from typing import Any, Dict, Iterator, Set, Container, List
-
-class CyclicDependencyError(ValueError): ...
-
-def topological_sort_as_sets(dependency_graph: Dict[Any, Any]) -> Iterator[Set[Any]]: ...
-def stable_topological_sort(l: Container[Any], dependency_graph: Dict[Any, Any]) -> List[Any]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:b554c9d5e502ff3e34bee7f0158c9b509a9b388481819d0f42ef905dc0c248a6
+size 303

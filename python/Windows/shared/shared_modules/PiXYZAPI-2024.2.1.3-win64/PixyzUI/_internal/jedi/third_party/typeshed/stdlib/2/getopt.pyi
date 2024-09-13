@@ -1,12 +1,3 @@
-from typing import List, Tuple
-
-class GetoptError(Exception):
-    opt: str
-    msg: str
-    def __init__(self, msg: str, opt: str = ...) -> None: ...
-    def __str__(self) -> str: ...
-
-error = GetoptError
-
-def getopt(args: List[str], shortopts: str, longopts: List[str] = ...) -> Tuple[List[Tuple[str, str]], List[str]]: ...
-def gnu_getopt(args: List[str], shortopts: str, longopts: List[str] = ...) -> Tuple[List[Tuple[str, str]], List[str]]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:36d1420a3641292e0a270cd49f1ea582a9ec4e18b95624e1c232f37f8716e51c
+size 460

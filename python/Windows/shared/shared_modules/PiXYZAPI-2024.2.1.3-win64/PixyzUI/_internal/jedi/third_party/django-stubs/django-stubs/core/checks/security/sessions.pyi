@@ -1,20 +1,3 @@
-from typing import Any, List, Iterable, Optional
-
-from django.core.checks.messages import Warning
-
-from django.apps.config import AppConfig
-
-def add_session_cookie_message(message: Any): ...
-
-W010: Any
-W011: Any
-W012: Any
-
-def add_httponly_message(message: Any): ...
-
-W013: Any
-W014: Any
-W015: Any
-
-def check_session_cookie_secure(app_configs: Optional[Iterable[AppConfig]], **kwargs: Any) -> List[Warning]: ...
-def check_session_cookie_httponly(app_configs: Optional[Iterable[AppConfig]], **kwargs: Any) -> List[Warning]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6c5900f2b947f604d8a7b09f45b2a545a19d329439fa4a5b7f3bd4c28c5abdc
+size 547

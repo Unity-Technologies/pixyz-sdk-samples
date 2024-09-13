@@ -1,26 +1,3 @@
-from typing import Any, Dict
-
-from django.template.backends.base import BaseEngine
-
-from django.template import Template
-
-ROOT: Any
-
-def get_default_renderer() -> DjangoTemplates: ...
-
-class BaseRenderer:
-    def get_template(self, template_name: str) -> Any: ...
-    def render(self, template_name: str, context: Dict[str, Any], request: None = ...) -> str: ...
-
-class EngineMixin:
-    def get_template(self, template_name: str) -> Any: ...
-    def engine(self) -> BaseEngine: ...
-
-class DjangoTemplates(EngineMixin, BaseRenderer):
-    backend: Any = ...
-
-class Jinja2(EngineMixin, BaseRenderer):
-    backend: Any = ...
-
-class TemplatesSetting(BaseRenderer):
-    def get_template(self, template_name: str) -> Template: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d459643d422f7b42e11e1da00f8306cd6c97121b5f53658a7bd56035875cd662
+size 750

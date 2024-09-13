@@ -1,8 +1,3 @@
-from typing import List, MutableSequence, Text, Union
-
-def reset() -> None: ...
-def listdir(path: Text) -> List[str]: ...
-
-opendir = listdir
-
-def annotate(head: Text, list: Union[MutableSequence[str], MutableSequence[Text], MutableSequence[Union[str, Text]]]) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3e9ce193099709835ebfedd3cd8f995cbd117ce54c89cf1c3b9b2f774d2250a
+size 281

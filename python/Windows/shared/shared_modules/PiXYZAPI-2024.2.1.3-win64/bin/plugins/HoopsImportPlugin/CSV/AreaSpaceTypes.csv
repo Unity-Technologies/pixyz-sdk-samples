@@ -1,10 +1,3 @@
-NAME(Used only as reminder for value);VALUE;LABEL
-OdBm::AreaSpaceType::None;-1;None
-OdBm::AreaSpaceType::AreaGross;0;Gross Building Area
-OdBm::AreaSpaceType::AreaExterior;1;Exterior Area
-OdBm::AreaSpaceType::AreaBCA;2;Building Common Area
-OdBm::AreaSpaceType::AreaExterior_2;3;Exterior Area
-OdBm::AreaSpaceType::AreaFloor;4;Floor Area
-OdBm::AreaSpaceType::AreaMVP;5;Major Vertical Penetration
-OdBm::AreaSpaceType::AreaOffice;6;Office Area
-OdBm::AreaSpaceType::AreaStore;7;Store Area
+version https://git-lfs.github.com/spec/v1
+oid sha256:1c967238789016f9a3712179d00bca4284b4a8371d14c82a39f3a536d6da41b4
+size 491

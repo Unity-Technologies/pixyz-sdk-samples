@@ -1,13 +1,3 @@
-from ._base import (
-    ALL_COMPLETED as ALL_COMPLETED,
-    FIRST_COMPLETED as FIRST_COMPLETED,
-    FIRST_EXCEPTION as FIRST_EXCEPTION,
-    CancelledError as CancelledError,
-    Executor as Executor,
-    Future as Future,
-    TimeoutError as TimeoutError,
-    as_completed as as_completed,
-    wait as wait,
-)
-from .process import ProcessPoolExecutor as ProcessPoolExecutor
-from .thread import ThreadPoolExecutor as ThreadPoolExecutor
+version https://git-lfs.github.com/spec/v1
+oid sha256:9503ab965d2f390706686b9eea75d375e4eb898b86a8b404c08edb6fa974af04
+size 449

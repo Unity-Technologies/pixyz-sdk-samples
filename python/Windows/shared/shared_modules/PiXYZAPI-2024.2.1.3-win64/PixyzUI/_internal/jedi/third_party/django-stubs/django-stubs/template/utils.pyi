@@ -1,16 +1,3 @@
-import collections
-from typing import Any, Dict, List, Tuple
-
-from django.core.exceptions import ImproperlyConfigured
-from django.template.backends.base import BaseEngine
-
-class InvalidTemplateEngineError(ImproperlyConfigured): ...
-
-class EngineHandler:
-    templates: collections.OrderedDict
-    def __init__(self, templates: List[Dict[str, Any]] = ...) -> None: ...
-    def __getitem__(self, alias: str) -> BaseEngine: ...
-    def __iter__(self) -> Any: ...
-    def all(self) -> List[BaseEngine]: ...
-
-def get_app_template_dirs(dirname: str) -> Tuple: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:8da8dfaa6b4962fa97b4e263941fe111a9666fc248dfd83d58a93eb2acab1ec3
+size 574

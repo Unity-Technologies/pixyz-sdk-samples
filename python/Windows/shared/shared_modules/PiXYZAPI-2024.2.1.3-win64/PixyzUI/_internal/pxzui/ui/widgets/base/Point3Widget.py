@@ -1,28 +1,3 @@
-from imgui_bundle import imgui
-from pxzui.ui.widgets.IWidget import IWidget
-
-
-class Point3Widget(IWidget):
-    def __init__(self, ui, name, defaultValue, readonly=False):
-        self.ui = ui
-        self.name = name
-        self.value = defaultValue if defaultValue != "" else "[0,0,0]"
-        self.readonly = readonly
-
-    def draw(self):
-        if self.readonly:
-            imgui.begin_disabled()
-        changed, floatListValue = imgui.input_float3("##" + self.name, eval(self.value))
-        if imgui.is_item_active():
-            self.ui.shortcuts.skipBasicThisFrame()
-        self.value = str(floatListValue)
-        if self.readonly:
-            imgui.end_disabled()
-        return changed, self.value
-
-    def getValue(self):
-        return self.value
-
-    def setValue(self, value):
-        self.value = value
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:f8b42f2542b379ffbf9dd5709d9281c6e251371067790288288d7acb64905bb6
+size 852

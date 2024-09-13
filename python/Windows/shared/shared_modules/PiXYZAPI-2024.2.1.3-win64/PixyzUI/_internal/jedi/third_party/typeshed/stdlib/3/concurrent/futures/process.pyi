@@ -1,28 +1,3 @@
-import sys
-from typing import Any, Callable, Optional, Tuple
-
-from ._base import Executor
-
-EXTRA_QUEUED_CALLS: Any
-
-if sys.version_info >= (3, 7):
-    from ._base import BrokenExecutor
-    class BrokenProcessPool(BrokenExecutor): ...
-
-else:
-    class BrokenProcessPool(RuntimeError): ...
-
-if sys.version_info >= (3, 7):
-    from multiprocessing.context import BaseContext
-    class ProcessPoolExecutor(Executor):
-        def __init__(
-            self,
-            max_workers: Optional[int] = ...,
-            mp_context: Optional[BaseContext] = ...,
-            initializer: Optional[Callable[..., None]] = ...,
-            initargs: Tuple[Any, ...] = ...,
-        ) -> None: ...
-
-else:
-    class ProcessPoolExecutor(Executor):
-        def __init__(self, max_workers: Optional[int] = ...) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:538e9f202fa5ffc7e93c7eb6ebefdf14828e9c812740aab3f9fed7d0a1d70591
+size 832

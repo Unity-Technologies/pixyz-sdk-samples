@@ -1,8 +1,3 @@
-from collections import OrderedDict
-from typing import Iterator, List, Optional, Tuple, Union
-
-from django.core.files.storage import FileSystemStorage
-
-def matches_patterns(path: str, patterns: Union[List[str], Tuple[str], OrderedDict] = ...) -> bool: ...
-def get_files(storage: FileSystemStorage, ignore_patterns: List[str] = ..., location: str = ...) -> Iterator[str]: ...
-def check_settings(base_url: Optional[str] = ...) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:c8045f7ab04aa95475790f7e1d9359761a00c3c26c8968a0f6d4fd54b1f6ca59
+size 446

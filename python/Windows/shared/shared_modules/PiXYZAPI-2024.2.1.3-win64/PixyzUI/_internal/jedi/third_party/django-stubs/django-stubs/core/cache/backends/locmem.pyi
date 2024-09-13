@@ -1,6 +1,3 @@
-from typing import Any, Dict
-
-from django.core.cache.backends.base import BaseCache
-
-class LocMemCache(BaseCache):
-    def __init__(self, name: str, params: Dict[str, Any]) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:ad355e1861da66e381cc9a9a55416579aeeb1e382ad814b17512526102d88ac6
+size 192

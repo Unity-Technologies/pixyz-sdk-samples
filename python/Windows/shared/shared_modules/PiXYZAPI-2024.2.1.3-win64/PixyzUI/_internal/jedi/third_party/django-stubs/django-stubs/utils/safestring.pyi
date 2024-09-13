@@ -1,26 +1,3 @@
-from typing import TypeVar, overload, Callable, Any
-
-_SD = TypeVar("_SD", bound="SafeData")
-
-class SafeData:
-    def __html__(self: _SD) -> _SD: ...
-
-class SafeText(str, SafeData):
-    @overload
-    def __add__(self, rhs: SafeText) -> SafeText: ...
-    @overload
-    def __add__(self, rhs: str) -> str: ...
-    @overload
-    def __iadd__(self, rhs: SafeText) -> SafeText: ...
-    @overload
-    def __iadd__(self, rhs: str) -> str: ...
-
-SafeString = SafeText
-
-_C = TypeVar("_C", bound=Callable)
-@overload
-def mark_safe(s: _SD) -> _SD: ...
-@overload
-def mark_safe(s: _C) -> _C: ...
-@overload
-def mark_safe(s: Any) -> SafeText: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:60c191afa6bf2c1924dd90066512ddb4c7ea598cdcf66e953d6acf71c2108302
+size 655

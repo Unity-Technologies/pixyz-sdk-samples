@@ -1,10 +1,3 @@
-from typing import Any, Dict, Tuple, Type, TypeVar
-
-_T = TypeVar("_T")
-
-# TODO: Change the return into a NewType bound to int after pytype/#597
-def get_cache_token() -> object: ...
-
-class ABCMeta(type):
-    def __new__(__mcls, __name: str, __bases: Tuple[Type[Any], ...], __namespace: Dict[str, Any]) -> ABCMeta: ...
-    def register(cls, subclass: Type[_T]) -> Type[_T]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:10f8fdd886b8ea43014f5cd5f08bf1fb2d3d68d69944eaed55aa0b2f1aa4bee0
+size 386

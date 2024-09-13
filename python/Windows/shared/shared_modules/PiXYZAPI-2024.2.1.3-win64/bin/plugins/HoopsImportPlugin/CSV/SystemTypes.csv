@@ -1,34 +1,3 @@
-NAME(Used only as reminder for value);VALUE;LABEL
-OdBm::SystemType::Undefined;0;Undefined
-OdBm::SystemType::SupplyAir;1;Supply Air
-OdBm::SystemType::ReturnAir;2;Return Air
-OdBm::SystemType::ExhaustAir;3;Exhaust Air
-OdBm::SystemType::OtherAir;4;Other Air
-OdBm::SystemType::DataCircuit;5;Data
-OdBm::SystemType::PowerCircuit;6;Power
-OdBm::SystemType::SupplyHydronic;7;Hydronic Supply
-OdBm::SystemType::ReturnHydronic;8;Hydronic Return
-OdBm::SystemType::Telephone;9;Telephone
-OdBm::SystemType::Security;10;Security
-OdBm::SystemType::FireAlarm;11;Fire Alarm
-OdBm::SystemType::NurseCall;12;Nurse Call
-OdBm::SystemType::Controls;13;Controls
-OdBm::SystemType::Communication;14;Communication
-OdBm::SystemType::CondensateDrain;15;Condensate Drain
-OdBm::SystemType::Sanitary;16;Sanitary
-OdBm::SystemType::Vent;17;Vent
-OdBm::SystemType::Storm;18;Storm
-OdBm::SystemType::DomesticHotWater;19;Domestic Hot Water
-OdBm::SystemType::DomesticColdWater;20;Domestic Cold Water
-OdBm::SystemType::Recirculation;21;Recirculation
-OdBm::SystemType::OtherPipe;22;Other
-OdBm::SystemType::FireProtectWet;23;Fire Protection Wet
-OdBm::SystemType::FireProtectDry;24;Fire Protection Dry
-OdBm::SystemType::FireProtectPreaction;25;Fire Protection Pre-Action
-OdBm::SystemType::FireProtectOther;26;Fire Protection Other
-OdBm::SystemType::SwitchTopology;27;Switch Topology
-OdBm::SystemType::Fitting;28;Fitting
-OdBm::SystemType::Global;29;Global
-OdBm::SystemType::PowerBalanced;30;Power - Balanced
-OdBm::SystemType::PowerUnBalanced;31;Power - Unbalanced
-OdBm::SystemType::CableTrayConduit;32;Cable Tray Conduit
+version https://git-lfs.github.com/spec/v1
+oid sha256:05454ddecffe7b94804802116eaa687e310ec71b46d59681daaa91606d478e04
+size 1604

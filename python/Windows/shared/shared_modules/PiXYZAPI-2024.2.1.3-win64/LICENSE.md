@@ -1,3 +1,3 @@
-Copyright © Unity Technologies SF.
-This software is subject to, and made available under, the Unity Terms of Service (see https://unity.com/legal). Your use of this software constitutes your acceptance of such terms.
-Unless expressly provided otherwise, the software under this license is made available strictly on an "AS IS" BASIS WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. Please review the Terms of Service for details on these and other terms and conditions.
+version https://git-lfs.github.com/spec/v1
+oid sha256:382e6a7b96a7547dc2735be6c3177afd235c621fd183b49a3349657fbe6f1770
+size 473

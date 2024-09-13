@@ -1,23 +1,3 @@
-from typing import Any
-
-from .. import exceptions
-
-LocationParseError = exceptions.LocationParseError
-
-url_attrs: Any
-
-class Url:
-    slots: Any
-    def __new__(cls, scheme=..., auth=..., host=..., port=..., path=..., query=..., fragment=...): ...
-    @property
-    def hostname(self): ...
-    @property
-    def request_uri(self): ...
-    @property
-    def netloc(self): ...
-    @property
-    def url(self): ...
-
-def split_first(s, delims): ...
-def parse_url(url): ...
-def get_host(url): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:69a1732353913855603b5d15ed57d87a3b268b11c8aca747593c3334d856c296
+size 515

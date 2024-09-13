@@ -1,21 +1,3 @@
-from typing import Any
-
-class Mark:
-    name: Any
-    index: Any
-    line: Any
-    column: Any
-    buffer: Any
-    pointer: Any
-    def __init__(self, name, index, line, column, buffer, pointer) -> None: ...
-    def get_snippet(self, indent=..., max_length=...): ...
-
-class YAMLError(Exception): ...
-
-class MarkedYAMLError(YAMLError):
-    context: Any
-    context_mark: Any
-    problem: Any
-    problem_mark: Any
-    note: Any
-    def __init__(self, context=..., context_mark=..., problem=..., problem_mark=..., note=...) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c73e05903f957c29a425c218cae1b838f675699acad80c73d78644965071275
+size 556

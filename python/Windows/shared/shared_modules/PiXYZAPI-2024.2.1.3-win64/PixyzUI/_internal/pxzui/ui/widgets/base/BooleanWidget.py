@@ -1,24 +1,3 @@
-from imgui_bundle import imgui
-from pxzui.ui.widgets.IWidget import IWidget
-
-
-class BooleanWidget(IWidget):
-    def __init__(self, name, defaultValue, readOnly=False):
-        self.name = name
-        self.value = defaultValue.capitalize() if defaultValue != "" else "True"
-        self.readOnly = readOnly
-
-    def draw(self):
-        if self.readOnly:
-            imgui.begin_disabled()
-        changed, boolValue = imgui.checkbox("##" + self.name, self.value == "True")
-        self.value = str(boolValue)
-        if self.readOnly:
-            imgui.end_disabled()
-        return changed, self.value
-
-    def getValue(self):
-        return self.value
-
-    def setValue(self, value):
-        self.value = value
+version https://git-lfs.github.com/spec/v1
+oid sha256:3671681d094f199a9935ffea8a2c25ee73014bb5c7551af40e1403f94e36bcc1
+size 737

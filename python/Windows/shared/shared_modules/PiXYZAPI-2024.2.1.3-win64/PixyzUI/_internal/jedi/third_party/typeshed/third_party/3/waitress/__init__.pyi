@@ -1,7 +1,3 @@
-from typing import Any, Tuple
-
-from waitress.server import create_server as create_server
-
-def serve(app: Any, **kw: Any) -> None: ...
-def serve_paste(app: Any, global_conf: Any, **kw: Any) -> int: ...
-def profile(cmd: Any, globals: Any, locals: Any, sort_order: Tuple[str, ...], callers: bool) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:3bb1de01ddee202eb4f8f43c0bef06d73633b097800d13c68da87609ac43624b
+size 315

@@ -1,17 +1,3 @@
-import json
-from typing import Any, Dict
-
-from django.core.serializers.python import Serializer as PythonSerializer
-
-class Serializer(PythonSerializer):
-    json_kwargs: Dict[str, Any]
-
-def Deserializer(stream_or_string: Any, **options: Any) -> None: ...
-
-class DjangoJSONEncoder(json.JSONEncoder):
-    allow_nan: bool
-    check_circular: bool
-    ensure_ascii: bool
-    indent: int
-    skipkeys: bool
-    sort_keys: bool
+version https://git-lfs.github.com/spec/v1
+oid sha256:7007d39286e909ebb456568cf48d3cbbe14b7f157956b8181ae420fb2343a723
+size 439

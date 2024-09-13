@@ -1,8 +1,3 @@
-import email.message
-from email.policy import Policy
-from typing import Optional, Tuple, Union
-
-_ParamsType = Union[str, None, Tuple[str, Optional[str], str]]
-
-class MIMEBase(email.message.Message):
-    def __init__(self, _maintype: str, _subtype: str, *, policy: Optional[Policy] = ..., **_params: _ParamsType) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d12f310f6efc54dd0aca5c0cc64d1b0fa2292f27641879f293cc6f99dbeb479b
+size 333

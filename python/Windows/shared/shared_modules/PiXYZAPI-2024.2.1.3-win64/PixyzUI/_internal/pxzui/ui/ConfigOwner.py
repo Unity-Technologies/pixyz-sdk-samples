@@ -1,19 +1,3 @@
-class ConfigOwner:
-    def __init__(self):
-        self._config = {}
-
-    def restoreConfig(self, config):
-        for key in config.keys():
-            self._config[key] = config[key]
-
-    def saveConfig(self):
-        return self._config
-
-    def getConfig(self, key):
-        return self._config[key] if key in self._config.keys() else None
-
-    def setConfig(self, key, value):
-        self._config[key] = value
-
-    def hasConfig(self, key):
-        return key in self._config.keys()
+version https://git-lfs.github.com/spec/v1
+oid sha256:e914d83e80f03a6bcd9949465cddd899ba9025536453cda52019a3f3d4bd0a5e
+size 508

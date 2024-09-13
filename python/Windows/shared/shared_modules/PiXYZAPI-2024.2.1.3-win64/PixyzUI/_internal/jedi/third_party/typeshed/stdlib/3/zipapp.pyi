@@ -1,24 +1,3 @@
-import sys
-from pathlib import Path
-from typing import BinaryIO, Callable, Optional, Union
-
-_Path = Union[str, Path, BinaryIO]
-
-class ZipAppError(ValueError): ...
-
-if sys.version_info >= (3, 7):
-    def create_archive(
-        source: _Path,
-        target: Optional[_Path] = ...,
-        interpreter: Optional[str] = ...,
-        main: Optional[str] = ...,
-        filter: Optional[Callable[[Path], bool]] = ...,
-        compressed: bool = ...,
-    ) -> None: ...
-
-else:
-    def create_archive(
-        source: _Path, target: Optional[_Path] = ..., interpreter: Optional[str] = ..., main: Optional[str] = ...
-    ) -> None: ...
-
-def get_interpreter(archive: _Path) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:b944920a7836a16459ae20e7e6a663f0303f4b89a95d32f54a53509dfb7822ff
+size 702

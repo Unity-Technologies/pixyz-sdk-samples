@@ -1,15 +1,3 @@
-from typing import Any
-
-from django.apps.config import AppConfig
-from django.apps.registry import Apps
-
-def create_permissions(
-    app_config: AppConfig,
-    verbosity: int = ...,
-    interactive: bool = ...,
-    using: str = ...,
-    apps: Apps = ...,
-    **kwargs: Any
-) -> None: ...
-def get_system_username() -> str: ...
-def get_default_username(check_db: bool = ...) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:54d8b2d10a7950c6863f43a2af6e6adb1d1301328b31be49515774ec0bed1578
+size 399

@@ -1,15 +1,3 @@
-from collections import OrderedDict
-from typing import Any, Dict, Iterator, List, Optional
-
-from django.core.serializers.base import DeserializedObject
-from django.db.models.base import Model
-
-from django.core.serializers import base
-
-class Serializer(base.Serializer):
-    objects: List[Any] = ...
-    def get_dump_object(self, obj: Model) -> OrderedDict: ...
-
-def Deserializer(
-    object_list: List[Dict[str, Any]], *, using: Optional[str] = ..., ignorenonexistent: bool = ..., **options: Any
-) -> Iterator[DeserializedObject]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:399f3c7864ce45b5e42c54e162d819e29b8882fdd8d6939d1531bd179aaa2fc7
+size 550

@@ -1,16 +1,3 @@
-from typing import Any, Callable, ContextManager, MutableMapping, Optional, TypeVar
-
-_KT = TypeVar("_KT")
-_VT = TypeVar("_VT")
-_T = TypeVar("_T", bound=Callable[..., Any])
-_T_co = TypeVar("_T_co", covariant=True)
-_T_self = TypeVar("_T_self")
-
-def cached(
-    cache: Optional[MutableMapping[_KT, _VT]], key: Callable[..., _KT] = ..., lock: Optional[ContextManager[_T_co]] = ...
-) -> Callable[[_T], _T]: ...
-def cachedmethod(
-    cache: Callable[[_T_self], Optional[MutableMapping[_KT, _VT]]],
-    key: Callable[..., _KT] = ...,
-    lock: Optional[ContextManager[_T_co]] = ...,
-) -> Callable[[_T], _T]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:2530c4c6635689d8b089a49880013b45a4893a89cb7b802ff481b64e69a5f790
+size 621

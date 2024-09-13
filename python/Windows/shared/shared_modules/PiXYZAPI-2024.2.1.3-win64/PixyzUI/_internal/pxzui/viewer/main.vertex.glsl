@@ -1,10 +1,3 @@
-#version 330
-const vec2 quadVertices[4] = vec2[4](vec2(0.0f, 1.0f), vec2(0.0f, 0.0f), vec2(1.0f, 1.0f), vec2(1.0f, 0.0f));
-layout(location = 0) in vec2 aTexCoords;
-out vec2 TexCoords;
-
-void main()
-{
-   TexCoords = quadVertices[gl_VertexID];
-   gl_Position = vec4(quadVertices[gl_VertexID] * 2. - vec2(1., 1.), 0., 1.0);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6bff25e3c4cae06b7bd646d2c9506426f016f6e78c8088f578d33aa3008e7553
+size 332

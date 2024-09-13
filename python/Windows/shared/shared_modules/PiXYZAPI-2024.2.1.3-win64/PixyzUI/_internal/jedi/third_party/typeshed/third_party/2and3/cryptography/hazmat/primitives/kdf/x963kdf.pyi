@@ -1,12 +1,3 @@
-from typing import Optional
-
-from cryptography.hazmat.backends.interfaces import HashBackend
-from cryptography.hazmat.primitives.hashes import HashAlgorithm
-from cryptography.hazmat.primitives.kdf import KeyDerivationFunction
-
-class X963KDF(KeyDerivationFunction):
-    def __init__(
-        self, algorithm: HashAlgorithm, length: int, sharedinfo: Optional[bytes], backend: Optional[HashBackend] = ...
-    ): ...
-    def derive(self, key_material: bytes) -> bytes: ...
-    def verify(self, key_material: bytes, expected_key: bytes) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:a1459260dc5136296573db18d396b5aa7c4b1e37cbd4a48c23c88c033d8eb9ae
+size 557

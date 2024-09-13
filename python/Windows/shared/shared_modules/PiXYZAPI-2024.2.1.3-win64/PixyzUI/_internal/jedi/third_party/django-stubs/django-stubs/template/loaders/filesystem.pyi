@@ -1,12 +1,3 @@
-from typing import Any, List, Optional, Union
-
-from django.template.base import Origin
-from django.template.engine import Engine
-
-from .base import Loader as BaseLoader
-
-class Loader(BaseLoader):
-    dirs: Optional[List[str]] = ...
-    def __init__(self, engine: Engine, dirs: Optional[List[str]] = ...) -> None: ...
-    def get_dirs(self) -> Union[List[bytes], List[str]]: ...
-    def get_contents(self, origin: Origin) -> Any: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:db7463d4d17ac68a3f0553b12b59c425e4aea44ecf0ae1add0896fb84131c08d
+size 445

@@ -1,6 +1,3 @@
-from typing import IO, Any
-
-class GetPassWarning(UserWarning): ...
-
-def getpass(prompt: str = ..., stream: IO[Any] = ...) -> str: ...
-def getuser() -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:085e13522d4e9109637e793c464384c3a481818b8bbc7d87061852d6c24c972e
+size 166

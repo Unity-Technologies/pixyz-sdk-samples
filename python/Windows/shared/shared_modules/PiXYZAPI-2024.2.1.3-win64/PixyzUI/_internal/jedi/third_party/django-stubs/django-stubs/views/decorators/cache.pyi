@@ -1,7 +1,3 @@
-from typing import Any, Callable, Optional, TypeVar
-
-_F = TypeVar("_F", bound=Callable[..., Any])
-
-def cache_page(timeout: float, *, cache: Optional[Any] = ..., key_prefix: Optional[Any] = ...) -> Callable: ...
-def cache_control(**kwargs: Any) -> Callable: ...
-def never_cache(view_func: _F) -> _F: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:8413fb25819b760c49961f75e2e28fb15255d6f478c1169f73a6366942c898c0
+size 310

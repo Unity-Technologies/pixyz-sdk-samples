@@ -1,6 +1,3 @@
-from .cache import Cache as Cache
-from .decorators import cached as cached, cachedmethod as cachedmethod
-from .lfu import LFUCache as LFUCache
-from .lru import LRUCache as LRUCache
-from .rr import RRCache as RRCache
-from .ttl import TTLCache as TTLCache
+version https://git-lfs.github.com/spec/v1
+oid sha256:93455c3d2f68c5ab34bf79926f354721c247eba1eca4b4d1c76950023b69b92a
+size 260

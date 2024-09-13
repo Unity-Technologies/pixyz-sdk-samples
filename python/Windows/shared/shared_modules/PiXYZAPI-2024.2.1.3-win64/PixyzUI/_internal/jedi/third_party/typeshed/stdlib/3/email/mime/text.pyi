@@ -1,8 +1,3 @@
-from email.mime.nonmultipart import MIMENonMultipart
-from email.policy import Policy
-from typing import Optional
-
-class MIMEText(MIMENonMultipart):
-    def __init__(
-        self, _text: str, _subtype: str = ..., _charset: Optional[str] = ..., *, policy: Optional[Policy] = ...
-    ) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc8b6a84ef70b03043f3e97330a4241ce677dfe820623b42b9f7341857ae8218
+size 305

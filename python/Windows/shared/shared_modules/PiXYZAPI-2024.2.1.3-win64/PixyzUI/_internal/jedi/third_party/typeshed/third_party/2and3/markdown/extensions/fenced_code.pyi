@@ -1,16 +1,3 @@
-from typing import Any, Pattern
-
-from markdown.extensions import Extension
-from markdown.preprocessors import Preprocessor
-
-class FencedCodeExtension(Extension): ...
-
-class FencedBlockPreprocessor(Preprocessor):
-    FENCED_BLOCK_RE: Pattern
-    CODE_WRAP: str = ...
-    LANG_TAG: str = ...
-    checked_for_codehilite: bool = ...
-    codehilite_conf: Any
-    def __init__(self, md) -> None: ...
-
-def makeExtension(**kwargs): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:931f07d2719b6349cf8e0221e1a8f70847bf013e9bbec39f33d83836b4b441ed
+size 444

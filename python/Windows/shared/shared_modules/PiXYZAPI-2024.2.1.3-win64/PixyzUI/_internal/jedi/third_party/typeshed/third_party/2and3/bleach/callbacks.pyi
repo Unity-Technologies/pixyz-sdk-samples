@@ -1,6 +1,3 @@
-from typing import Any, MutableMapping, Text
-
-_Attrs = MutableMapping[Any, Text]
-
-def nofollow(attrs: _Attrs, new: bool = ...) -> _Attrs: ...
-def target_blank(attrs: _Attrs, new: bool = ...) -> _Attrs: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:8b824c59575873c9dc162faf8d5862faffa5c5af1b3e4b4eac0f34639c73a65a
+size 212

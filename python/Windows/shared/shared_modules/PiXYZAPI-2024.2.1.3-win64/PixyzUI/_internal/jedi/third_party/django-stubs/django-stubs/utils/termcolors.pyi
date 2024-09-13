@@ -1,18 +1,3 @@
-from typing import Any, Callable, Dict, Optional, Tuple, Union, Sequence
-
-color_names: Any
-foreground: Any
-background: Any
-RESET: str
-opt_dict: Any
-
-def colorize(text: Optional[str] = ..., opts: Sequence[str] = ..., **kwargs: Any) -> str: ...
-def make_style(opts: Tuple = ..., **kwargs: Any) -> Callable: ...
-
-NOCOLOR_PALETTE: str
-DARK_PALETTE: str
-LIGHT_PALETTE: str
-PALETTES: Any
-DEFAULT_PALETTE: str = ...
-
-def parse_color_setting(config_string: str) -> Optional[Dict[str, Dict[str, Union[Tuple[str], str]]]]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:027e46f843eb224296b45e1dedcb319fead85ff5799b0d3a7e9c5d3406ace2d0
+size 535

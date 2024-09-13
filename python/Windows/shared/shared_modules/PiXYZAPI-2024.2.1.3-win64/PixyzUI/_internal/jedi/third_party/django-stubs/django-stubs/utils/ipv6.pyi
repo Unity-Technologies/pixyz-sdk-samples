@@ -1,4 +1,3 @@
-from typing import Any
-
-def clean_ipv6_address(ip_str: Any, unpack_ipv4: bool = ..., error_message: Any = ...): ...
-def is_valid_ipv6_address(ip_str: str) -> bool: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:098aa4d32096fea0eab480d17ad0960e0d1da7ee726da96aa351d5f0a004ddee
+size 172

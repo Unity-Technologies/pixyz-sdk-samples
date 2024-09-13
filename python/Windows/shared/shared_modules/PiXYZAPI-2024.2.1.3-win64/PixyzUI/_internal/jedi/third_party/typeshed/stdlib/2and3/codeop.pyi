@@ -1,14 +1,3 @@
-from types import CodeType
-from typing import Optional
-
-def compile_command(source: str, filename: str = ..., symbol: str = ...) -> Optional[CodeType]: ...
-
-class Compile:
-    flags: int
-    def __init__(self) -> None: ...
-    def __call__(self, source: str, filename: str, symbol: str) -> CodeType: ...
-
-class CommandCompiler:
-    compiler: Compile
-    def __init__(self) -> None: ...
-    def __call__(self, source: str, filename: str = ..., symbol: str = ...) -> Optional[CodeType]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d08fe151d03593b06dbe3ad13579af74aeb96cb83dbf5fe0ba49e32d13f439f2
+size 503

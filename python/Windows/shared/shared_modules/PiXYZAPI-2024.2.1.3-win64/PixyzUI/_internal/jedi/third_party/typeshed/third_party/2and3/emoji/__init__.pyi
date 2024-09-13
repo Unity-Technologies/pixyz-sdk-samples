@@ -1,13 +1,3 @@
-from .core import (
-    demojize as demojize,
-    emoji_count as emoji_count,
-    emoji_lis as emoji_lis,
-    emojize as emojize,
-    get_emoji_regexp as get_emoji_regexp,
-)
-from .unicode_codes import (
-    EMOJI_ALIAS_UNICODE as EMOJI_ALIAS_UNICODE,
-    EMOJI_UNICODE as EMOJI_UNICODE,
-    UNICODE_EMOJI as UNICODE_EMOJI,
-    UNICODE_EMOJI_ALIAS as UNICODE_EMOJI_ALIAS,
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3e7a786906f735bec1b26ace340c84eb4c926b6d66c09ebbd2e911d0d94e04d
+size 386

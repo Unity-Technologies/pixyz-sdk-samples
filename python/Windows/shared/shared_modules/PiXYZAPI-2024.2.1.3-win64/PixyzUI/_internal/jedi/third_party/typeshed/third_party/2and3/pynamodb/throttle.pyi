@@ -1,19 +1,3 @@
-from typing import Any, Optional
-
-log: Any
-
-class ThrottleBase:
-    capacity: Any
-    window: Any
-    records: Any
-    sleep_interval: Any
-    def __init__(self, capacity, window: int = ..., initial_sleep: Optional[Any] = ...) -> None: ...
-    def add_record(self, record): ...
-    def throttle(self): ...
-
-class NoThrottle(ThrottleBase):
-    def __init__(self) -> None: ...
-    def add_record(self, record): ...
-
-class Throttle(ThrottleBase):
-    def throttle(self): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea750ae8f2c1a87fe0df78dadc853fa3c9fa41539d9a64da2cf1f89da4cd93ab
+size 491

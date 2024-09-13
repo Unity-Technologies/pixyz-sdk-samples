@@ -1,12 +1,3 @@
-from typing import Any, Callable, Iterable, Optional, TypeVar, Union, overload
-
-_T = TypeVar("_T")
-_S = TypeVar("_S")
-@overload
-def first(iterable: Iterable[_T]) -> Optional[_T]: ...
-@overload
-def first(iterable: Iterable[_T], default: _S) -> Union[_T, _S]: ...
-@overload
-def first(iterable: Iterable[_T], default: _S, key: Optional[Callable[[_T], Any]]) -> Union[_T, _S]: ...
-@overload
-def first(iterable: Iterable[_T], *, key: Optional[Callable[[_T], Any]]) -> Optional[_T]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:aaf0113d92eab78deb84703e723f63e3d95a0cb92a51ab2b5c246f32dc2e5f78
+size 493

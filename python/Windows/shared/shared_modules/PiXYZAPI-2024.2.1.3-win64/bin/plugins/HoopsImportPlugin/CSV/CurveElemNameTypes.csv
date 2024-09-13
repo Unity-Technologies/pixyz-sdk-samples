@@ -1,8 +1,3 @@
-NAME(Used only as reminder for value);VALUE;LABEL
-OdBm::CurveElemNameType::None;-1;None
-OdBm::CurveElemNameType::ModelLines;0;Model Lines
-OdBm::CurveElemNameType::DetailsLines;1;Detail Lines
-OdBm::CurveElemNameType::RefLines;2;Reference Lines
-OdBm::CurveElemNameType::SymbolicLines;3;Symbolic Lines
-OdBm::CurveElemNameType::Line;4;Line
-OdBm::CurveElemNameType::SpanDirectionEdge;5;Span Direction Edges
+version https://git-lfs.github.com/spec/v1
+oid sha256:853479cc59ea27e2453ded9c8053a35a5f59179c197fae6185d7f73bd2c3060b
+size 408

@@ -1,13 +1,3 @@
-from typing import Dict, Optional, Type
-
-from django.contrib.sessions.backends.base import SessionBase
-from django.contrib.sessions.base_session import AbstractBaseSession
-from django.contrib.sessions.models import Session
-from django.db.models.base import Model
-
-class SessionStore(SessionBase):
-    def __init__(self, session_key: Optional[str] = ...) -> None: ...
-    @classmethod
-    def get_model_class(cls) -> Type[Session]: ...
-    def model(self) -> Type[AbstractBaseSession]: ...
-    def create_model_instance(self, data: Dict[str, Model]) -> AbstractBaseSession: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:fb301f2265c5ec0214f0032eecec7e5b24908ee72d9d81444b2da8a2bd38e623
+size 590

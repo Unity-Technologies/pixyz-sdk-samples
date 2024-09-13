@@ -1,15 +1,3 @@
-from typing import Any, Dict, List
-
-from django.db.models.deletion import Collector
-
-from django.core.management import BaseCommand
-
-class Command(BaseCommand): ...
-
-class NoFastDeleteCollector(Collector):
-    data: Dict[str, Any]
-    dependencies: Dict[Any, Any]
-    fast_deletes: List[Any]
-    field_updates: Dict[Any, Any]
-    using: str
-    def can_fast_delete(self, *args: Any, **kwargs: Any) -> bool: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d5543a19facf6c838e80e2a9983b3aefe4bbf2b58ab4bd1917f2e92d1cc43c0
+size 426

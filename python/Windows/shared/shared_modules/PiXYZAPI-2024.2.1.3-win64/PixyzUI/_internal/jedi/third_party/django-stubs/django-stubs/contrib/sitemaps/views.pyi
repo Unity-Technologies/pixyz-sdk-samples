@@ -1,23 +1,3 @@
-from collections import OrderedDict
-from typing import Callable, Dict, Optional, Type, Union
-
-from django.http.request import HttpRequest
-from django.template.response import TemplateResponse
-
-from django.contrib.sitemaps import GenericSitemap, Sitemap
-
-def x_robots_tag(func: Callable) -> Callable: ...
-def index(
-    request: HttpRequest,
-    sitemaps: Dict[str, Union[Type[Sitemap], Sitemap]],
-    template_name: str = ...,
-    content_type: str = ...,
-    sitemap_url_name: str = ...,
-) -> TemplateResponse: ...
-def sitemap(
-    request: HttpRequest,
-    sitemaps: Union[Dict[str, Type[Sitemap]], Dict[str, GenericSitemap], OrderedDict],
-    section: Optional[str] = ...,
-    template_name: str = ...,
-    content_type: str = ...,
-) -> TemplateResponse: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2f16f370ea6b287834a23efc1524aed2eccfcb7d57de0b3a7790d418a4e08ed
+size 785

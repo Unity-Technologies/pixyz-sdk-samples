@@ -1,7 +1,3 @@
-from typing import Any, Callable, TypeVar
-
-_F = TypeVar("_F", bound=Callable[..., Any])
-
-def coroutine(func: _F) -> _F: ...
-def iscoroutinefunction(func: Callable[..., Any]) -> bool: ...
-def iscoroutine(obj: Any) -> bool: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:c90f04bc8bceb58954a1804528ed5a180fa5de2d4b02016546140786c2e16fd8
+size 233

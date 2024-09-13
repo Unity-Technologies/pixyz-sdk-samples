@@ -1,10 +1,3 @@
-from typing import Any
-
-RegionData: Any
-
-def regions(**kw_params): ...
-def connect_to_region(region_name, **kw_params): ...
-def get_region(region_name, **kw_params): ...
-
-# Explicitly mark this package as incomplete.
-def __getattr__(name: str) -> Any: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3d0f9537c6f191d6a126b679a77d03f304cae4af67cb59f30c61c391d7326fd
+size 266

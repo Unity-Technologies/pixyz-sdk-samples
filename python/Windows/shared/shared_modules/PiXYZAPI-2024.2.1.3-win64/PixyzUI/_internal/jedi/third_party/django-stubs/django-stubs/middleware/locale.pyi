@@ -1,10 +1,3 @@
-from typing import Any
-
-from django.http.request import HttpRequest
-from django.http.response import HttpResponseBase
-from django.utils.deprecation import MiddlewareMixin
-
-class LocaleMiddleware(MiddlewareMixin):
-    response_redirect_class: Any = ...
-    def process_request(self, request: HttpRequest) -> None: ...
-    def process_response(self, request: HttpRequest, response: HttpResponseBase) -> HttpResponseBase: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:4b3ea4c5cae49742340125c5a233cd543d3318d52ee8ab461f275bf7f9c53d32
+size 433

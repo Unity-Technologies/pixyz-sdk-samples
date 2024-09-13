@@ -1,25 +1,3 @@
-import sys
-from typing import List
-
-class _Feature:
-    def getOptionalRelease(self) -> sys._version_info: ...
-    def getMandatoryRelease(self) -> sys._version_info: ...
-    compiler_flag: int
-
-absolute_import: _Feature
-division: _Feature
-generators: _Feature
-nested_scopes: _Feature
-print_function: _Feature
-unicode_literals: _Feature
-with_statement: _Feature
-if sys.version_info >= (3, 0):
-    barry_as_FLUFL: _Feature
-
-if sys.version_info >= (3, 5):
-    generator_stop: _Feature
-
-if sys.version_info >= (3, 7):
-    annotations: _Feature
-
-all_feature_names: List[str]  # undocumented
+version https://git-lfs.github.com/spec/v1
+oid sha256:a0ffbe0e2d70a30df33d5a88b9ea06d0528f38638ae35ab462c0910c56830160
+size 612

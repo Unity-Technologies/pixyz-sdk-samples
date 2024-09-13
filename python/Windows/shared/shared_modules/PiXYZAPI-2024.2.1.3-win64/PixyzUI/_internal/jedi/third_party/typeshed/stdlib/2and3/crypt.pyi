@@ -1,22 +1,3 @@
-import sys
-from typing import List, Optional, Union
-
-if sys.version_info >= (3, 3):
-    class _Method: ...
-    METHOD_CRYPT: _Method
-    METHOD_MD5: _Method
-    METHOD_SHA256: _Method
-    METHOD_SHA512: _Method
-    if sys.version_info >= (3, 7):
-        METHOD_BLOWFISH: _Method
-
-    methods: List[_Method]
-
-    if sys.version_info >= (3, 7):
-        def mksalt(method: Optional[_Method] = ..., *, rounds: Optional[int] = ...) -> str: ...
-    else:
-        def mksalt(method: Optional[_Method] = ...) -> str: ...
-    def crypt(word: str, salt: Optional[Union[str, _Method]] = ...) -> str: ...
-
-else:
-    def crypt(word: str, salt: str) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:7e7c0d148f98ec4dd4de55bf6c655bdbd3352b332d0b9b6574a8418ddf503d07
+size 670

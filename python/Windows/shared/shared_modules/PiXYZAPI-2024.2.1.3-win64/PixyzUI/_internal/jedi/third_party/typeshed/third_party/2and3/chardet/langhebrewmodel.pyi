@@ -1,7 +1,3 @@
-from typing import Tuple
-
-from . import _LangModelType
-
-WIN1255_CHAR_TO_ORDER_MAP: Tuple[int, ...]
-HEBREW_LANG_MODEL: Tuple[int, ...]
-Win1255HebrewModel: _LangModelType
+version https://git-lfs.github.com/spec/v1
+oid sha256:569e214c3670b60158ab5321fe5803e3d0e167890c61d2240b976db01b6db881
+size 176

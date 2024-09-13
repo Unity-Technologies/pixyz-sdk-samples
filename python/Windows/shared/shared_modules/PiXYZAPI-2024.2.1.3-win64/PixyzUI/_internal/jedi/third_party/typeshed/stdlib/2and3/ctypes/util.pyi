@@ -1,7 +1,3 @@
-import sys
-from typing import Optional
-
-def find_library(name: str) -> Optional[str]: ...
-
-if sys.platform == "win32":
-    def find_msvcrt() -> Optional[str]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee62dd3625340fc62066af208e92792ba8660d65928bf8a5bfb23bc4ac1655cd
+size 170

@@ -1,25 +1,3 @@
-import sys
-from typing import Optional
-
-def version() -> str: ...
-
-if sys.version_info >= (3, 0):
-    def bootstrap(
-        *,
-        root: Optional[str] = ...,
-        upgrade: bool = ...,
-        user: bool = ...,
-        altinstall: bool = ...,
-        default_pip: bool = ...,
-        verbosity: int = ...,
-    ) -> None: ...
-
-else:
-    def bootstrap(
-        root: Optional[str] = ...,
-        upgrade: bool = ...,
-        user: bool = ...,
-        altinstall: bool = ...,
-        default_pip: bool = ...,
-        verbosity: int = ...,
-    ) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:eff0a6ebb2885d8c19c2a64ae552e9f82f647cb86c6a810ff967c9e770e222f8
+size 587

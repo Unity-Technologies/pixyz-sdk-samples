@@ -1,11 +1,3 @@
-from typing import List, NamedTuple, Optional
-
-class struct_group(NamedTuple):
-    gr_name: str
-    gr_passwd: Optional[str]
-    gr_gid: int
-    gr_mem: List[str]
-
-def getgrall() -> List[struct_group]: ...
-def getgrgid(gid: int) -> struct_group: ...
-def getgrnam(name: str) -> struct_group: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:176edee351768445a9b11bc46c75edfe03c31207d71a08859c1ff2ed3731cc81
+size 306

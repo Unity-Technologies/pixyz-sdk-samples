@@ -1,17 +1,3 @@
-from typing import Any
-
-from django.db.models import Field, Transform
-from .mixins import CheckFieldDefaultMixin
-
-class HStoreField(CheckFieldDefaultMixin, Field):
-    def get_transform(self, name) -> Any: ...
-
-class KeyTransform(Transform):
-    def __init__(self, key_name: str, *args: Any, **kwargs: Any): ...
-
-class KeyTransformFactory:
-    def __init__(self, key_name: str): ...
-    def __call__(self, *args, **kwargs) -> KeyTransform: ...
-
-class KeysTransform(Transform): ...
-class ValuesTransform(Transform): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:bbde3e80d6871cc19c6a45c7e4b43f5da39082459a1c8b2a2ac7fa641148e314
+size 536

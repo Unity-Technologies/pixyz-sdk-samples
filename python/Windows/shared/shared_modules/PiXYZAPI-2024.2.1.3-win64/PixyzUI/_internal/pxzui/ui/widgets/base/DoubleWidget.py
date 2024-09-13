@@ -1,27 +1,3 @@
-from imgui_bundle import imgui
-from pxzui.ui.widgets.IWidget import IWidget
-
-
-class DoubleWidget(IWidget):
-    def __init__(self, ui, name, defaultValue, readOnly=False):
-        self.ui = ui
-        self.name = name
-        self.value = defaultValue if defaultValue != "" else "0.0"
-        self.readOnly = readOnly
-
-    def draw(self):
-        if self.readOnly:
-            imgui.begin_disabled()
-        changed, floatValue = imgui.input_float("##" + self.name, float(self.value))
-        if imgui.is_item_active():
-            self.ui.shortcuts.skipBasicThisFrame()
-        self.value = str(floatValue)
-        if self.readOnly:
-            imgui.end_disabled()
-        return changed, self.value
-
-    def getValue(self):
-        return self.value
-
-    def setValue(self, value):
-        self.value = value
+version https://git-lfs.github.com/spec/v1
+oid sha256:6da0b6dbfa0e11c9d1553c8524d37671bee163040a0601040c507ead53047ba8
+size 838

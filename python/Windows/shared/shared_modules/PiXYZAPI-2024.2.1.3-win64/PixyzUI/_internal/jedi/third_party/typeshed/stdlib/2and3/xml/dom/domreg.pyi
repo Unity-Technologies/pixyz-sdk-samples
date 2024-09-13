@@ -1,10 +1,3 @@
-from _typeshed.xml import DOMImplementation
-from typing import Any, Callable, Dict, Iterable, Optional, Tuple, Union
-
-well_known_implementations: Dict[str, str]
-registered: Dict[str, Callable[[], DOMImplementation]]
-
-def registerDOMImplementation(name: str, factory: Callable[[], DOMImplementation]) -> None: ...
-def getDOMImplementation(
-    name: Optional[str] = ..., features: Union[str, Iterable[Tuple[str, Optional[str]]]] = ...
-) -> DOMImplementation: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:30d0bac577c1a4cae4cd1d39416e5823c979e27fdc809f31ba382b1041c12adf
+size 472

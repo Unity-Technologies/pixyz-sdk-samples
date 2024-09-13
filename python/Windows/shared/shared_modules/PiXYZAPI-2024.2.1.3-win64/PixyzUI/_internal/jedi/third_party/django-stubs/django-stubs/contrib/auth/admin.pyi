@@ -1,18 +1,3 @@
-from typing import Any
-
-from django.core.handlers.wsgi import WSGIRequest
-from django.http.response import HttpResponse
-
-from django.contrib import admin
-
-csrf_protect_m: Any
-sensitive_post_parameters_m: Any
-
-class GroupAdmin(admin.ModelAdmin): ...
-
-class UserAdmin(admin.ModelAdmin):
-    change_user_password_template: Any = ...
-    add_fieldsets: Any = ...
-    add_form: Any = ...
-    change_password_form: Any = ...
-    def user_change_password(self, request: WSGIRequest, id: str, form_url: str = ...) -> HttpResponse: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:1fbc739d697b62c927e0a14a7d02dc630ba2861ad47d288786d514bd6909fdd5
+size 545

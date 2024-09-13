@@ -1,10 +1,3 @@
-import sys
-from typing import Any, Awaitable, Callable
-
-from .case import TestCase
-
-if sys.version_info >= (3, 8):
-    class IsolatedAsyncioTestCase(TestCase):
-        async def asyncSetUp(self) -> None: ...
-        async def asyncTearDown(self) -> None: ...
-        def addAsyncCleanup(self, __func: Callable[..., Awaitable[Any]], *args: Any, **kwargs: Any) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:0cf2971ee516ad1c7612e939eecb8e9cf9930953ce226bc319c5af2978852a7a
+size 382

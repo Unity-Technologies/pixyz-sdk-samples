@@ -1,12 +1,3 @@
-from typing import Any, NamedTuple
-from .utils.version import get_version as get_version
-
-VERSION: Any
-__version__: str
-
-def setup(set_prefix: bool = ...) -> None: ...
-
-# Used by mypy_django_plugin when returning a QuerySet row that is a NamedTuple where the field names are unknown
-class _NamedTupleAnyAttr(NamedTuple):
-    def __getattr__(self, item: str) -> Any: ...
-    def __setattr__(self, item: str, value: Any) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:54b96980150202eafd68e678a6cf565c53485dfd54dec790e61cd60e20454c64
+size 444

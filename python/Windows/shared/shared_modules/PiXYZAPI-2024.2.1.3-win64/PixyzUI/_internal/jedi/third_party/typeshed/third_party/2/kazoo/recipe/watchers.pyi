@@ -1,21 +1,3 @@
-from typing import Any
-
-log: Any
-
-class DataWatch:
-    def __init__(self, client, path, func=..., *args, **kwargs) -> None: ...
-    def __call__(self, func): ...
-
-class ChildrenWatch:
-    def __init__(self, client, path, func=..., allow_session_lost=..., send_event=...) -> None: ...
-    def __call__(self, func): ...
-
-class PatientChildrenWatch:
-    client: Any
-    path: Any
-    children: Any
-    time_boundary: Any
-    children_changed: Any
-    def __init__(self, client, path, time_boundary=...) -> None: ...
-    asy: Any
-    def start(self): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb932933cb00d5c929f3029326694e357bd9dcf8e80a24e97b6b141276b5e328
+size 572

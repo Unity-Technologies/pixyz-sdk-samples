@@ -1,6 +1,3 @@
-from datetime import datetime, timedelta, tzinfo
-from typing import Optional
-
-def default_tzinfo(dt: datetime, tzinfo: tzinfo) -> datetime: ...
-def today(tzinfo: Optional[tzinfo] = ...) -> datetime: ...
-def within_delta(dt1: datetime, dt2: datetime, delta: timedelta) -> bool: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8528cba3f05f9358e504fa0569bd0c60b6d05ecd3fa5e6098fd54aff07d7b50
+size 287

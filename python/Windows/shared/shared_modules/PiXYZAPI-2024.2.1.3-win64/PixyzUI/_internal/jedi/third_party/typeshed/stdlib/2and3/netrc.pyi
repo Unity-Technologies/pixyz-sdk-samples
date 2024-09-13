@@ -1,15 +1,3 @@
-from typing import Dict, List, Optional, Tuple
-
-class NetrcParseError(Exception):
-    filename: Optional[str]
-    lineno: Optional[int]
-    msg: str
-
-# (login, account, password) tuple
-_NetrcTuple = Tuple[str, Optional[str], Optional[str]]
-
-class netrc:
-    hosts: Dict[str, _NetrcTuple]
-    macros: Dict[str, List[str]]
-    def __init__(self, file: str = ...) -> None: ...
-    def authenticators(self, host: str) -> Optional[_NetrcTuple]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:a80a82d7b2d909451fe7dc6e386d5f7997a60390d1a2bed98d07a2171810cb48
+size 459

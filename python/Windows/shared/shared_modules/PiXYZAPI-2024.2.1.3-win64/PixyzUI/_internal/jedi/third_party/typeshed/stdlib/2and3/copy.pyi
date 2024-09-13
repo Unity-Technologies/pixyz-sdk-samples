@@ -1,14 +1,3 @@
-from typing import Any, Dict, Optional, TypeVar
-
-_T = TypeVar("_T")
-
-# None in CPython but non-None in Jython
-PyStringMap: Any
-
-# Note: memo and _nil are internal kwargs.
-def deepcopy(x: _T, memo: Optional[Dict[int, Any]] = ..., _nil: Any = ...) -> _T: ...
-def copy(x: _T) -> _T: ...
-
-class Error(Exception): ...
-
-error = Error
+version https://git-lfs.github.com/spec/v1
+oid sha256:c9de61b64e57019048a71ac6173e18f2b1aa855f8511c5b7acd05d7e3650a49d
+size 342

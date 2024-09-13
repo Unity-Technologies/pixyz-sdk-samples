@@ -1,14 +1,3 @@
-import string
-from typing import Any, Dict, List, Optional, Tuple, Union
-
-from django.http.request import HttpRequest
-
-from .base import BaseEngine
-
-class TemplateStrings(BaseEngine):
-    template_dirs: Tuple[str]
-    def __init__(self, params: Dict[str, Union[Dict[Any, Any], List[Any], bool, str]]) -> None: ...
-
-class Template(string.Template):
-    template: str
-    def render(self, context: Optional[Dict[str, str]] = ..., request: Optional[HttpRequest] = ...) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:a68661bf8d1570fde59ff40d7a22db9ef10ae75e10993d0529f1162459502ee4
+size 492

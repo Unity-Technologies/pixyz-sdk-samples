@@ -1,26 +1,3 @@
-from _typeshed import StrPath
-from typing import Dict, List, Optional, Text, Tuple, TypeVar
-
-_P = TypeVar("_P")
-_Label = Tuple[int, Optional[Text]]
-_DFA = List[List[Tuple[int, int]]]
-_DFAS = Tuple[_DFA, Dict[int, int]]
-
-class Grammar:
-    symbol2number: Dict[Text, int]
-    number2symbol: Dict[int, Text]
-    states: List[_DFA]
-    dfas: Dict[int, _DFAS]
-    labels: List[_Label]
-    keywords: Dict[Text, int]
-    tokens: Dict[int, int]
-    symbol2label: Dict[Text, int]
-    start: int
-    def __init__(self) -> None: ...
-    def dump(self, filename: StrPath) -> None: ...
-    def load(self, filename: StrPath) -> None: ...
-    def copy(self: _P) -> _P: ...
-    def report(self) -> None: ...
-
-opmap_raw: Text
-opmap: Dict[Text, Text]
+version https://git-lfs.github.com/spec/v1
+oid sha256:779d252bc7cb88723e438dc95b66d93a563da28ddc572d85804adffa57870488
+size 759

@@ -1,20 +1,3 @@
-from typing import Any, Pattern
-
-from markdown.extensions import Extension
-from markdown.treeprocessors import Treeprocessor
-
-def get_attrs(str): ...
-def isheader(elem): ...
-
-class AttrListTreeprocessor(Treeprocessor):
-    BASE_RE: str = ...
-    HEADER_RE: Pattern
-    BLOCK_RE: Pattern
-    INLINE_RE: Pattern
-    NAME_RE: Pattern
-    def assign_attrs(self, elem, attrs) -> None: ...
-    def sanitize_name(self, name): ...
-
-class AttrListExtension(Extension): ...
-
-def makeExtension(**kwargs): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c1b67f1c4b0879512aa6cb5433b0a3e38c14832e0be57a6e6257a441e257aa8
+size 518

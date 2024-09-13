@@ -1,17 +1,3 @@
-from typing import Any, List
-
-from django.template.base import Parser, Token
-
-from django.template import Node
-
-register: Any
-
-def localize(value: Any) -> str: ...
-def unlocalize(value: Any) -> str: ...
-
-class LocalizeNode(Node):
-    nodelist: List[Node] = ...
-    use_l10n: bool = ...
-    def __init__(self, nodelist: List[Node], use_l10n: bool) -> None: ...
-
-def localize_tag(parser: Parser, token: Token) -> LocalizeNode: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:31f1f3f582078fe935c36ba154e735dfa0ab33ca75ba5e7df6e9c19dac2c3ab4
+size 446

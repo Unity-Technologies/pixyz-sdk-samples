@@ -1,20 +1,3 @@
-from typing import Union
-
-from django.contrib.auth.models import AnonymousUser, User
-from django.core.handlers.wsgi import WSGIRequest
-from django.http.request import HttpRequest
-from django.utils.deprecation import MiddlewareMixin
-
-def get_user(request: WSGIRequest) -> Union[AnonymousUser, User]: ...
-
-class AuthenticationMiddleware(MiddlewareMixin):
-    def process_request(self, request: HttpRequest) -> None: ...
-
-class RemoteUserMiddleware(MiddlewareMixin):
-    header: str = ...
-    force_logout_if_no_header: bool = ...
-    def process_request(self, request: HttpRequest) -> None: ...
-    def clean_username(self, username: str, request: HttpRequest) -> str: ...
-
-class PersistentRemoteUserMiddleware(RemoteUserMiddleware):
-    force_logout_if_no_header: bool = ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:1440aa9d2f138417765539c801fcf786591f902cacb66228c0794dc4fcdc6b54
+size 794

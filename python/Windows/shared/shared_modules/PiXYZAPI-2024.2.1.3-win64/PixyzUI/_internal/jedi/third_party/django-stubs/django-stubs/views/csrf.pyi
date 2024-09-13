@@ -1,7 +1,3 @@
-from django.http.request import HttpRequest
-from django.http.response import HttpResponseForbidden
-
-CSRF_FAILURE_TEMPLATE: str
-CSRF_FAILURE_TEMPLATE_NAME: str
-
-def csrf_failure(request: HttpRequest, reason: str = ..., template_name: str = ...) -> HttpResponseForbidden: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:c89f539c9b2bd86da29a2a9df719503d84fac26953f68bac4671def6c48fd1a1
+size 281

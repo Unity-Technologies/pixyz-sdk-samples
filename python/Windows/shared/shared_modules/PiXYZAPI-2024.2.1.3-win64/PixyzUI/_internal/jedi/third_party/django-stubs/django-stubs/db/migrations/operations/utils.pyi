@@ -1,5 +1,3 @@
-from django.db.migrations.state import ProjectState
-
-from django.db.models.fields import Field
-
-def is_referenced_by_foreign_key(state: ProjectState, model_name_lower: str, field: Field, field_name: str) -> bool: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:f1856cb2c5b74300b96282e18870ddde5cf876d874ea85d58cb59310abaac56b
+size 222

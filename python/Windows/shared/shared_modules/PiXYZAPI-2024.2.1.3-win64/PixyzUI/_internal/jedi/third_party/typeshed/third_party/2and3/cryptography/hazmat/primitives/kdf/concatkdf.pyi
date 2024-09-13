@@ -1,24 +1,3 @@
-from typing import Optional
-
-from cryptography.hazmat.backends.interfaces import HashBackend, HMACBackend
-from cryptography.hazmat.primitives.hashes import HashAlgorithm
-from cryptography.hazmat.primitives.kdf import KeyDerivationFunction
-
-class ConcatKDFHash(KeyDerivationFunction):
-    def __init__(
-        self, algorithm: HashAlgorithm, length: int, otherinfo: Optional[bytes], backend: Optional[HashBackend] = ...
-    ): ...
-    def derive(self, key_material: bytes) -> bytes: ...
-    def verify(self, key_material: bytes, expected_key: bytes) -> None: ...
-
-class ConcatKDFHMAC(KeyDerivationFunction):
-    def __init__(
-        self,
-        algorithm: HashAlgorithm,
-        length: int,
-        salt: Optional[bytes],
-        otherinfo: Optional[bytes],
-        backend: Optional[HMACBackend] = ...,
-    ): ...
-    def derive(self, key_material: bytes) -> bytes: ...
-    def verify(self, key_material: bytes, expected_key: bytes) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:6220c6991a6a51c2ca576b67a5bc69c3cd709df113e8227cd8697f60b3db61e9
+size 975

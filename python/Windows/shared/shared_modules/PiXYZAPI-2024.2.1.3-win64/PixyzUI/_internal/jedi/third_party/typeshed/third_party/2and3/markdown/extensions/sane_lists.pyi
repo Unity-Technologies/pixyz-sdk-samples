@@ -1,14 +1,3 @@
-from typing import Any, Pattern
-
-from markdown.blockprocessors import OListProcessor, UListProcessor
-from markdown.extensions import Extension
-
-class SaneOListProcessor(OListProcessor):
-    def __init__(self, parser) -> None: ...
-
-class SaneUListProcessor(UListProcessor):
-    def __init__(self, parser) -> None: ...
-
-class SaneListExtension(Extension): ...
-
-def makeExtension(**kwargs): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:02abe3b563a0392f7da470b0c6de99e5a1d2b3e999f05cc468c073058d57200c
+size 406

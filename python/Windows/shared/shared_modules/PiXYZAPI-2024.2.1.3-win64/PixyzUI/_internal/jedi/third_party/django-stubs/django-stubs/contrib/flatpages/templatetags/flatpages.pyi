@@ -1,16 +1,3 @@
-from typing import Any, Optional
-
-from django import template
-from django.template.base import Parser, Token
-from django.template.context import Context
-
-register: Any
-
-class FlatpageNode(template.Node):
-    context_name: str = ...
-    starts_with: None = ...
-    user: None = ...
-    def __init__(self, context_name: str, starts_with: Optional[str] = ..., user: Optional[str] = ...) -> None: ...
-    def render(self, context: Context) -> str: ...
-
-def get_flatpages(parser: Parser, token: Token) -> FlatpageNode: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:80181aebe7aed3c3c2ef8ded49507716f3e6aefdcf0202e4723a5fe7fa192b70
+size 534

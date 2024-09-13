@@ -1,17 +1,3 @@
-from typing import Any, Callable, Dict, List
-
-from django.template.base import Parser, Token
-from django.template.context import Context
-from django.template.library import InclusionNode
-from django.utils.safestring import SafeText
-
-class InclusionAdminNode(InclusionNode):
-    args: List[Any]
-    func: Callable
-    kwargs: Dict[Any, Any]
-    takes_context: bool
-    template_name: str = ...
-    def __init__(
-        self, parser: Parser, token: Token, func: Callable, template_name: str, takes_context: bool = ...
-    ) -> None: ...
-    def render(self, context: Context) -> SafeText: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:f2b29fcd1ea00815174551c1f1ca34867bb7f25e20b55761a897e7b3421197a7
+size 609

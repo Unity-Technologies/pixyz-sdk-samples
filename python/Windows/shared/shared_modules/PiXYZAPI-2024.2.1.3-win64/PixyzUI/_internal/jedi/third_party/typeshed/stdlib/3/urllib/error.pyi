@@ -1,13 +1,3 @@
-from typing import IO, Mapping, Optional, Union
-from urllib.response import addinfourl
-
-# Stubs for urllib.error
-
-class URLError(IOError):
-    reason: Union[str, BaseException]
-
-class HTTPError(URLError, addinfourl):
-    code: int
-    def __init__(self, url: str, code: int, msg: str, hdrs: Mapping[str, str], fp: Optional[IO[bytes]]) -> None: ...
-
-class ContentTooShortError(URLError): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:00811a53abc941f85b780e13fed89ea6ee30e4f324678299413aa4070c37bd29
+size 404

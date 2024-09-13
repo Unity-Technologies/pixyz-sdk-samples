@@ -1,16 +1,3 @@
-from typing import Pattern
-
-from .compat import tobytes as tobytes
-
-WS: str
-OWS: str
-RWS: str
-BWS = str
-TCHAR: str
-OBS_TEXT: str
-TOKEN: str
-VCHAR: str
-FIELD_VCHAR: str
-FIELD_CONTENT: str
-FIELD_VALUE: str
-HEADER_FIELD: Pattern
+version https://git-lfs.github.com/spec/v1
+oid sha256:242cc35cbe7a5c6a390ee546da8a778f8e82ca706659dc63980ffdb8fa1c2152
+size 242

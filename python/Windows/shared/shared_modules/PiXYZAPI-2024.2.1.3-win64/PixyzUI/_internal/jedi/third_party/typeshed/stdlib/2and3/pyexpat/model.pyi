@@ -1,11 +1,3 @@
-XML_CTYPE_ANY: int
-XML_CTYPE_CHOICE: int
-XML_CTYPE_EMPTY: int
-XML_CTYPE_MIXED: int
-XML_CTYPE_NAME: int
-XML_CTYPE_SEQ: int
-
-XML_CQUANT_NONE: int
-XML_CQUANT_OPT: int
-XML_CQUANT_PLUS: int
-XML_CQUANT_REP: int
+version https://git-lfs.github.com/spec/v1
+oid sha256:b52ed00eb10ddafcd4e78febde9c79560b0d3cf84710157349df22e0b7e51c95
+size 216

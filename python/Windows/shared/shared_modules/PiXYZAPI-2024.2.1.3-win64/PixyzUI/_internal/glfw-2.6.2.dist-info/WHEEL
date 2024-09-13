@@ -1,16 +1,3 @@
-Wheel-Version: 1.0
-Generator: bdist_wheel (0.37.1)
-Root-Is-Purelib: true
-Tag: py2-none-win_amd64
-Tag: py27-none-win_amd64
-Tag: py3-none-win_amd64
-Tag: py30-none-win_amd64
-Tag: py31-none-win_amd64
-Tag: py32-none-win_amd64
-Tag: py33-none-win_amd64
-Tag: py34-none-win_amd64
-Tag: py35-none-win_amd64
-Tag: py36-none-win_amd64
-Tag: py37-none-win_amd64
-Tag: py38-none-win_amd64
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:37bcb6c4920cf1f344a2012451e07c6658bbb9ffdab6024f6484af988ea31ced
+size 388

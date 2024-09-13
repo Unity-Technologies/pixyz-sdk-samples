@@ -1,9 +1,3 @@
-from typing import Tuple
-
-from . import _LangModelType
-
-Latin2_HungarianCharToOrderMap: Tuple[int, ...]
-win1250HungarianCharToOrderMap: Tuple[int, ...]
-HungarianLangModel: Tuple[int, ...]
-Latin2HungarianModel: _LangModelType
-Win1250HungarianModel: _LangModelType
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb735b66c439884c3c8c92bfec6537323100db6f012b63fceeb70d49cb7897c8
+size 272

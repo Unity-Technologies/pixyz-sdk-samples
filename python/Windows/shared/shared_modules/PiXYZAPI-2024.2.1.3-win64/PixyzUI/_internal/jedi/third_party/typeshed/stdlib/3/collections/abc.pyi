@@ -1,27 +1,3 @@
-from . import (
-    AsyncGenerator as AsyncGenerator,
-    AsyncIterable as AsyncIterable,
-    AsyncIterator as AsyncIterator,
-    Awaitable as Awaitable,
-    ByteString as ByteString,
-    Callable as Callable,
-    Collection as Collection,
-    Container as Container,
-    Coroutine as Coroutine,
-    Generator as Generator,
-    Hashable as Hashable,
-    ItemsView as ItemsView,
-    Iterable as Iterable,
-    Iterator as Iterator,
-    KeysView as KeysView,
-    Mapping as Mapping,
-    MappingView as MappingView,
-    MutableMapping as MutableMapping,
-    MutableSequence as MutableSequence,
-    MutableSet as MutableSet,
-    Reversible as Reversible,
-    Sequence as Sequence,
-    Set as Set,
-    Sized as Sized,
-    ValuesView as ValuesView,
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:8267f4482a477f72aef7f56adbc3bfa3ca8d933493b5ef2fbd966fbe7ed94d04
+size 771

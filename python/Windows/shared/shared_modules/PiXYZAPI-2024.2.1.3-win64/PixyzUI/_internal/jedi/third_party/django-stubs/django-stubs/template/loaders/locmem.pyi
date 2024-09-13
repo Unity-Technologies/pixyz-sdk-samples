@@ -1,11 +1,3 @@
-from typing import Dict
-
-from django.template.base import Origin
-from django.template.engine import Engine
-
-from .base import Loader as BaseLoader
-
-class Loader(BaseLoader):
-    templates_dict: Dict[str, str] = ...
-    def __init__(self, engine: Engine, templates_dict: Dict[str, str]) -> None: ...
-    def get_contents(self, origin: Origin) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:f9a1aa9a84647261cd091aa01d066ec63f39d51b96147a173fb48ec3cf82c442
+size 365

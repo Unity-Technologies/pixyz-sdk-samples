@@ -1,9 +1,3 @@
-from typing import Optional
-
-from cryptography.hazmat.backends.interfaces import ScryptBackend
-from cryptography.hazmat.primitives.kdf import KeyDerivationFunction
-
-class Scrypt(KeyDerivationFunction):
-    def __init__(self, salt: bytes, length: int, n: int, r: int, p: int, backend: Optional[ScryptBackend] = ...): ...
-    def derive(self, key_material: bytes) -> bytes: ...
-    def verify(self, key_material: bytes, expected_key: bytes) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:bee71beb197c3f86142c7e023c9a62df930a8a6085e157d7b107e61a7f1047cc
+size 461

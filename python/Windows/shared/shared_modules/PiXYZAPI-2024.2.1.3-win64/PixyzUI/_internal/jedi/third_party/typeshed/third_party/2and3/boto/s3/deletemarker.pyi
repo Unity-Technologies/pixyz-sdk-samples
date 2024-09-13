@@ -1,12 +1,3 @@
-from typing import Any, Optional
-
-class DeleteMarker:
-    bucket: Any
-    name: Any
-    version_id: Any
-    is_latest: bool
-    last_modified: Any
-    owner: Any
-    def __init__(self, bucket: Optional[Any] = ..., name: Optional[Any] = ...) -> None: ...
-    def startElement(self, name, attrs, connection): ...
-    def endElement(self, name, value, connection): ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f7e8c57a5a4a06e57bb94bcd9e4fd99990e691179de5f6dff47d0f9b09f6ec3
+size 378

@@ -1,16 +1,3 @@
-import sys
-from typing import BinaryIO, Optional, Text, Union
-
-_File = Union[Text, BinaryIO]
-
-class Error(Exception): ...
-
-if sys.version_info >= (3, 7):
-    def encode(
-        in_file: _File, out_file: _File, name: Optional[str] = ..., mode: Optional[int] = ..., *, backtick: bool = ...
-    ) -> None: ...
-
-else:
-    def encode(in_file: _File, out_file: _File, name: Optional[str] = ..., mode: Optional[int] = ...) -> None: ...
-
-def decode(in_file: _File, out_file: Optional[_File] = ..., mode: Optional[int] = ..., quiet: int = ...) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:ef15db77f0e42e0270da8014fd54c59c3e8a381a409ac2b600c5ac1b1924ff93
+size 565

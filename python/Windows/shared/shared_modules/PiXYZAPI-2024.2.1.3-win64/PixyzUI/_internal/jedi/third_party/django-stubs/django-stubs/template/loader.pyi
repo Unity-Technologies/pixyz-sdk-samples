@@ -1,14 +1,3 @@
-from typing import Any, Dict, List, Optional, Union
-from . import engines as engines  # noqa: F401
-
-from django.http.request import HttpRequest
-from django.template.exceptions import TemplateDoesNotExist as TemplateDoesNotExist  # noqa: F401
-
-def get_template(template_name: str, using: Optional[str] = ...) -> Any: ...
-def select_template(template_name_list: Union[List[str], str], using: Optional[str] = ...) -> Any: ...
-def render_to_string(
-    template_name: Union[List[str], str],
-    context: Optional[Dict[str, Any]] = ...,
-    request: Optional[HttpRequest] = ...,
-    using: Optional[str] = ...,
-) -> str: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:51a2b268ebb5586e84e1a2d28e52b93565e608a7c6f9cc229b072941abbba23b
+size 634

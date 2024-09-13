@@ -1,24 +1,3 @@
-from .decorators import register as register
-from .filters import (
-    AllValuesFieldListFilter as AllValuesFieldListFilter,
-    BooleanFieldListFilter as BooleanFieldListFilter,
-    ChoicesFieldListFilter as ChoicesFieldListFilter,
-    DateFieldListFilter as DateFieldListFilter,
-    FieldListFilter as FieldListFilter,
-    ListFilter as ListFilter,
-    RelatedFieldListFilter as RelatedFieldListFilter,
-    RelatedOnlyFieldListFilter as RelatedOnlyFieldListFilter,
-    SimpleListFilter as SimpleListFilter,
-)
-from .helpers import ACTION_CHECKBOX_NAME as ACTION_CHECKBOX_NAME
-from .options import (
-    HORIZONTAL as HORIZONTAL,
-    VERTICAL as VERTICAL,
-    ModelAdmin as ModelAdmin,
-    StackedInline as StackedInline,
-    TabularInline as TabularInline,
-)
-from .sites import AdminSite as AdminSite, site as site
-from . import checks as checks
-
-def autodiscover() -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:e33dca3affd8f0bbf91713ebc0360f4f8bb9fa969e0c94af0aaca284d08ee79e
+size 905

@@ -1,10 +1,3 @@
-from distutils.cmd import Command
-from typing import ClassVar, List, Optional, Tuple
-
-class install_egg_info(Command):
-    description: ClassVar[str]
-    user_options: ClassVar[List[Tuple[str, Optional[str], str]]]
-    def initialize_options(self) -> None: ...
-    def finalize_options(self) -> None: ...
-    def run(self) -> None: ...
-    def get_outputs(self) -> List[str]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:22795b824317ffd0117d7187e9690051e7342cbdd444825ac0b0c6cfc760e29e
+size 390

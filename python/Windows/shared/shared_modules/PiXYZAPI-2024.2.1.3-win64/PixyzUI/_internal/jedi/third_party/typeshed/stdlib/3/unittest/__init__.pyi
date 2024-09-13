@@ -1,11 +1,3 @@
-from typing import Optional
-from unittest.async_case import *
-from unittest.case import *
-from unittest.loader import *
-from unittest.main import *
-from unittest.result import TestResult as TestResult
-from unittest.runner import *
-from unittest.signals import *
-from unittest.suite import *
-
-def load_tests(loader: TestLoader, tests: TestSuite, pattern: Optional[str]) -> TestSuite: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:b38d2dbdc651fa9908dcde254da368538b13a8a60e5e694e6c7f36170625ac05
+size 398

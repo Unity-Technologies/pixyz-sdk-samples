@@ -1,12 +1,3 @@
-from typing import IO, Any, Text, Union
-
-from simplejson.decoder import JSONDecoder as JSONDecoder
-from simplejson.encoder import JSONEncoder as JSONEncoder, JSONEncoderForHTML as JSONEncoderForHTML
-from simplejson.scanner import JSONDecodeError as JSONDecodeError
-
-_LoadsString = Union[Text, bytes, bytearray]
-
-def dumps(obj: Any, *args: Any, **kwds: Any) -> str: ...
-def dump(obj: Any, fp: IO[str], *args: Any, **kwds: Any) -> None: ...
-def loads(s: _LoadsString, **kwds: Any) -> Any: ...
-def load(fp: IO[str], **kwds: Any) -> Any: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:302740c20d59c74f18d980e6df81b96f0e05a260db6ddb118e9798d122d722d3
+size 550

@@ -1,8 +1,3 @@
-from typing import Any, Iterable, Optional, Text
-
-def colored(
-    text: Text, color: Optional[Text] = ..., on_color: Optional[Text] = ..., attrs: Optional[Iterable[Text]] = ...
-) -> Text: ...
-def cprint(
-    text: Text, color: Optional[Text] = ..., on_color: Optional[Text] = ..., attrs: Optional[Iterable[Text]] = ..., **kwargs: Any
-) -> None: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:d70fb3de42b8da20ae107ddf350ce9938e1fb28dee23e35d689411332cf7dcba
+size 358

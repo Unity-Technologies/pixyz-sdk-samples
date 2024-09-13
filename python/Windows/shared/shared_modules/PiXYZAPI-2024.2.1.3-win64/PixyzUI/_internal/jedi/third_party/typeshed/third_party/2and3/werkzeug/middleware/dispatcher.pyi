@@ -1,8 +1,3 @@
-from _typeshed.wsgi import StartResponse, WSGIApplication, WSGIEnvironment
-from typing import Iterable, Mapping, Optional, Text
-
-class DispatcherMiddleware(object):
-    app: WSGIApplication
-    mounts: Mapping[Text, WSGIApplication]
-    def __init__(self, app: WSGIApplication, mounts: Optional[Mapping[Text, WSGIApplication]] = ...) -> None: ...
-    def __call__(self, environ: WSGIEnvironment, start_response: StartResponse) -> Iterable[bytes]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e62c97e6f966abf5a7f51d0c6fa5cc916c7e4f9db9c96a280131b2732f06e8d
+size 459

@@ -1,15 +1,3 @@
-from typing import List, NamedTuple
-
-class struct_spwd(NamedTuple):
-    sp_nam: str
-    sp_pwd: str
-    sp_lstchg: int
-    sp_min: int
-    sp_max: int
-    sp_warn: int
-    sp_inact: int
-    sp_expire: int
-    sp_flag: int
-
-def getspall() -> List[struct_spwd]: ...
-def getspnam(name: str) -> struct_spwd: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:c8ffbc7a0554d53bf64d642aaec4a42253c48d85f0ab9a1abac4b9fb4104aea8
+size 323

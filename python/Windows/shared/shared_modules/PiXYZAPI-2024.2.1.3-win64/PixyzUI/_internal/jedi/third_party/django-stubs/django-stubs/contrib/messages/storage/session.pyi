@@ -1,10 +1,3 @@
-from typing import Any, List, Optional, Sequence, Union
-
-from django.contrib.messages.storage.base import BaseStorage
-from django.http.request import HttpRequest
-
-class SessionStorage(BaseStorage):
-    session_key: str = ...
-    def __init__(self, request: HttpRequest, *args: Any, **kwargs: Any) -> None: ...
-    def serialize_messages(self, messages: Sequence[Any]) -> str: ...
-    def deserialize_messages(self, data: Optional[Union[List[Any], str]]) -> Optional[List[Any]]: ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ddeea614bb551c3649d80c5695a252579d80d585d30930105f025d9263d677f
+size 492
