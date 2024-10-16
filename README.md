@@ -1,19 +1,16 @@
-# Pixyz Engine SDK Samples
+# Pixyz SDK Samples
 
-This GitHub repo contains a set of Pixyz Engine SDK samples to help users get started with the Pixyz SDK.
+This GitHub repo contains a set of samples to help users get started with the Pixyz SDK.
 
 ## Documentation
-**Unity Cloud SDK** 
-https://docs.unity.com/cloud/en-us/asset-manager/python-sdk
-
-**pixyz SDK**
-https://www.pixyz-software.com/documentations/html/2024.3/sdk/manual/index.html
+* [Unity Cloud SDK](https://docs.unity.com/cloud/en-us/asset-manager/python-sdk) 
+* [Pixyz SDK 2024.2](https://www.pixyz-software.com/documentations/html/2024.2/sdk/manual/index.html)
 
 ## Samples
 
-- Import Optimize Export: This simple sample forms the basis of all the other samples. It demonstrates how to simply initialize pixyz SDK, import a model, tesselate it, and export the model. In addition, it demonstrates how you can use pixyz SDK to capture screenshots and extract metadata from your model hierarchy.
-- Folder Watcher: This sample watches a folder for new models to be pasted into it and then imports and processes them using the functions defined in the previous sample. The sample also demonstrates how to import settings via a config.json file and upload exported files to Unity Cloud Asset Manager. This sample is based on the old pixyz Scenario Processor sample and is a great way to see the differences between SDK and the legacy Scenario Processor.
-- Parallel Processing: This sample shows how pixyz SDK can be used across multiple processes, demonstrating how you can start a process, terminate a process and monitor processes in parallel from a simple py QT UI. This sample requires multiple pixyz SDK licenses but demonstrates the power of parallel processing and operating using individual processes rather than a single process that runs for a long time.
+- **[Import Optimize Export](#import-optimize-export)**: this simple sample forms the basis of all the other samples. It demonstrates how to simply initialize Pixyz SDK, import a model, tesselate it, and export the model. In addition, it demonstrates how you can use Pixyz SDK to capture screenshots and extract metadata from your model hierarchy.
+- **[Folder Watcher](#folder-watcher)**: this sample watches a folder for new models to be pasted into it and then imports and processes them using the functions defined in the previous sample. The sample also demonstrates how to import settings via a config.json file and upload exported files to Unity Cloud Asset Manager. This sample is based on the old Pixyz Scenario Processor sample and is a great way to see the differences between SDK and the legacy Scenario Processor.
+- **[Parallel Processing](#parallel-processing)**: this sample shows how Pixyz SDK can be used across multiple processes, demonstrating how you can start a process, terminate a process and monitor processes in parallel from a simple py QT UI. This sample requires multiple Pixyz SDK licenses but demonstrates the power of parallel processing and operating using individual processes rather than a single process that runs for a long time.
 
 ## Git LFS Setup
 
@@ -33,7 +30,7 @@ This repository uses Git LFS (Large File Storage) to manage large files. To ensu
    <img src="documentation/img/pycharm_setup_1.png" alt="pycharm new project" width="360">
    <img src="documentation/img/pycharm_setup_2.png" alt="pycharm setup project" width="600">
 
-3. Add pixyz SDK bin and lib folder to the projects interpreter path. To do this in pycharm go to Settings>Python Interpreter>Show All>Show Interpreter Paths>Add(+)
+3. Add Pixyz SDK bin and lib folder to the projects interpreter path. To do this in pycharm go to Settings>Python Interpreter>Show All>Show Interpreter Paths>Add(+)
 Then Select the bin and lib folder located at [Project directory]/shared/shared_modules/PiXYZAPI-XXXX.X.X.X/
 
 <img src="documentation/img/pycharm_interpreter.png" alt="pycharm create interpreter" width ="600">
@@ -49,7 +46,7 @@ Then Select the bin and lib folder located at [Project directory]/shared/shared_
 
 Note: All the samples use the common functions defined in the ImportOptimiseExport script. You will need to follow these first initial steps for other samples to work.
 
-**Import Optimise Export**
+### Import Optimize Export
 
 1. First we need to setup our Pixyz SDK license - Open the script shared/shared_utils/pixyz_utils/pixyz_init.py 
 2. Replace "VALIDATION_KEY" with the Validation key you would have recieved
@@ -61,8 +58,8 @@ Note: All the samples use the common functions defined in the ImportOptimiseExpo
 
 7. To run the script just press the play button indicated in the image.
    This will:
-   1. Initialise pixyz
-   2. Get a pixyz license from the server
+   1. Initialise Pixyz
+   2. Get a Pixyz license from the server
    3. Import the SkidLoader model located in the shared models folder contained in this repository
    4. Generate a screen shot before tesselation, saving it to the skidloaders folder
    5. Tessellate the model using the prepare function defined in this script
@@ -70,7 +67,7 @@ Note: All the samples use the common functions defined in the ImportOptimiseExpo
    7. Extract the models objects names, transforms and metadata to a json file in the models folder
    8. Export the tessellated model as a glb file. You can change the extension by simply changing the extension argument given in the exportmodel function call
 
-**Folder Watcher**
+### Folder Watcher
 
 Note: This sample can use the Unity cloud SDK to upload files straight to Asset Manager, to use this function make sure to install the Unity Cloud SDK using step 7 in the installation steps.
 
@@ -94,13 +91,13 @@ Note: This sample can use the Unity cloud SDK to upload files straight to Asset 
 16. Copy paste a single file into the folder watcher input folder directory
 17. Exported files will appear in the output folder and if you have used Unity Cloud AssetManager they will also appear in your project on asset manager
 
-**Parallel Processing**
+### Parallel Processing
 
-Note: This sample consumes multiple pixyz licenses at the same time as they are initialized in separate processes that run in parallel
+Note: This sample consumes multiple Pixyz licenses at the same time as they are initialized in separate processes that run in parallel
 1. Make sure that you have pyside6 installed as per step 8 in the installation doc. This is what is used to create the user interface
 2. Locate the folder ParallelProcessing. You will see two scripts, one is the main script that controls the UI and exectues the second script per process that is started.
 3. Run the main script, you will see a new window appear, you can use this window to add new files to import by using the + button at the bottom.
-4. Each file that you import will start a new process and consume a node of pixyz SDK.
+4. Each file that you import will start a new process and consume a node of Pixyz SDK.
 5. These will run in parallel until completed or terminated.  
 6. All processes that are running or completed will be present in the main UI process.
 7. Any information that is printed to the console from the sub process will be shown in the label field of that process in the UI
