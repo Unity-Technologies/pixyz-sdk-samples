@@ -5,8 +5,9 @@ import ctypes
 import pxz
 
 current_progress = 0
-product_name = "PixyzSDK"
-validation_key = "VALIDATION_KEY"
+# By default, you don't need a product/validation key except for version before 2024.2.0.24 and special cases
+product_name = None
+validation_key = None
 server_name = "SERVER_HOSTNAME"
 port = 27005
 
@@ -14,7 +15,10 @@ port = 27005
 def initPixyz():
     # init Pixyz
     print("Initializing pixyz sdk")
-    pxz.initialize(product_name, validation_key)
+    if validation_key is None:
+        pxz.initialize()
+    else:
+        pxz.initialize(product_name, validation_key)
 
     if debuggerIsActive():
         # set log level to INFO so that we can see the logs in the console
