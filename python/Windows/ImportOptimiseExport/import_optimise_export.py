@@ -72,10 +72,10 @@ def prepareModel(root):
     tolerance = min(math_utils.aabb_diag_length(scene.getAABB([root])) / 1000, 0.1)
     print("Repairing CAD... ")
     algo.repairCAD([root], tolerance, False)
-    print("Repairing Meshes... ")
-    algo.repairMesh([root], tolerance, True, False)
     print("Tessellating Meshes... ")
     algo.tessellate([root], tolerance, -1, -1)
+    print("Repairing Meshes... ")
+    algo.repairMesh([root], tolerance, True, False)
 
 
 def exportModel(filepath, extension, root):
