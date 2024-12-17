@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <RuntimeHostConfigurationOption Include="System.Runtime.Loader.UseRidGraph" Value="true"/>
+    <Compile Include="..\..\shared\shared_utils\MathUtils.cs" Link="MathUtils.cs" />
+    <Compile Include="..\..\shared\shared_utils\PixyzUtils.cs" Link="PixyzUtils.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Runtime.Loader.UseRidGraph" Value="true" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="PiXYZCSharpAPI" Version="2024.3.0.8-win64" />
   </ItemGroup>
   
