@@ -2,4 +2,4 @@
 --extra-index-url https://unity3ddist.jfrog.io/artifactory/api/pypi/am-pypi-prod-local/simple
 pxz
 pyside6
-unity-cloud
+unity-cloud==0.10.3
