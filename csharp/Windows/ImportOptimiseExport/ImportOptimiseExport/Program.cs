@@ -16,6 +16,9 @@ namespace PiXYZDemo
     {
         static PiXYZAPI api = PiXYZAPI.Initialize();
 
+        static string serverName = "Server Name";
+        static ushort serverPort = 27005;
+
         static void OptimiseModel(uint root, string fileName)
         {
             var stats = PixyzUtils.GetStats(api, root);
@@ -102,7 +105,7 @@ namespace PiXYZDemo
         {
             if (!api.Core.CheckLicense())
             {
-                api.Core.ConfigureLicenseServer("lics-it-gcp-p01", 27005, true);
+                api.Core.ConfigureLicenseServer(serverName, serverPort, true);
                 Console.WriteLine("Configured license server.");
             }
 

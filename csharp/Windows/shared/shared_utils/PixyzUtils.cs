@@ -1,12 +1,6 @@
-﻿using System;
-using static System.Formats.Asn1.AsnWriter;
-using System.Xml.Linq;
-using System.Xml;
-
-namespace PiXYZDemo
+﻿namespace PiXYZDemo
 {
     using Newtonsoft.Json;
-    using System.Diagnostics;
     using UnityEngine.Pixyz.API;
     using UnityEngine.Pixyz.Geom;
     using UnityEngine.Pixyz.Scene;
@@ -84,12 +78,12 @@ namespace PiXYZDemo
             Console.WriteLine($"{"parts",-20}{n_parts} -> {_n_parts}\n");
         }
 
-        static Dictionary<string, string> GetMetadataDict(MetadataDefinition metadataDefinition)
+        static Dictionary<string, string> GetMetadataDict(PropertyValue propertyValue)
         {
             return new Dictionary<string, string>
             {
-                { "name", "metadata.Name" },
-                { "value", "metadata.Value" }
+                { "name", propertyValue.name },
+                { "value", propertyValue.value }
             };
         }
 
@@ -115,18 +109,24 @@ namespace PiXYZDemo
 
             if (api.Scene.HasComponent(occurrence, ComponentType.Metadata))
             {
-                var metadata = api.Scene.GetComponent(occurrence, ComponentType.Metadata);
 
-                var occurrences = new MetadataList((int)metadata);
+                var metadataComponent = api.Scene.GetComponent(occurrence, ComponentType.Metadata);
+                var occurrences = new MetadataList(1);
+                occurrences[0] = metadataComponent;
 
-                var metadataDefinitions = api.Scene.GetMetadatasDefinitions(occurrences);
+                MetadataDefinitionList metadataDefinitions = api.Scene.GetMetadatasDefinitions(occurrences);
+
+
+                MetadataDefinition metadataDefinition = metadataDefinitions[0];
 
                 var metadataList = new List<Dictionary<string, string>>();
-                foreach (var definition in metadataDefinitions.list)
+
+                foreach (PropertyValue propertyValue in metadataDefinition._base.list)
                 {
-                    metadataList.Add(GetMetadataDict(definition));
+                    metadataList.Add(GetMetadataDict(propertyValue));
                 }
-                //hierarchyDict.Add("metadata", metadataList);
+
+                hierarchyDict.Add("metadata", metadataList);
             }
 
             return hierarchyDict;
