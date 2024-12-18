@@ -29,7 +29,10 @@ def initPixyz():
 
     # add all tokens
     for token in pxz.core.listTokens():
-        pxz.core.needToken(token)
+        try:
+            pxz.core.needToken(token)
+        except:
+            pass
     if os.name == "nt":
         initializeDedicatedGraphics()
 

@@ -25,7 +25,7 @@ This GitHub repo contains a set of samples to help users get started with the Pi
    <img src="documentation/img/git_clone_2.png" alt="git client gui" width="350">
 
 2. Create or open a Python project using your script editor of choice. 
-3. In `Pixyz-sdk-samples/python/Windows` run `pip install -r requirements.txt` in your terminal. it will retrieve and install the latest version of Pixyz SDK and Unity Cloud SDK.
+3. In `Pixyz-sdk-samples/python/Windows` run `pip install -r requirements.txt` in your terminal. It will retrieve and install the latest versions of Pixyz SDK and Unity Cloud SDK.
 4. Open the `shared/shared_utils/pixyz_utils/pixyz_init.py` script and:
    1. Replace "SERVER_HOSTNAME" with the name of your license server, you can also set an IP address instead
    2. Set the port number to match with your license server
