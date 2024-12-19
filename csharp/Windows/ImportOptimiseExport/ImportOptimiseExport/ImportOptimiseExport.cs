@@ -12,16 +12,11 @@ namespace PiXYZDemo
     using System.Xml.Linq;
     using UnityEngine.Pixyz.API;
 
-    class Program
+    class ImportOptimiseExport
     {
-        static PiXYZAPI api = PiXYZAPI.Initialize();
-
-        static string serverName = "Server Name";
-        static ushort serverPort = 27005;
-
         static void OptimiseModel(uint root, string fileName)
         {
-            var stats = PixyzUtils.GetStats(api, root);
+            var stats = PixyzUtils.GetStats(root);
             var t0 = stats.Item1;
             var n_triangles = stats.Item2;
             var n_vertices = stats.Item3;
@@ -31,28 +26,28 @@ namespace PiXYZDemo
 
             Console.WriteLine("Removing Holes...");
             double diameter = 10;
-            api.Algo.RemoveHoles(occurrences, true, false, false, diameter, 0);
+            PixyzInit.api.Algo.RemoveHoles(occurrences, true, false, false, diameter, 0);
 
             Console.WriteLine("Delete Patches...");
-            api.Algo.DeletePatches(occurrences, true);
+            PixyzInit.api.Algo.DeletePatches(occurrences, true);
 
             Console.WriteLine("Decimating...");
-            api.Algo.Decimate(occurrences, 1, 0.1, 3, -1, false);
+            PixyzInit.api.Algo.Decimate(occurrences, 1, 0.1, 3, -1, false);
 
             Console.WriteLine("Removing Hidden Geometries...");
-            api.Algo.RemoveOccludedGeometries(occurrences, SelectionLevel.Polygons, 1024, 16, 90, false, 1);
+            PixyzInit.api.Algo.RemoveOccludedGeometries(occurrences, SelectionLevel.Polygons, 1024, 16, 90, false, 1);
 
-            var newStats = PixyzUtils.GetStats(api, root);
+            var newStats = PixyzUtils.GetStats(root);
             var t1 = newStats.Item1;
             PixyzUtils.PrintStats(fileName, t1 - t0, n_triangles, newStats.Item2, n_vertices, newStats.Item3, n_parts, newStats.Item4);
         }
 
-        static void ConvertFile(string inputFile, string outputFolder, List<string> extensions, bool optimization, string orgId, string projId, string collectionPath, List<string> tags)
+        public static void ConvertFile(string inputFile, string outputFolder, List<string> extensions, bool optimization, string orgId, string projId, string collectionPath, List<string> tags)
         {
             var modelFiles = new List<string>();
             var fileName = Path.GetFileNameWithoutExtension(inputFile);
 
-            api.Core.SetLogFile(Path.Combine(outputFolder, fileName + ".log"));
+            PixyzInit.api.Core.SetLogFile(Path.Combine(outputFolder, fileName + ".log"));
 
             var root = ImportModel(inputFile);
 
@@ -66,7 +61,7 @@ namespace PiXYZDemo
             foreach (var extension in extensions)
             {
                 Console.WriteLine($"Exporting {extension}...");
-                api.IO.ExportScene(Path.Combine(outputFolder, fileName + extension));
+                PixyzInit.api.IO.ExportScene(Path.Combine(outputFolder, fileName + extension));
                 modelFiles.Add(Path.Combine(outputFolder, fileName + extension));
             }
         }
@@ -74,7 +69,7 @@ namespace PiXYZDemo
         static uint ImportModel(string filepath)
         {
             Console.WriteLine($"Importing {filepath}...");
-            return api.IO.ImportScene(filepath);
+            return PixyzInit.api.IO.ImportScene(filepath);
         }
 
         static void PrepareModel(uint root)
@@ -82,46 +77,23 @@ namespace PiXYZDemo
             var occurrences = new OccurrenceList((int)root);
 
             Console.WriteLine("Calculating Tolerances... ");
-            double tolerance = Math.Min(MathUtils.AabbDiagLength(api.Scene.GetAABB(occurrences)) / 1000, 0.1);
+            double tolerance = Math.Min(MathUtils.AabbDiagLength(PixyzInit.api.Scene.GetAABB(occurrences)) / 1000, 0.1);
 
             Console.WriteLine("Repairing CAD... ");
-            api.Algo.RepairCAD(occurrences, tolerance, false);
+            PixyzInit.api.Algo.RepairCAD(occurrences, tolerance, false);
 
             Console.WriteLine("Repairing Meshes... ");
-            api.Algo.RepairMesh(occurrences, tolerance, true, false);
+            PixyzInit.api.Algo.RepairMesh(occurrences, tolerance, true, false);
 
             Console.WriteLine("Tessellating Meshes... ");
-            api.Algo.Tessellate(occurrences, tolerance, -1, -1);
+            PixyzInit.api.Algo.Tessellate(occurrences, tolerance, -1, -1);
         }
 
         static void ExportModel(string filepath, string extension, uint root)
         {
             var finalPath = Path.Combine(Path.GetDirectoryName(filepath), Path.GetFileNameWithoutExtension(filepath) + extension);
             Console.WriteLine($"Exporting {finalPath}...");
-            api.IO.ExportScene(finalPath, root);
-        }
-
-        static void ConfigureLicenseAndTokens()
-        {
-            if (!api.Core.CheckLicense())
-            {
-                api.Core.ConfigureLicenseServer(serverName, serverPort, true);
-                Console.WriteLine("Configured license server.");
-            }
-
-            Console.WriteLine("Adding available tokens.");
-            foreach (var token in api.Core.ListTokens().list)
-            {
-                try
-                {
-                    api.Core.NeedToken(token);
-                    Console.WriteLine($"Token {token} added successfully.");
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine($"Failed to add token {token}: {e.Message}");
-                }
-            }
+            PixyzInit.api.IO.ExportScene(finalPath, root);
         }
 
         static void Main(string[] args)
@@ -129,15 +101,16 @@ namespace PiXYZDemo
 
             string modelFilePath = "../../../../../../../python/Windows/shared/shared_models/SkidLoaderSolidworks/Skid Loader ASSM 11-4-21.SLDASM";
 
-            ConfigureLicenseAndTokens();
+            PixyzInit.InitPixyz();
+            PixyzInit.GetPixyzLicense();
 
-            if (api.Core.CheckLicense())
+            if (PixyzInit.api.Core.CheckLicense())
             {
                 var root = ImportModel(modelFilePath);
-                PixyzUtils.SaveScreenshot(api, (int)root, Path.Combine(Path.GetDirectoryName(modelFilePath), "before.png"), Orientation.LEFT);
+                PixyzUtils.SaveScreenshot((int)root, Path.Combine(Path.GetDirectoryName(modelFilePath), "before.png"), Orientation.LEFT);
                 PrepareModel(root);
-                PixyzUtils.SaveScreenshot(api, (int)root, Path.Combine(Path.GetDirectoryName(modelFilePath), "after.png"), Orientation.FRONT);
-                PixyzUtils.ExtractHierarchyToJson(api, root, Path.Combine(Path.GetDirectoryName(modelFilePath), $"{Path.GetFileNameWithoutExtension(modelFilePath)}.json"));
+                PixyzUtils.SaveScreenshot((int)root, Path.Combine(Path.GetDirectoryName(modelFilePath), "after.png"), Orientation.FRONT);
+                PixyzUtils.ExtractHierarchyToJson(root, Path.Combine(Path.GetDirectoryName(modelFilePath), $"{Path.GetFileNameWithoutExtension(modelFilePath)}.json"));
                 ExportModel(modelFilePath, "_new.glb", root);
             }
             else
