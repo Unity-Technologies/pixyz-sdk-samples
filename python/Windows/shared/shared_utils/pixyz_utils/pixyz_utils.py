@@ -23,10 +23,12 @@ class Orientation(Enum):
     BOTTOM = 3
     LEFT = 4
     RIGHT = 5
+    THREE_FOUR_PERSP = 6
+
 
 
 def saveScreenshot(occurrence, path, orientation=Orientation.FRONT, type=view.CameraType.Perspective, resolution=1024,
-                   fov=60, show_edges=False, show_lines=False):
+                   fov=60, showEdges=False, showLines=False, addPostProcess=True):
     print("Taking Screenshot...")
     if orientation == Orientation.FRONT:
         direction = geom.Point3(0, 0, -1)
@@ -40,17 +42,25 @@ def saveScreenshot(occurrence, path, orientation=Orientation.FRONT, type=view.Ca
         direction = geom.Point3(1, 0, 0)
     elif orientation == Orientation.RIGHT:
         direction = geom.Point3(-1, 0, 0)
+    elif orientation == Orientation.THREE_FOUR_PERSP:
+        direction = geom.Point3(0.5, -0.5, -1)
     else:
         direction = geom.Point3(0, 0, 0)
 
     viewer = view.createViewer(resolution, resolution)
-    gpu_scene = view.createGPUScene([occurrence], show_edges)
+    gpu_scene = view.createGPUScene([occurrence], showEdges)
     view.addGPUScene(gpu_scene, viewer)
     view.fitCamera(direction, type, fov, viewer, [occurrence])
-    if show_edges:
+    view.setViewerProperty("OcclusionCullingEnabled", "False", viewer)
+
+    if showEdges:
         view.setViewerProperty("ShowEdges", "True", viewer)
-    if show_lines:
+    if showLines:
         view.setViewerProperty("ShowLines", "False", viewer)
+
+    view.setViewerProperty("EnableToneMaping", str(addPostProcess), viewer)
+    view.setViewerProperty("UseFXAA", str(addPostProcess), viewer)
+    view.setViewerProperty("UseSSAO", str(addPostProcess), viewer)
 
     view.takeScreenshot(path, viewer)
     print("Screenshot saved at: " + path)

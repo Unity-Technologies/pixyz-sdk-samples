@@ -40,10 +40,12 @@ def CreateAndPublishFilesToAsset(asset_name, model_files, org_id, project_id, co
     except Exception as e:
         print(f'Failed to create asset: {asset_name}')
         print(e)
+
 def CreateUnfrozenAssetVersion(org_id, project_id, asset_id, asset_version):
     print("Creating unfrozen asset version")
     asset = unity_cloud.assets.create_unfrozen_asset_version(org_id, project_id, asset_id, asset_version)
     return asset
+
 def FreezeAssetVersion(org_id, project_id,asset_id, asset_version):
     print("Freezing asset version")
     unity_cloud.assets.freeze_asset_version(org_id, project_id, asset_id, asset_version, "")
@@ -76,6 +78,7 @@ def CreateCollection(collection_name, org_id, project_id):
         description="This collection was created by a pixyzSDK process"
     )
     unity_cloud.assets.create_collection(collection_creation, org_id, project_id)
+
 def UploadAsset(asset_id, asset_version, modelFile, org_id, project_id, dataset_id):
     print(f"Uploading {os.path.basename(modelFile)} to the asset")
     upload = FileUploadInformation(

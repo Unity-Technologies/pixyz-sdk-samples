@@ -99,7 +99,7 @@ if __name__ == '__main__':
                                    Orientation.LEFT)
         prepareModel(root)
         pixyz_utils.saveScreenshot(root, os.path.join(os.path.dirname(model_file_path), "after.png"),
-                                   Orientation.FRONT)
+                                   Orientation.THREE_FOUR_PERSP)
         pixyz_utils.extractHierarchyToJson(root, os.path.join(os.path.dirname(model_file_path),
                                                                 f"{os.path.splitext(os.path.basename(model_file_path))[0]}.json"))
         exportModel(model_file_path, "_new.glb", root)
