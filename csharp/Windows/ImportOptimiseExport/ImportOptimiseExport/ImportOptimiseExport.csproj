@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Compile Include="..\..\shared\shared_utils\MathUtils.cs" Link="MathUtils.cs" />
+    <Compile Include="..\..\shared\shared_utils\PixyzInit.cs" Link="PixyzInit.cs" />
     <Compile Include="..\..\shared\shared_utils\PixyzUtils.cs" Link="PixyzUtils.cs" />
   </ItemGroup>
 
