@@ -26,7 +26,7 @@ def initPixyz():
         pxz.core.addConsoleVerbose(pxz.core.Verbose.INFO)
     else:
         pxz.core.configureInterfaceLogger(False, False, False)
-
+    getPixyzLicense()
     # add all tokens
     for token in pxz.core.listTokens():
         try:

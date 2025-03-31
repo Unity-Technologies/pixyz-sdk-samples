@@ -8,7 +8,6 @@ finalPath = None
 
 def main(filepath):
     pixyz_init.initPixyz()
-    pixyz_init.getPixyzLicense()
     if core.checkLicense():
         root = importOptimiseExport.importModel(filepath)
         importOptimiseExport.prepareModel(root)
