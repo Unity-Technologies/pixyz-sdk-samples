@@ -90,7 +90,6 @@ def exportModel(filepath, extension, root):
 if __name__ == '__main__':
 
     pixyz_init.initPixyz()
-    pixyz_init.getPixyzLicense()
     model_file_path = "../shared/shared_models/SkidLoaderSolidworks/Skid Loader ASSM 11-4-21.SLDASM"
 
     if core.checkLicense():

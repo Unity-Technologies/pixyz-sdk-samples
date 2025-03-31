@@ -91,6 +91,8 @@ def getFileExtension(file):
 def executePixyzSDK(input_file, output_folder, extensions, optimization, publish_to_assetmanager, orgid, projid,
                     collection_path, tags):
     pixyz_init.initPixyz()
+    # If you want to publish to Asset Manager make sure to change the config publish_to_assetmanager to True and
+    # install the unity cloud SDK. Instructions are in the readme for setting up a service account
     if publish_to_assetmanager == "True":
         from shared.shared_utils.unity_cloud_utils import unitycloud_init as unitycloud_init
         unitycloud_init.unitycloud_init()
