@@ -5,6 +5,7 @@ This GitHub repo contains a set of samples to help users get started with the Pi
 - **[Import Optimize Export](#import-optimize-export)**
 - **[Folder Watcher](#folder-watcher)**
 - **[Parallel Processing](#parallel-processing)**
+- **[Pixyz Scheduler](#pixyz-scheduler)**
 
 
 ## Documentation
@@ -94,3 +95,18 @@ This sample requires multiple Pixyz SDK licenses but demonstrates the power of p
 1. These will run in parallel until completed or terminated.  
 1. All processes that are running or completed will be present in the main UI process.
 1. Any information that is printed to the console from the sub process will be shown in the label field of that process in the UI
+
+### Pixyz scheduler
+> [!WARNING]
+> This sample *may* consumes multiple Pixyz licenses at the same time as they are initialized in separate processes running in parallel.
+
+Pixyz SDK Scheduler is a distributed task scheduling system tailored for 3D workflows. It integrates natively with Pixyz SDK (Python). It triggers tasks via REST API and automates processing on local/cloud infrastructure.
+* Robust, scalable, low-latency 3D task manager
+* Optimized cost/performance via smart task placement
+* Simplified dev-to-prod pipeline
+* Supports advanced DAG-based processing
+
+
+The Pixyz SDK Scheduler is a powerful toolkit designed for orchestrating and executing decentralized tasks across a network of specialized workers. Tailored for seamless integration with the Pixyz framework, this toolkit empowers users to effortlessly submit jobs to distributed workers via an intuitive API.
+
+[The Pixyz SDK Scheduler dedicated repository](https://github.com/Unity-Technologies/pixyz-scheduler)
